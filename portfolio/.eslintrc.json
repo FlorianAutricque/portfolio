@@ -1,0 +1,6 @@
+{
+  "extends": "react-app"
+}
+
+// install eslint =>  npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
+//then add seslint in vite.config
