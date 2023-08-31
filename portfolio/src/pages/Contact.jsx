@@ -1,11 +1,24 @@
+import Button from "../components/Button";
 import PageNav from "../components/PageNav";
+import styles from "./Contact.module.css";
+import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Contact() {
   return (
-    <div>
+    <>
       <PageNav />
-      Contact
-    </div>
+      <div className={styles.contact}>
+        <h1>Contact</h1>
+        <Button>
+          <AiFillGithub size={20} />
+          Github
+        </Button>
+        <Button>
+          <AiOutlineLinkedin />
+          Linkedin
+        </Button>
+      </div>
+    </>
   );
 }
 
