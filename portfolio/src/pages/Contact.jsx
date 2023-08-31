@@ -1,7 +1,6 @@
-import Button from "../components/Button";
+import ContactAllButtons from "../components/ContactAllButtons";
 import PageNav from "../components/PageNav";
 import styles from "./Contact.module.css";
-import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Contact() {
   return (
@@ -9,14 +8,13 @@ function Contact() {
       <PageNav />
       <div className={styles.contact}>
         <h1>Contact</h1>
-        <Button>
-          <AiFillGithub size={20} />
-          Github
-        </Button>
-        <Button>
-          <AiOutlineLinkedin />
-          Linkedin
-        </Button>
+        <p>
+          Need some HTML, CSS, or JavaScript magic? Don't hesitate! <br /> Reach
+          out to me. Whether it's about web design, responsive layouts, or
+          designing exceptional user journeys, I'm here to help.
+          <br /> Let's turn your digital dreams into reality!
+        </p>
+        <ContactAllButtons />
       </div>
     </>
   );

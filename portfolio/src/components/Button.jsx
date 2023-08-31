@@ -1,8 +1,16 @@
 import styles from "./Button.module.css";
 
-function Button({ children, onClick }) {
+function Button({ children, link }) {
+  function handleClick(e) {
+    e.preventDefault();
+    if (link.startsWith("mailto:")) {
+      window.location.href = link;
+    } else {
+      window.open(link, "_blank");
+    }
+  }
   return (
-    <button onClick={onClick} className={styles.btn}>
+    <button onClick={handleClick} className={styles.button}>
       {children}
     </button>
   );

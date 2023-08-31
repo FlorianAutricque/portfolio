@@ -1,4 +1,11 @@
 .contact h1 {
   text-align: center;
   margin-top: 5%;
+  font-size: 3rem;
+}
+
+.contact p {
+  text-align: center;
+  margin: 100px;
+  line-height: 2;
 }
