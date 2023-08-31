@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import PageNav from "../components/PageNav";
 
 function Projects() {
   return (
     <div>
-      <NavLink />
+      <PageNav />
       projects
     </div>
   );

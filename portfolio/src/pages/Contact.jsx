@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import PageNav from "../components/PageNav";
 
 function Contact() {
   return (
     <div>
-      <NavLink />
+      <PageNav />
       Contact
     </div>
   );

@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
+import styles from "./PageNav.module.css";
+import Logo from "./Logo";
 
 function PageNav() {
   return (
-    <nav>
+    <nav className={styles.nav}>
+      <Logo />
       <ul>
         <li>
           <NavLink to="/infos">Infos</NavLink>
@@ -17,7 +20,7 @@ function PageNav() {
           <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>

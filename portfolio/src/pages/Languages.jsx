@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import PageNav from "../components/PageNav";
 
 function Languages() {
   return (
     <div>
-      <NavLink />
+      <PageNav />
       languages
     </div>
   );

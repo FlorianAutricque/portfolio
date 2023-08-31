@@ -2,10 +2,13 @@ import PageNav from "../components/PageNav";
 
 function Homepage() {
   return (
-    <div>
+    <>
       <PageNav />
-      HOMEPAGE
-    </div>
+      <h1>
+        Front-end Developer <br />
+        Creative
+      </h1>
+    </>
   );
 }
 
