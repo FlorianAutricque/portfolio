@@ -1,0 +1,18 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.homepage span {
+  background: radial-gradient(circle, var(--color-box-1), var(--color-box-2));
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  color: transparent;
+}
