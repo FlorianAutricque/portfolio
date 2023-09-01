@@ -7,10 +7,10 @@ function LanguagesBox({ children, icon }) {
     <Box
       size1={styles2.small}
       size2={styles2.smallMedium}
-      className={styles.language}
+      className={styles.item}
       icon={icon}
     >
-      {children}
+      <span className={styles.text}>{children}</span>
     </Box>
   );
 }

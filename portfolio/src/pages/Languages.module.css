@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 9rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-top: 5rem;
   align-items: center;
   justify-content: center;
 }
@@ -10,4 +12,22 @@
 .item {
   flex: 1 1 calc(16.666% - 10px);
   margin: 5px;
+  position: relative;
+  transition: border 300ms ease;
+  /* transform: scale(1); */
+}
+
+.text {
+  display: none;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.containerEachBox:hover .text {
+  display: block;
+  color: var(--color-text);
+  /* transform: scale(1.2); */
+}
+
+.containerEachBox:hover {
+  border-color: var(--color-box-2);
 }

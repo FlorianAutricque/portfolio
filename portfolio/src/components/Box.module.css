@@ -5,6 +5,10 @@
   padding: 1rem;
 }
 
+.boxFunFact:hover {
+  border-color: var(--color-box-2);
+}
+
 .boxOutside {
   background-image: linear-gradient(to bottom right, #27292ba4, #454849b9);
   padding: 1rem;
@@ -13,4 +17,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 1.5;
 }

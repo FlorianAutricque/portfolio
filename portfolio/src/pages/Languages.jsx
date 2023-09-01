@@ -29,78 +29,87 @@ function Languages() {
       <h1>Languages and Tools</h1>
 
       <div className={styles.container}>
-        <LanguagesBox icon={<FaReact size={80} />} className={styles.item}>
-          React
-        </LanguagesBox>
-        <LanguagesBox
-          icon={<BiLogoJavascript size={80} />}
-          className={styles.item}
-        >
-          Javascript
-        </LanguagesBox>{" "}
-        <LanguagesBox
-          icon={<SiRubyonrails size={80} />}
-          className={styles.item}
-        >
-          Rails
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<DiRuby size={80} />} className={styles.item}>
-          Ruby
-        </LanguagesBox>
-        <LanguagesBox icon={<FaBootstrap size={80} />} className={styles.item}>
-          Bootstrap
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<AiFillHtml5 size={80} />} className={styles.item}>
-          HTML
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<BiLogoCss3 size={80} />} className={styles.item}>
-          CSS
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<DiSass size={80} />} className={styles.item}>
-          Sass
-        </LanguagesBox>
-        <LanguagesBox
-          icon={<SiTailwindcss size={80} />}
-          className={styles.item}
-        >
-          Tailwindcss
-        </LanguagesBox>
-        <LanguagesBox
-          icon={<SiStyledcomponents size={80} />}
-          className={styles.item}
-        >
-          Styled Comp.
-        </LanguagesBox>
-        <LanguagesBox icon={<SiMysql size={80} />} className={styles.item}>
-          MySQL
-        </LanguagesBox>{" "}
-        <LanguagesBox
-          icon={<BiLogoPostgresql size={80} />}
-          className={styles.item}
-        >
-          SQL
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<SiSqlite size={80} />} className={styles.item}>
-          SQLite
-        </LanguagesBox>
-        <LanguagesBox icon={<BiLogoFigma size={80} />} className={styles.item}>
-          Figma
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<BsGit size={80} />} className={styles.item}>
-          Git
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<DiHeroku size={80} />} className={styles.item}>
-          Heroku
-        </LanguagesBox>{" "}
-        <LanguagesBox icon={<SiWebpack size={80} />} className={styles.item}>
-          Webpack
-        </LanguagesBox>
-        <LanguagesBox
-          icon={<RiSupabaseFill size={80} />}
-          className={styles.item}
-        >
-          Supabase
-        </LanguagesBox>
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<FaReact size={80} />}>React</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BiLogoJavascript size={80} />}>
+            Javascript
+          </LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiRubyonrails size={80} />}>Rails</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<DiRuby size={80} />}>Ruby</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<FaBootstrap size={80} />}>
+            Bootstrap
+          </LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<AiFillHtml5 size={80} />}>HTML</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BiLogoCss3 size={80} />}>CSS</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<DiSass size={80} />}>Sass</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiTailwindcss size={80} />}>
+            Tailwindcss
+          </LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiStyledcomponents size={80} />}>
+            Styled Comp.
+          </LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiMysql size={80} />}>MySQL</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BiLogoPostgresql size={80} />}>SQL</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiSqlite size={80} />}>SQLite</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BiLogoFigma size={80} />}>Figma</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BsGit size={80} />}>Git</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<DiHeroku size={80} />}>Heroku</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiWebpack size={80} />}>Webpack</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<RiSupabaseFill size={80} />}>
+            Supabase
+          </LanguagesBox>
+        </div>
       </div>
     </>
   );
