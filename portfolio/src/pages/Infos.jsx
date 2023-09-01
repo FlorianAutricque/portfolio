@@ -1,7 +1,7 @@
 import PageNav from "../components/PageNav";
 import styles from "./Infos.module.css";
-import Button from "../components/Button";
-import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
+import ButtonInfos from "../components/ButtonInfos";
+import FunFactInfos from "../components/FunFactInfos";
 
 function Infos() {
   return (
@@ -12,14 +12,7 @@ function Infos() {
       <div className={styles.container}>
         <div>
           <img src="/idimage.png" alt="Flo" className={styles.img} />
-          <div className={styles.btnInfos}>
-            <Button link="https://github.com/FlorianAutricque">
-              <AiFillGithub size={20} /> Github
-            </Button>
-            <Button link="https://www.linkedin.com/in/florian-autricque/">
-              <AiOutlineLinkedin size={20} /> Linkedin
-            </Button>
-          </div>
+          <ButtonInfos />
         </div>
 
         <p>
@@ -35,6 +28,7 @@ function Infos() {
           development.
         </p>
       </div>
+      <FunFactInfos />
     </>
   );
 }
