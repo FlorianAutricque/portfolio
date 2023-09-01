@@ -1,6 +1,7 @@
 /* Default styles */
 .img {
   height: 300px;
+  margin-top: 20px;
 }
 
 .container {
@@ -14,6 +15,14 @@
 .container p {
   align-items: left;
   line-height: 2;
+}
+
+.containerFunFact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 8rem;
 }
 
 /*

@@ -1,7 +1,7 @@
 import PageNav from "../components/PageNav";
 import styles from "./Infos.module.css";
 import ButtonInfos from "../components/ButtonInfos";
-import FunFactInfos from "../components/FunFactInfos";
+import AllFunFacts from "../components/AllFunFacts";
 
 function Infos() {
   return (
@@ -22,13 +22,16 @@ function Infos() {
           development and environment, followed by a Master's degree in
           sustainable development, I have amassed valuable experience in the
           solar industry, where I successfully held management positions
-          overseeing environmental projects. Motivated by a desire for career
-          transition, I pursued further education in Full Stack Web Development
-          at Le Wagon in Montreal, focusing my expertise on Front-end
-          development.
+          overseeing environmental projects.
+          <br /> <br />
+          Motivated by a desire for career transition, I pursued further
+          education in Full Stack Web Development at Le Wagon in Montreal,
+          focusing my expertise on Front-end development.
         </p>
       </div>
-      <FunFactInfos />
+      <div className={styles.containerFunFact}>
+        <AllFunFacts />
+      </div>
     </>
   );
 }
