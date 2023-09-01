@@ -22,7 +22,7 @@
   gap: 10px;
   margin-top: 20px;
 }
-
+/*
 @media (max-width: 820px) {
   .container {
     flex-direction: column;
@@ -35,4 +35,4 @@
     height: auto;
     max-width: 100%;
   }
-}
+} */

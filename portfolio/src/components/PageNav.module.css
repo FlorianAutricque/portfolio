@@ -20,4 +20,12 @@
   text-decoration: none;
   color: var(--color-text);
   font-size: 20px;
+  transition: color 0.2s;
+}
+
+.nav a.active,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: var(--color-box-2);
 }
