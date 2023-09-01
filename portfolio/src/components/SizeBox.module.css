@@ -1,0 +1,17 @@
+.large {
+  width: 300px;
+  height: 300px;
+}
+
+.mediumLarge {
+  height: 270px;
+}
+
+.small {
+  width: 130px;
+  height: 130px;
+}
+
+.smallMedium {
+  height: 100px;
+}
