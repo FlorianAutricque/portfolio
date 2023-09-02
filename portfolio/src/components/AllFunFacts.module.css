@@ -1,0 +1,10 @@
+.text {
+  display: none;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.reveal:hover .text {
+  display: block;
+  color: var(--color-text);
+  /* transform: scale(1.2); */
+}
