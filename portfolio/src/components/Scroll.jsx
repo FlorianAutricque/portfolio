@@ -7,9 +7,9 @@ function ScrollTriggeredText({ children, position }) {
 
   useEffect(() => {
     const options = {
-      root: null, // Use the viewport as the root
+      root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the element is visible
+      threshold: 0.5,
     };
 
     let targetNode = textRef.current;
@@ -36,9 +36,12 @@ function ScrollTriggeredText({ children, position }) {
 
   return (
     <div className={`${styles.scrollTrigerText} ${position}`}>
-      <p ref={textRef} className={isVisible ? styles.visible : styles.hidden}>
+      <span
+        ref={textRef}
+        className={isVisible ? styles.visible : styles.hidden}
+      >
         {children}
-      </p>
+      </span>
     </div>
   );
 }
