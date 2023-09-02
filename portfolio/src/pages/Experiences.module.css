@@ -1,0 +1,21 @@
+.containerExp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 20% 0 20%;
+}
+.horizontal {
+  margin-top: 3rem;
+  border-left: 6px solid black;
+  /* height: 300px */
+  position: absolute;
+  left: 50%;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  margin-top: 5rem;
+}
