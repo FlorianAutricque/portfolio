@@ -1,0 +1,13 @@
+.horizontal {
+  margin-top: 3rem;
+  border-left: 6px solid transparent;
+  border-image: linear-gradient(
+    to bottom,
+    var(--color-box-1),
+    var(--color-box-2)
+  );
+  border-image-slice: 1;
+
+  position: absolute;
+  left: 50%;
+}
