@@ -4,6 +4,7 @@ import Infos from "./pages/Infos";
 import Experiences from "./pages/Experiences";
 import Languages from "./pages/Languages";
 import Projects from "./pages/Projects";
+import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="experiences" element={<Experiences />} />
         <Route path="languages" element={<Languages />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="project/:projectId" element={<Project />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
