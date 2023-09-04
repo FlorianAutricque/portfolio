@@ -8,19 +8,44 @@ function PageNav() {
       <Logo />
       <ul>
         <li>
-          <NavLink to="/infos">Infos</NavLink>
+          <NavLink
+            to="/infos"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Infos
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/experiences">Experiences</NavLink>
+          <NavLink
+            to="/experiences"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Experiences
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/languages">Languages</NavLink>
+          <NavLink
+            to="/languages"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Languages
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Projects
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
