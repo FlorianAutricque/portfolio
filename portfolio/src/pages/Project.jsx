@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import PageNav from "../components/PageNav";
 import styles from "../components/Button.module.css";
+import styles2 from "./Project.module.css";
 
 function Project() {
   const location = useLocation();
@@ -17,26 +18,27 @@ function Project() {
         <p>Project Name: {project ? project.name : ""}</p>
         <p>Project description: {project ? project.descritpion : ""}</p>
 
-        {project
+        {/* {project
           ? project.mainImage && (
               <p>
                 Project image:
                 <img src={project.mainImage} alt={project.name} />
               </p>
             )
-          : ""}
+          : ""} */}
 
         {project
           ? project.allImages && (
               <div>
                 <p>Project images:</p>
                 {project.allImages.map((image, index) => {
-                  if (index < project.allImages.length - 2) {
+                  if (index < project.allImages.length) {
                     return (
                       <img
                         key={index}
                         src={image}
                         alt={`${project.name} ${index + 1}`}
+                        className={styles2.image}
                       />
                     );
                   }

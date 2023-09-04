@@ -12,7 +12,7 @@ function Projects() {
       name: "WorldWise",
       mainImage: "/projectsImages/worldwise/worldwise1.png",
       allImages: Array.from(
-        { length: 9 },
+        { length: 11 },
         (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.png`
       ),
       descritpion:
@@ -22,66 +22,118 @@ function Projects() {
       projectId: 2,
       name: "Weather App",
       mainImage: "/projectsImages/weatherApp/weatherapp1.png",
+      allImages: Array.from(
+        { length: 3 },
+        (_, index) => `/projectsImages/weatherApp/weatherapp${index + 1}.png`
+      ),
     },
     {
       projectId: 3,
       name: "OUVA",
       mainImage: "/projectsImages/ouva/ouva1.png",
+      allImages: Array.from(
+        { length: 5 },
+        (_, index) => `/projectsImages/ouva/ouva${index + 1}.png`
+      ),
     },
     {
       projectId: 4,
       name: "Hairbnb",
       mainImage: "/projectsImages/hairbnb/airbnb1.png",
+      allImages: Array.from(
+        { length: 8 },
+        (_, index) => `/projectsImages/hairbnb/airbnb${index + 1}.png`
+      ),
     },
     {
       projectId: 5,
       name: "The Wild Oasis",
       mainImage: "/projectsImages/wildoasis/wildoasis1.png",
+      allImages: Array.from(
+        { length: 28 },
+        (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.png`
+      ),
     },
     {
       projectId: 6,
       name: "usePopcorn",
       mainImage: "/projectsImages/usepopcorn/usepopcorn1.png",
+      allImages: Array.from(
+        { length: 7 },
+        (_, index) => `/projectsImages/usepopcorn/usepopcorn${index + 1}.png`
+      ),
     },
     {
       projectId: 7,
       name: "Fast React Pizza",
       mainImage: "/projectsImages/pizzareact/pizzareact1.png",
+      allImages: Array.from(
+        { length: 12 },
+        (_, index) => `/projectsImages/pizzareact/pizzareact${index + 1}.png`
+      ),
     },
     {
       projectId: 8,
       name: "React Quizz",
       mainImage: "/projectsImages/reactquizz/quizz1.png",
+      allImages: Array.from(
+        { length: 7 },
+        (_, index) => `/projectsImages/reactquizz/quizz${index + 1}.png`
+      ),
     },
     {
       projectId: 9,
       name: "Far Away",
       mainImage: "/projectsImages/faraway/faraway1.png",
+      allImages: Array.from(
+        { length: 8 },
+        (_, index) => `/projectsImages/faraway/faraway${index + 1}.png`
+      ),
     },
     {
       projectId: 10,
       name: "Bankist",
       mainImage: "/projectsImages/bankist/bankist1.png",
+      allImages: Array.from(
+        { length: 9 },
+        (_, index) => `/projectsImages/bankist/bankist${index + 1}.png`
+      ),
     },
     {
       projectId: 11,
       name: "Forkify",
       mainImage: "/projectsImages/forkify/forkify1.png",
+      allImages: Array.from(
+        { length: 12 },
+        (_, index) => `/projectsImages/forkify/forkify${index + 1}.png`
+      ),
     },
     {
       projectId: 12,
       name: "Mapty",
       mainImage: "/projectsImages/mapty/mapty1.png",
+      allImages: Array.from(
+        { length: 6 },
+        (_, index) => `/projectsImages/mapty/mapty${index + 1}.png`
+      ),
     },
     {
       projectId: 13,
       name: "Guess My Number",
       mainImage: "/projectsImages/number/number1.png",
+      allImages: Array.from(
+        { length: 3 },
+        (_, index) => `/projectsImages/number/number${index + 1}.png`
+      ),
     },
     {
       projectId: 14,
       name: "Pig Game",
       mainImage: "/projectsImages/piggame/game1.png",
+      allImages: Array.from(
+        { length: 4 },
+        (_, index) => `/projectsImages/piggame/game${index + 1}.png`
+      ),
     },
   ];
 
