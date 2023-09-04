@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import PageNav from "../components/PageNav";
 import styles from "../components/Button.module.css";
 import styles2 from "./Project.module.css";
+import { AiFillGithub } from "react-icons/ai";
 
 function Project() {
   const location = useLocation();
@@ -13,10 +14,13 @@ function Project() {
     <>
       <PageNav />
       <div>
-        <h1>Project Details</h1>
-        <p>Project ID: {project ? project.projectId : ""}</p>
-        <p>Project Name: {project ? project.name : ""}</p>
-        <p>Project description: {project ? project.descritpion : ""}</p>
+        <h1>{project ? project.name : ""}</h1>
+        <p>Project description: {project ? project.description : ""}</p>
+        <Link to={project.github} target="_blank" className={styles.button}>
+          <AiFillGithub size={20} /> Github
+        </Link>
+
+        <p>Stack: {project.stack.join(", ")}</p>
 
         {/* {project
           ? project.mainImage && (
@@ -26,7 +30,6 @@ function Project() {
               </p>
             )
           : ""} */}
-
         {project
           ? project.allImages && (
               <div>
@@ -50,7 +53,7 @@ function Project() {
       </div>
 
       <Link to="/projects" className={styles.button}>
-        Go back
+        &larr; Go back
       </Link>
     </>
   );

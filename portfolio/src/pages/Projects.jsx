@@ -15,8 +15,10 @@ function Projects() {
         { length: 11 },
         (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.png`
       ),
-      descritpion:
+      description:
         "Introducing WorldWise: Your Ultimate Travel Companion. Experience seamless travel tracking with the WorldWise app. Explore a variety of features to elevate your adventures. Learn about our offerings, products, and pricing for your travel needs. Log in to access your dedicated account with an interactive world map to tell your travel stories. Easily log your trips on the map with personal anecdotes. Track Countries, Cherish Memories: WorldWise counts the countries you've visited. ity Exploration: Dive into cities you've visited with details like visit dates and your impression. Access destination history through a quick Wikipedia link. ",
+      github: "https://github.com/FlorianAutricque/worldwise",
+      stack: ["React", "CSS", "HTML"],
     },
     {
       projectId: 2,
