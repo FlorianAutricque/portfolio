@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import PageNav from "../components/PageNav";
-import styles from "../components/Button.module.css";
-import styles2 from "./Project.module.css";
+import styles2 from "../components/Button.module.css";
+import styles from "./Project.module.css";
 import { AiFillGithub } from "react-icons/ai";
 
 function Project() {
@@ -15,12 +15,20 @@ function Project() {
       <PageNav />
       <div>
         <h1>{project ? project.name : ""}</h1>
-        <p>Project description: {project ? project.description : ""}</p>
-        <Link to={project.github} target="_blank" className={styles.button}>
-          <AiFillGithub size={20} /> Github
-        </Link>
 
-        <p>Stack: {project.stack.join(", ")}</p>
+        <div className={styles.containerTextStack}>
+          <p>Stack: {project.stack.join(", ")}</p>
+
+          <div>
+            <h3>About: </h3>
+            <p>{project ? project.description : ""}</p>
+          </div>
+        </div>
+        <Link to={project.github} target="_blank" className={styles2.button}>
+          <span className={styles2.textLink}>
+            <AiFillGithub size={20} /> Github
+          </span>
+        </Link>
 
         {project
           ? project.allImages && (
@@ -33,7 +41,7 @@ function Project() {
                         key={index}
                         src={image}
                         alt={`${project.name} ${index + 1}`}
-                        className={styles2.image}
+                        className={styles.image}
                       />
                     );
                   }
@@ -44,7 +52,7 @@ function Project() {
           : ""}
       </div>
 
-      <Link to="/projects" className={styles.button}>
+      <Link to="/projects" className={styles2.button}>
         &larr; Go back
       </Link>
     </>

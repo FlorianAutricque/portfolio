@@ -12,7 +12,7 @@ function Button({ children, link }) {
   }
   return (
     <Link onClick={handleClick} className={styles.button}>
-      {children}
+      <span className={styles.textLink}>{children}</span>
     </Link>
   );
 }

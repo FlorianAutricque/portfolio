@@ -2,6 +2,7 @@ import PageNav from "../components/PageNav";
 import styles from "./Experiences.module.css";
 import VerticalLineExperiences from "../components/VerticalLineExperiences";
 import AllExperiences from "../components/AllExperiences";
+import ButtonScrollTop from "../components/ButtonScrollTop";
 
 function Experiences() {
   return (
@@ -12,6 +13,7 @@ function Experiences() {
         <VerticalLineExperiences />
         <AllExperiences />
       </div>
+      <ButtonScrollTop />
     </>
   );
 }

@@ -6,10 +6,16 @@ function ButtonInfos() {
   return (
     <div className={styles.btnInfos}>
       <Button link="https://github.com/FlorianAutricque">
-        <AiFillGithub size={20} /> Github
+        <span className={styles.textLink}>
+          {" "}
+          <AiFillGithub size={20} /> Github{" "}
+        </span>
       </Button>
       <Button link="https://www.linkedin.com/in/florian-autricque/">
-        <AiOutlineLinkedin size={20} /> Linkedin
+        <span className={styles.textLink}>
+          {" "}
+          <AiOutlineLinkedin size={20} /> Linkedin
+        </span>
       </Button>
     </div>
   );
