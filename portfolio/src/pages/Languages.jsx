@@ -20,6 +20,7 @@ import {
   SiWebpack,
   SiTailwindcss,
   SiStyledcomponents,
+  SiStimulus,
 } from "react-icons/si";
 
 function Languages() {
@@ -37,6 +38,9 @@ function Languages() {
           <LanguagesBox icon={<BiLogoJavascript size={80} />}>
             Javascript
           </LanguagesBox>
+        </div>
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<SiStimulus size={80} />}>Stimulus</LanguagesBox>
         </div>
 
         <div className={styles.containerEachBox}>
