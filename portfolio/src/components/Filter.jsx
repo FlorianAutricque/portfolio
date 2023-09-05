@@ -1,5 +1,8 @@
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+
+import styles from "./Filter.module.css";
+import styles2 from "./Button.module.css";
 
 function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
   const [searchParams] = useSearchParams();
@@ -16,16 +19,20 @@ function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
   // }
 
   return (
-    <div>
+    <div className={styles.selectFilter}>
       {options.map(option => (
-        <button
+        <Link
           key={option.value}
           value={option.value}
           onClick={() => onSelectFilter(option.value)}
-          className={option.value === selectedFilter ? "active" : ""}
+          // className={option.value === selectedFilter ? "active" : ""}
+          className={styles2.button}
         >
-          {option.label}
-        </button>
+          <span className={styles2.textLink}>
+            {option.icon}
+            {option.label}
+          </span>
+        </Link>
       ))}
     </div>
   );

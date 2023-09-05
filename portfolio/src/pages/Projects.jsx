@@ -9,6 +9,10 @@ import ButtonScrollTop from "../components/ButtonScrollTop";
 import Filter from "../components/Filter";
 import { useState } from "react";
 
+import { FaReact } from "react-icons/fa";
+import { BiLogoJavascript } from "react-icons/bi";
+import { DiRuby } from "react-icons/di";
+
 function Projects() {
   const projects = [
     {
@@ -219,9 +223,13 @@ function Projects() {
         filterField="stack"
         options={[
           { value: "All", label: "All" },
-          { value: "React", label: "React" },
-          { value: "Javascript", label: "Javascript" },
-          { value: "Ruby on rails", label: "Ruby" },
+          { value: "React", label: "React", icon: <FaReact /> },
+          {
+            value: "Javascript",
+            label: "Javascript",
+            icon: <BiLogoJavascript />,
+          },
+          { value: "Ruby on rails", label: "Ruby", icon: <DiRuby /> },
         ]}
         onSelectFilter={setSelectedFilter}
       />
