@@ -5,24 +5,27 @@ import styles from "./AllExperiences.module.css";
 function AllExperiences() {
   return (
     <>
-      <Scroll position={styles.left}>
+      <Scroll position={styles.first}>
         <h3>React Course 2023: React, Redux, Tailwind CSS & More</h3>
         <h5>August 2023</h5>
         <p>
           <em>Udemy</em>
         </p>
         React.js, Tailwind CSS, supabase, Redux.js, JavaScript eXtension (JSX),
-        CSS Modules, Styled Components, Context API, React Router
+        CSS Modules, Styled Components, Context API, React Router.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Javascript course</h3>
-        <h5>July 2023</h5>
-        <p>
-          <em>Udemy</em>
-        </p>
-        Modern OOP, Asynchronous JavaScript, NPM, Parcel, Babel and ES6 modules.
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Javascript course</h3>
+          <h5>July 2023</h5>
+          <p>
+            <em>Udemy</em>
+          </p>
+          Modern OOP, Asynchronous JavaScript, NPM, Parcel, Babel and ES6
+          modules.
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Fullstack web development, computer programming</h3>
@@ -30,20 +33,22 @@ function AllExperiences() {
         <p>
           <em>Le Wagon Montreal</em>
         </p>
-        9 weeks intensive coding bootcamp learning HTML, CSS,Bootstrap,
-        JavaScript, Figma, SQL, git, GitHub, Heroku andRuby on Rails, Trello.
+        9 weeks intensive coding bootcamp learning HTML, CSS, Bootstrap,
+        JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Personal goal pursuit | Career break</h3>
-        <h5>October 2022-April 2023</h5>
-        <p>
-          <em>France</em>
-        </p>
-        Pursuing personal goal of investment opportunities through CTO, PEA, LI.
-        Additionally, I invested into real estate by implementing a buy,
-        renovation, and re-sell strategy.
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Personal goal pursuit | Career break</h3>
+          <h5>October 2022-April 2023</h5>
+          <p>
+            <em>France</em>
+          </p>
+          Pursuing personal goal of investment opportunities through CTO, PEA,
+          LI. Additionally, I invested into real estate by implementing a buy,
+          renovation, and re-sell strategy.
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Leading Hand/Supervisor</h3>
@@ -52,31 +57,31 @@ function AllExperiences() {
           <em>Stralis Energy</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> Gunnedah solar plant and Woolooga solar plant
-          (Australia)
+          <BiSolidLocationPlus /> Gunnedah and Woolooga solar plant (Australia)
         </span>
-        <br /> <br />- Management of 15 people in Gunnedah and 30 in Woolooga.
-        <br /> -Responsible of overseeing operations, quality checks, team
-        organization, and prioritizing everyone's safety. <br />- Enhancing
-        production efficiency to optimize overall performance.
+        <br /> <br />
+        Led teams of 15 in Gunnedah and 30 in Woolooga. <br />
+        Managed operations, quality, organization, and safety.
+        <br />
+        Enhanced production efficiency for better performance.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Team Leader</h3>
-        <h5>July 2020-February 2021</h5>
-        <p>
-          <em>All Energy Contracting</em>
-        </p>
-        <span>
-          <BiSolidLocationPlus /> Glenrowan solar plant (Australia)
-        </span>{" "}
-        <br /> <br />
-        - Providing support to supervisors in overseeing a team of 15
-        individuals involved in underground electric cable work, with a focus on
-        optimizing team organization. <br />- Ensuring quality assurance and
-        quality control of combiner boxes and power conditioning units
-        (PCUs).performance.
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Team Leader</h3>
+          <h5>July 2020-February 2021</h5>
+          <p>
+            <em>All Energy Contracting</em>
+          </p>
+          <span>
+            <BiSolidLocationPlus /> Glenrowan solar plant (Australia)
+          </span>{" "}
+          <br /> <br />
+          Assisted supervisors with a 15-member underground electric cable team,
+          prioritizing team organization. <br /> Ensured quality control for
+          combiner boxes and power conditioning units (PCUs).
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Leading Hand</h3>
@@ -87,31 +92,33 @@ function AllExperiences() {
         <span>
           <BiSolidLocationPlus /> Limondale solar plant (Australia)
         </span>{" "}
-        <br /> <br />- Managing a team of 15 individuals. Organizing their tasks
-        and increasing their performances.
-        <br /> - Quality control of the components constructed, focusing on
-        maintaining high standards. <br />- Organizing and implementing safety
-        measures in the workplace.
-        <br /> - Conducting quality assurance and quality control assessments of
-        modules deployed in the field, verifying their adherence to specified
-        standards.
+        <br /> <br /> Managed a 15-member team, improving task organization and
+        performance.
+        <br />
+        Ensured high-quality component construction.
+        <br />
+        Implemented workplace safety measures.
+        <br />
+        Conducted field assessments to verify module quality standards.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Leading Hand</h3>
-        <h5>December 2018-October2019</h5>
-        <p>
-          <em>Bamford Engineering & Consulting</em>
-        </p>
-        <span>
-          <BiSolidLocationPlus /> Limondale solar plant (Australia)
-        </span>{" "}
-        <br /> <br />- Leading hand of the workshop area. Managing a team of 30
-        people. <br />- Conducting thorough quality checks and implementing
-        stringent quality control measures to uphold the standards of
-        production. <br />- Actively seeking ways to enhance production
-        efficiency and optimize output levels.
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Leading Hand</h3>
+          <h5>December 2018-October2019</h5>
+          <p>
+            <em>Bamford Engineering & Consulting</em>
+          </p>
+          <span>
+            <BiSolidLocationPlus /> Limondale solar plant (Australia)
+          </span>{" "}
+          <br /> <br /> Led 30-person workshop team.
+          <br />
+          Ensured rigorous quality control for production standards.
+          <br />
+          Strived to boost production efficiency and output.
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Laborer</h3>
@@ -122,17 +129,19 @@ function AllExperiences() {
         <span>
           <BiSolidLocationPlus /> Limondale solar plant (Australia)
         </span>{" "}
-        <br /> <br />- Assembling components in the workshop are
+        <br /> <br />- Assembling components in the workshop area.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Master's degree</h3>
-        <h5>September 2016-September 2018</h5>
-        <p>
-          <em>Le Mans University</em>
-        </p>
-        <span>Master Territorial Sustainable Development Policies</span>
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Master's degree</h3>
+          <h5>September 2016-September 2018</h5>
+          <p>
+            <em>Le Mans University</em>
+          </p>
+          <span>Master Territorial Sustainable Development Policies.</span>
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Retail worker | Student job</h3>
@@ -140,21 +149,22 @@ function AllExperiences() {
         <p>
           <em>XPO Logistics</em>
         </p>
-        <br />
-        - Teamwork with colleagues to ensure efficient store operations and a
-        positive customer experience. <br />- Preparing customer orders with
-        attention to detail and accuracy. <br />- Commitment to safety by
-        strictly adhering to established safety rules and guidelines.
+        Collaborated with colleagues for efficient store operations and customer
+        satisfaction. <br />
+        Prepared accurate customer orders with attention to detail. <br />
+        Prioritized safety by following guidelines.
       </Scroll>
 
-      <Scroll position={styles.right}>
-        <h3>Bachelor's degree</h3>
-        <h5>September 2012-July 2016</h5>
-        <p>
-          <em>University Bordeaux Montaigne</em>
-        </p>
-        <span>Bachelor's degree, Territory development and environment</span>
-      </Scroll>
+      <div className={styles.x}>
+        <Scroll position={styles.right}>
+          <h3>Bachelor's degree</h3>
+          <h5>September 2012-July 2016</h5>
+          <p>
+            <em>University Bordeaux Montaigne</em>
+          </p>
+          <span>Bachelor's degree, Territory development and environment.</span>
+        </Scroll>
+      </div>
 
       <Scroll position={styles.left}>
         <h3>Retail worker | Student job</h3>
@@ -162,13 +172,15 @@ function AllExperiences() {
         <p>
           <em>Carrefour</em>
         </p>
+        Problem-solving.
         <br />
-        - Problem solving <br />- Collaborating with colleagues to ensure smooth
-        store operations. <br />- Customer interactions, store security, and
-        safety protocols. <br />
-        - Arranging products in an organized and visually appealing manner.
-        <br /> - Inventories, conducting stock checks, and notifying management
-        when products need to be restocked.
+        Collaborating for store operations.
+        <br />
+        Customer interactions, security, and safety.
+        <br />
+        Organizing products attractively.
+        <br />
+        Managing inventory and restocking notifications.
       </Scroll>
     </>
   );

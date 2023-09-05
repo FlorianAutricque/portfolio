@@ -22,14 +22,6 @@ function Project() {
 
         <p>Stack: {project.stack.join(", ")}</p>
 
-        {/* {project
-          ? project.mainImage && (
-              <p>
-                Project image:
-                <img src={project.mainImage} alt={project.name} />
-              </p>
-            )
-          : ""} */}
         {project
           ? project.allImages && (
               <div>

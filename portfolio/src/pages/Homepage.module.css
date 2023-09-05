@@ -12,7 +12,6 @@
 
 .homepage span {
   background: radial-gradient(circle, var(--color-box-1), var(--color-box-2));
-  /* -webkit-background-clip: text; */
   background-clip: text;
   color: transparent;
 }

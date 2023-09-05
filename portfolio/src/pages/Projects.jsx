@@ -4,6 +4,7 @@ import PageNav from "../components/PageNav";
 import styles from "./Projects.module.css";
 import styles2 from "../components/SizeBox.module.css";
 import Box from "../components/Box";
+import styles3 from "../components/PageNav.module.css";
 
 function Projects() {
   const projects = [
@@ -151,6 +152,7 @@ function Projects() {
             key={project.projectId}
             to={`/project/${project.projectId}`}
             state={{ projectData: project }}
+            className={styles3.active}
           >
             <div>
               <Box size1={styles2.sizeProject}>

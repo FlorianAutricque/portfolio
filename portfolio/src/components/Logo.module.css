@@ -1,3 +1,11 @@
 .img {
   height: 2rem;
 }
+
+.logo {
+  background: radial-gradient(circle, var(--color-box-1), var(--color-box-2));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  margin: 0;
+}
