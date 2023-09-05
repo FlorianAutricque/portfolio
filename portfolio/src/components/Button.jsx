@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Button.module.css";
 
 function Button({ children, link }) {
@@ -10,9 +11,9 @@ function Button({ children, link }) {
     }
   }
   return (
-    <button onClick={handleClick} className={styles.button}>
+    <Link onClick={handleClick} className={styles.button}>
       {children}
-    </button>
+    </Link>
   );
 }
 

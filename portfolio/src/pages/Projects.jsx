@@ -1,10 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import PageNav from "../components/PageNav";
 import styles from "./Projects.module.css";
 import styles2 from "../components/SizeBox.module.css";
 import Box from "../components/Box";
 import styles3 from "../components/PageNav.module.css";
+import styles4 from "../components/Button.module.css";
+
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
 function Projects() {
   const projects = [
@@ -199,6 +202,30 @@ function Projects() {
     },
   ];
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <PageNav />
@@ -227,6 +254,14 @@ function Projects() {
             </div>
           </NavLink>
         ))}
+      </div>
+
+      <div className="scroll-to-top-button">
+        {isVisible && (
+          <Link onClick={scrollToTop} className={styles4.button}>
+            <BsFillArrowUpSquareFill /> Scroll to Top
+          </Link>
+        )}
       </div>
     </div>
   );
