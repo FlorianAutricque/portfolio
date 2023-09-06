@@ -9,6 +9,7 @@ function PageNav() {
   const toggleActiveClass = () => {
     setIsActive(!isActive);
   };
+
   const removeActive = () => {
     setIsActive(false);
   };
@@ -16,14 +17,16 @@ function PageNav() {
   return (
     <nav className={styles.nav}>
       <Logo />
+
       <div
         className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
         onClick={toggleActiveClass}
       >
-        <span className={`${styles.bar}`}></span>
-        <span className={`${styles.bar}`}></span>
-        <span className={`${styles.bar}`}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
       </div>
+
       <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
         <li onClick={removeActive}>
           <NavLink
@@ -33,6 +36,7 @@ function PageNav() {
             Infos
           </NavLink>
         </li>
+
         <li onClick={removeActive}>
           <NavLink
             to="/experiences"
@@ -41,6 +45,7 @@ function PageNav() {
             Experiences
           </NavLink>
         </li>
+
         <li onClick={removeActive}>
           <NavLink
             to="/languages"
@@ -49,6 +54,7 @@ function PageNav() {
             Languages
           </NavLink>
         </li>
+
         <li onClick={removeActive}>
           <NavLink
             to="/projects"
@@ -57,6 +63,7 @@ function PageNav() {
             Projects
           </NavLink>
         </li>
+
         <li onClick={removeActive}>
           <NavLink
             to="/contact"

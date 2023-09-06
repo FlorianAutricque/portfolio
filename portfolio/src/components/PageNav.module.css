@@ -66,16 +66,16 @@
     flex-direction: column;
     gap: 0;
     top: 70px;
-    left: -100%;
+    right: -100%;
     text-align: start;
     width: 100%;
     transition: 0.7s ease-in-out;
-    background-color: var(--color-main);
+    background-image: linear-gradient(to bottom right, #27292bef, #454849e8);
     padding: 10px;
   }
 
   .navMenu.active {
-    left: 0;
+    right: 0;
   }
 
   .navMenu li {
