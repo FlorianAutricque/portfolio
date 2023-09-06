@@ -36,7 +36,13 @@ function Project() {
 
           <div className={styles.aboutDescription}>
             <h3>About: </h3>
-            <p>{project ? project.description : ""}</p>
+            {/* <p>{project ? project.description.split("\n") : ""}</p> */}
+
+            {project
+              ? project.description
+                  .split("\n")
+                  .map((paragraph, index) => <p key={index}>{paragraph}</p>)
+              : ""}
           </div>
         </div>
 
