@@ -1,5 +1,11 @@
 @import "https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:wght@100;300;400;500&display=swap";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-main: #27292b;
   --color-text: #fffff5;

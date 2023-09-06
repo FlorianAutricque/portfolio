@@ -1,13 +1,31 @@
 import { NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
+import { useState } from "react";
 
 function PageNav() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+  };
+  const removeActive = () => {
+    setIsActive(false);
+  };
+
   return (
     <nav className={styles.nav}>
       <Logo />
-      <ul>
-        <li>
+      <div
+        className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
+        onClick={toggleActiveClass}
+      >
+        <span className={`${styles.bar}`}></span>
+        <span className={`${styles.bar}`}></span>
+        <span className={`${styles.bar}`}></span>
+      </div>
+      <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
+        <li onClick={removeActive}>
           <NavLink
             to="/infos"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -15,7 +33,7 @@ function PageNav() {
             Infos
           </NavLink>
         </li>
-        <li>
+        <li onClick={removeActive}>
           <NavLink
             to="/experiences"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -23,7 +41,7 @@ function PageNav() {
             Experiences
           </NavLink>
         </li>
-        <li>
+        <li onClick={removeActive}>
           <NavLink
             to="/languages"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -31,7 +49,7 @@ function PageNav() {
             Languages
           </NavLink>
         </li>
-        <li>
+        <li onClick={removeActive}>
           <NavLink
             to="/projects"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -39,7 +57,7 @@ function PageNav() {
             Projects
           </NavLink>
         </li>
-        <li>
+        <li onClick={removeActive}>
           <NavLink
             to="/contact"
             className={({ isActive }) => (isActive ? styles.active : "")}
