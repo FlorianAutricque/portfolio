@@ -6,8 +6,7 @@
   padding-right: 2rem;
   font-family: "Iceland";
   border-bottom: solid 1px #0d0d0d70;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px;
 }
 
 .nav ul {
@@ -66,7 +65,7 @@
     flex-direction: column;
     gap: 0;
     top: 70px;
-    right: -100%;
+    left: -100%;
     text-align: start;
     width: 100%;
     transition: 0.7s ease-in-out;
@@ -75,7 +74,7 @@
   }
 
   .navMenu.active {
-    right: 0;
+    left: 0;
   }
 
   .navMenu li {

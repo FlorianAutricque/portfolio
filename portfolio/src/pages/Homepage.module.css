@@ -15,3 +15,10 @@
   background-clip: text;
   color: transparent;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .homepage span {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

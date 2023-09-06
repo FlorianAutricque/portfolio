@@ -9,3 +9,10 @@
   font-size: 2rem;
   margin: 0;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .logo {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
