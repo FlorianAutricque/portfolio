@@ -38,7 +38,7 @@
   }
 
   .bar {
-    background-color: #120f0b;
+    background-color: var(--color-text);
     width: 20px;
     height: 3px;
     display: block;
