@@ -1,0 +1,13 @@
+@import "node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+
+.carousel {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.projectPhotoText {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: x-large;
+}

@@ -1,9 +1,3 @@
-.image {
-  height: 200px;
-  width: 200px;
-  padding: 2rem;
-}
-
 .textLink {
   display: flex;
   justify-content: center;
@@ -11,8 +5,26 @@
   gap: 4px;
 }
 
-.containerTextStack {
+.containerImgText {
   display: flex;
   gap: 10rem;
   margin: 0 12% 0 12%;
+}
+
+.stackGithub {
+  text-align: center;
+}
+
+.stackGithub p {
+  margin-top: 30%;
+  margin-bottom: 25%;
+}
+
+.aboutDescription p {
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.goBack {
+  margin-left: 10%;
 }
