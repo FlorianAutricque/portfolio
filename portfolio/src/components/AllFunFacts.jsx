@@ -1,7 +1,9 @@
 import { GiPencilBrush } from "react-icons/gi";
-import Box from "./Box";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaSkiing } from "react-icons/fa";
+
+import Box from "./Box";
+
 import styles from "./SizeBox.module.css";
 import styles2 from "./AllFunFacts.module.css";
 

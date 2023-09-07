@@ -1,5 +1,6 @@
 import PageNav from "../components/PageNav";
 import LanguagesBox from "../components/LanguagesBox";
+
 import styles from "./Languages.module.css";
 
 import { FaReact, FaBootstrap } from "react-icons/fa6";

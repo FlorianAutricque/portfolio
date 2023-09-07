@@ -1,4 +1,5 @@
 import Box from "./Box";
+
 import styles from "../pages/Languages.module.css";
 import styles2 from "./SizeBox.module.css";
 

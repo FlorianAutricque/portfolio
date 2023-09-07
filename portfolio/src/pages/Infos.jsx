@@ -17,7 +17,7 @@ function Infos() {
 
         <p>
           <u>Location:</u> Montreal, Canada <br />
-          <br />I am a team player, creative and passionate, Highly organized,
+          <br />I am a team player, creative and passionate, highly organized,
           "can-do" attitude, reliable. With a Bachelor's degree in territory
           development and environment, followed by a Master's degree in
           sustainable development, I have amassed valuable experience in the

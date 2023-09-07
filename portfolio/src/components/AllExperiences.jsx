@@ -1,5 +1,5 @@
-import Scroll from "../components/Scroll";
 import { BiSolidLocationPlus } from "react-icons/bi";
+import Scroll from "../components/Scroll";
 import styles from "./AllExperiences.module.css";
 
 function AllExperiences() {

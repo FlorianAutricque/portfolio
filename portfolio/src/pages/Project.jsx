@@ -1,13 +1,13 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { AiFillGithub } from "react-icons/ai";
+import React from "react";
 
-import styles2 from "../components/Button.module.css";
 import styles from "./Project.module.css";
+import styles2 from "../components/Button.module.css";
 
 import PageNav from "../components/PageNav";
 import StackProject from "../components/StackProject";
 import CarouselComponent from "../components/CarouselComponent";
+import DescriptionProject from "../components/DescriptionProject";
 
 function Project() {
   const location = useLocation();
@@ -19,29 +19,9 @@ function Project() {
       <PageNav />
       <div>
         <h1>{project ? project.name : ""}</h1>
-
         <div className={styles.containerMain}>
           <StackProject />
-
-          <div className={styles.aboutDescription}>
-            <h3>About </h3>
-            {project
-              ? project.description
-                  .split("\n")
-                  .map((paragraph, index) => <p key={index}>{paragraph}</p>)
-              : ""}{" "}
-            <br />
-            <br />
-            <Link
-              to={project.github}
-              target="_blank"
-              className={styles2.button}
-            >
-              <span className={styles2.textLink}>
-                <AiFillGithub size={20} /> Github
-              </span>
-            </Link>
-          </div>
+          <DescriptionProject />
         </div>
 
         <CarouselComponent />

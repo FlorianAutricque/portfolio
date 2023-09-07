@@ -1,6 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useLocation } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import styles from "./CarouselComponent.module.css";
 
