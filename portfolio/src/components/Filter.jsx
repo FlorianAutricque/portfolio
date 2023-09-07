@@ -12,12 +12,6 @@ function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
     onSelectFilter(currentFilter);
   }, [currentFilter, onSelectFilter]);
 
-  // function handleChange(event) {
-  //   const selectedValue = event.target.value;
-  //   searchParams.set(filterField, selectedValue);
-  //   setSearchParams(searchParams);
-  // }
-
   return (
     <div className={styles.selectFilter}>
       {options.map(option => (
@@ -25,7 +19,6 @@ function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
           key={option.value}
           value={option.value}
           onClick={() => onSelectFilter(option.value)}
-          // className={option.value === selectedFilter ? "active" : ""}
           className={styles2.button}
         >
           <span className={styles2.textLink}>

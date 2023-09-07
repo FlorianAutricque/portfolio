@@ -20,10 +20,8 @@ function Project() {
       <div>
         <h1>{project ? project.name : ""}</h1>
 
-        <div className={styles.containerImgText}>
-          <div className={styles.stackGithub}>
-            <StackProject />
-          </div>
+        <div className={styles.containerMain}>
+          <StackProject />
 
           <div className={styles.aboutDescription}>
             <h3>About </h3>

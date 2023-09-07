@@ -15,7 +15,7 @@ function StackProject() {
 
   const project = location.state ? location.state.projectData : null;
   return (
-    <>
+    <div className={styles.stackGithub}>
       <h3 className={styles.StackUsedText}>Stack used</h3>
       <div className={styles.StackProjectGrid}>
         {project.stack.slice(1).map((x, index) => (
@@ -68,7 +68,7 @@ function StackProject() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

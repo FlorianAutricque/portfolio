@@ -213,6 +213,14 @@ function Projects() {
       ? projects
       : projects.filter(project => project.stack.includes(selectedFilter));
 
+  //TRYING TO IMPLEMENT ADDING CLASS ACTIVE TO NAVLINK
+
+  // const [Active, setActive] = useState(null);
+
+  // function handleActive() {
+  //   setActive("isActive");
+  // }
+
   return (
     <div>
       <PageNav />
@@ -240,7 +248,9 @@ function Projects() {
             key={project.projectId}
             to={`/project/${project.projectId}`}
             state={{ projectData: project }}
-            className={styles3.active}
+
+            // onClick={handleActive}
+            // className={{ Active } === "isActive" ? styles3.active : ""}
           >
             <div>
               <Box size1={styles2.sizeProject}>
