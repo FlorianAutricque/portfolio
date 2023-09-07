@@ -1,0 +1,29 @@
+.StackProjectGrid {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.StackUsedText {
+  text-align: center;
+}
+
+.StackProjectGrid:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .StackProjectGrid {
+    display: -webkit-grid;
+    -webkit-grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+} */

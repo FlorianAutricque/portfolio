@@ -8,13 +8,6 @@
   justify-content: center;
 }
 
-/* .item {
-  flex: 1 1 calc(16.666% - 10px);
-  margin: 5px;
-  position: relative;
-  transition: border 300ms ease;
-} */
-
 .text {
   display: none;
 }
