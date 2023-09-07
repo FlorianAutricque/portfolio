@@ -11,17 +11,19 @@ function AllExperiences() {
         <p>
           <em>Udemy</em>
         </p>
+        <br />
         React.js, Tailwind CSS, supabase, Redux.js, JavaScript eXtension (JSX),
         CSS Modules, Styled Components, Context API, React Router.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Javascript course</h3>
           <h5>July 2023</h5>
           <p>
             <em>Udemy</em>
           </p>
+          <br />
           Modern OOP, Asynchronous JavaScript, NPM, Parcel, Babel and ES6
           modules.
         </Scroll>
@@ -33,17 +35,18 @@ function AllExperiences() {
         <p>
           <em>Le Wagon Montreal</em>
         </p>
-        9 weeks intensive coding bootcamp learning HTML, CSS, Bootstrap,
+        <br />9 weeks intensive coding bootcamp learning HTML, CSS, Bootstrap,
         JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Personal goal pursuit | Career break</h3>
           <h5>October 2022-April 2023</h5>
           <p>
             <em>France</em>
           </p>
+          <br />
           Pursuing personal goal of investment opportunities through CTO, PEA,
           LI. Additionally, I invested into real estate by implementing a buy,
           renovation, and re-sell strategy.
@@ -66,7 +69,7 @@ function AllExperiences() {
         Enhanced production efficiency for better performance.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Team Leader</h3>
           <h5>July 2020-February 2021</h5>
@@ -102,7 +105,7 @@ function AllExperiences() {
         Conducted field assessments to verify module quality standards.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Leading Hand</h3>
           <h5>December 2018-October2019</h5>
@@ -132,13 +135,14 @@ function AllExperiences() {
         <br /> <br />- Assembling components in the workshop area.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Master's degree</h3>
           <h5>September 2016-September 2018</h5>
           <p>
             <em>Le Mans University</em>
           </p>
+          <br />
           <span>Master Territorial Sustainable Development Policies.</span>
         </Scroll>
       </div>
@@ -149,19 +153,21 @@ function AllExperiences() {
         <p>
           <em>XPO Logistics</em>
         </p>
+        <br />
         Collaborated with colleagues for efficient store operations and customer
         satisfaction. <br />
         Prepared accurate customer orders with attention to detail. <br />
         Prioritized safety by following guidelines.
       </Scroll>
 
-      <div className={styles.x}>
+      <div className={styles.margin}>
         <Scroll position={styles.right}>
           <h3>Bachelor's degree</h3>
           <h5>September 2012-July 2016</h5>
           <p>
             <em>University Bordeaux Montaigne</em>
           </p>
+          <br />
           <span>Bachelor's degree, Territory development and environment.</span>
         </Scroll>
       </div>
@@ -172,6 +178,7 @@ function AllExperiences() {
         <p>
           <em>Carrefour</em>
         </p>
+        <br />
         Problem-solving.
         <br />
         Collaborating for store operations.

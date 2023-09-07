@@ -18,7 +18,7 @@ function VerticalLineExperiences() {
   return (
     <div
       className={styles.horizontal}
-      style={{ height: `${scrollHeight + 250}px` }}
+      style={{ height: `${scrollHeight + 245}px` }}
     ></div>
   );
 }
