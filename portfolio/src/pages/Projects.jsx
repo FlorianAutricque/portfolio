@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
-import PageNav from "../components/PageNav";
-import styles from "./Projects.module.css";
-import styles2 from "../components/SizeBox.module.css";
-import Box from "../components/Box";
-import styles3 from "../components/PageNav.module.css";
+import { useState } from "react";
 
+import PageNav from "../components/PageNav";
+import Box from "../components/Box";
 import ButtonScrollTop from "../components/ButtonScrollTop";
 import Filter from "../components/Filter";
-import { useState } from "react";
+
+import styles from "./Projects.module.css";
+import styles2 from "../components/SizeBox.module.css";
+import styles3 from "../components/PageNav.module.css";
 
 import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
@@ -206,6 +207,7 @@ function Projects() {
     },
   ];
 
+  //FILTER
   const [selectedFilter, setSelectedFilter] = useState("All");
 
   const filteredProjects =
@@ -213,13 +215,10 @@ function Projects() {
       ? projects
       : projects.filter(project => project.stack.includes(selectedFilter));
 
-  //TRYING TO IMPLEMENT ADDING CLASS ACTIVE TO NAVLINK
-
-  // const [Active, setActive] = useState(null);
-
-  // function handleActive() {
-  //   setActive("isActive");
-  // }
+  //SCROLL TO TOP
+  function handleNavLinkClick() {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div>
@@ -248,9 +247,8 @@ function Projects() {
             key={project.projectId}
             to={`/project/${project.projectId}`}
             state={{ projectData: project }}
-
-            // onClick={handleActive}
-            // className={{ Active } === "isActive" ? styles3.active : ""}
+            className={({ isActive }) => (isActive ? styles3.active : "")}
+            onClick={handleNavLinkClick}
           >
             <div>
               <Box size1={styles2.sizeProject}>

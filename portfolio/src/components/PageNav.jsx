@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom";
-import styles from "./PageNav.module.css";
-import Logo from "./Logo";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
+
+import styles from "./PageNav.module.css";
+
+import Logo from "./Logo";
 
 function PageNav() {
   const [isActive, setIsActive] = useState(false);
@@ -13,6 +15,11 @@ function PageNav() {
   const removeActive = () => {
     setIsActive(false);
   };
+
+  //Projects stays green when entering project
+  const location = useLocation();
+
+  const projectDetail = location.pathname.includes("/project/");
 
   return (
     <nav className={styles.nav}>
@@ -58,7 +65,9 @@ function PageNav() {
         <li onClick={removeActive}>
           <NavLink
             to="/projects"
-            className={({ isActive }) => (isActive ? styles.active : "")}
+            className={({ isActive }) =>
+              isActive || projectDetail ? styles.active : ""
+            }
           >
             Projects
           </NavLink>
