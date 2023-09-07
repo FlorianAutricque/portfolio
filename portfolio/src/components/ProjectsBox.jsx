@@ -61,6 +61,7 @@ function ProjectsBox() {
                     src={project.mainImage}
                     alt={project.name}
                     className={styles.img}
+                    loading="lazy"
                   />
                 )}
               </Box>
