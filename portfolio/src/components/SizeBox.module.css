@@ -21,9 +21,10 @@
   width: 520px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .sizeProject {
     height: 100%;
-    width: 100%;
+    width: 85%;
+    margin: auto;
   }
 }
