@@ -14,3 +14,17 @@
   font-size: 20px;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .containerProjects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .img {
+    height: auto;
+    max-width: 100%;
+  }
+}

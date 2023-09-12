@@ -4,6 +4,7 @@ import { FaReact, FaBootstrap } from "react-icons/fa6";
 import { BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiRubyonrails, SiTailwindcss, SiStimulus } from "react-icons/si";
+import { PiFileJsxDuotone } from "react-icons/pi";
 
 import LanguagesBox from "./LanguagesBox";
 
@@ -62,6 +63,12 @@ function StackProject() {
               <div className={styles2.containerEachBox}>
                 <LanguagesBox icon={<SiTailwindcss size={80} />}>
                   Tailwindcss
+                </LanguagesBox>
+              </div>
+            ) : x === "JSX" ? (
+              <div className={styles2.containerEachBox}>
+                <LanguagesBox icon={<PiFileJsxDuotone size={80} />}>
+                  JSX
                 </LanguagesBox>
               </div>
             ) : null}

@@ -4,3 +4,13 @@
   align-items: center;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 500px) {
+  .selectFilter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

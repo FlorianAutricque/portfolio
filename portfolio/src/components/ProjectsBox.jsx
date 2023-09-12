@@ -42,6 +42,7 @@ function ProjectsBox() {
           { value: "Ruby on rails", label: "Ruby", icon: <DiRuby /> },
         ]}
         onSelectFilter={setSelectedFilter}
+        className={styles.buttonProjects}
       />
 
       <div className={styles.containerProjects}>

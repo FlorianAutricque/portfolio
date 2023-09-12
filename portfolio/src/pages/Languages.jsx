@@ -23,6 +23,7 @@ import {
   SiStyledcomponents,
   SiStimulus,
 } from "react-icons/si";
+import { PiFileJsxDuotone } from "react-icons/pi";
 
 function Languages() {
   return (
@@ -60,6 +61,10 @@ function Languages() {
 
         <div className={styles.containerEachBox}>
           <LanguagesBox icon={<AiFillHtml5 size={80} />}>HTML</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<PiFileJsxDuotone size={80} />}>JSX</LanguagesBox>
         </div>
 
         <div className={styles.containerEachBox}>

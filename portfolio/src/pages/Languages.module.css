@@ -16,3 +16,11 @@
   display: block;
   color: var(--color-text);
 }
+
+@media (max-width: 485px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
