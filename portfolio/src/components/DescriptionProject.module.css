@@ -3,3 +3,9 @@
   margin-top: 2rem;
   width: 500px;
 }
+
+@media (max-width: 500px) {
+  .aboutDescription {
+    width: 100%;
+  }
+}

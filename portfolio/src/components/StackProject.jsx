@@ -5,6 +5,7 @@ import { BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiRubyonrails, SiTailwindcss, SiStimulus } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
+import { RiSupabaseFill } from "react-icons/ri";
 
 import LanguagesBox from "./LanguagesBox";
 
@@ -69,6 +70,12 @@ function StackProject() {
               <div className={styles2.containerEachBox}>
                 <LanguagesBox icon={<PiFileJsxDuotone size={80} />}>
                   JSX
+                </LanguagesBox>
+              </div>
+            ) : x === "Supabase" ? (
+              <div className={styles2.containerEachBox}>
+                <LanguagesBox icon={<RiSupabaseFill size={80} />}>
+                  Supabase
                 </LanguagesBox>
               </div>
             ) : null}

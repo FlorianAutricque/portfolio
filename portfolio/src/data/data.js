@@ -64,7 +64,7 @@ const projects = [
       "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info. Data stored in Supabase.",
     github:
       "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
-    stack: ["All", "React", "CSS", "HTML", "Supabase"],
+    stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
     projectId: 6,
