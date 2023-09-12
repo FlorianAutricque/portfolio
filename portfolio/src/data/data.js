@@ -69,10 +69,10 @@ const projects = [
   {
     projectId: 6,
     name: "usePopcorn",
-    mainImage: "/projectsImages/usepopcorn/usepopcorn1.png",
+    mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
       { length: 7 },
-      (_, index) => `/projectsImages/usepopcorn/usepopcorn${index + 1}.png`
+      (_, index) => `/projectsImages/usepopcorn/usepopcorn${index + 1}.webp`
     ),
     description:
       "Introducing usePopcorn: Your gateway to an enriched movie experience.\nAccess IMDb ratings, descriptions, cast, and more. Rate, track, and manage your collection effortlessly.\nEnjoy graceful error handling and an engaging loader for slower connections.",
@@ -82,10 +82,10 @@ const projects = [
   {
     projectId: 7,
     name: "Fast React Pizza",
-    mainImage: "/projectsImages/pizzareact/pizzareact1.png",
+    mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
       { length: 12 },
-      (_, index) => `/projectsImages/pizzareact/pizzareact${index + 1}.png`
+      (_, index) => `/projectsImages/pizzareact/pizzareact${index + 1}.webp`
     ),
     description:
       "Introducing Fast Pizza React Co.: Your seamless pizza ordering solution.\nEnter your name, explore the menu, and customize your order effortlessly. \nCraft your perfect meal by choosing pizzas and quantities in an intuitive cart interface. \nModify your selections at will for a tailor-made experience. Complete your order with a valid phone number and easy location pinpointing. \nFor a faster delivery, enjoy the 'Priority Order' feature, which you can select during entry or while tracking your order.",
@@ -96,10 +96,10 @@ const projects = [
   {
     projectId: 8,
     name: "React Quizz",
-    mainImage: "/projectsImages/reactquizz/quizz1.png",
+    mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
       { length: 7 },
-      (_, index) => `/projectsImages/reactquizz/quizz${index + 1}.png`
+      (_, index) => `/projectsImages/reactquizz/quizz${index + 1}.webp`
     ),
     description:
       "React Quiz is a quiz application consisting of 15 questions, each offering 4 answer options. \nChoosing the correct answer results in accumulating points that contribute to your total score. Your achieved points are recorded as a high score. \nAt the end of the quiz, you can restart the game to challenge your previous high score. It's a race against time, as you have a 7-minute timer to complete the game successfully; otherwise, the game will conclude.",
@@ -110,10 +110,10 @@ const projects = [
   {
     projectId: 9,
     name: "Far Away",
-    mainImage: "/projectsImages/faraway/faraway1.png",
+    mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
       { length: 8 },
-      (_, index) => `/projectsImages/faraway/faraway${index + 1}.png`
+      (_, index) => `/projectsImages/faraway/faraway${index + 1}.webp`
     ),
     description:
       "Introducing Far Away your ultimate travel companion app designed to make packing easy! \nWith Far Away you can efficiently prepare for your trips with ease and precision. Far Away allows you to create a comprehensive packing list with as many items as you need. \nAs you start packing, simply tick off the items on your list to keep track of your progress. You can easily manage your list by deleting items you no longer need, and our smart sorting options help you stay organized. \nSort items by the order of input, alphabetically, or by packing status. Once your journey concludes, clearing your packing list is a breeze. \nFar Away also features a packing calculator to monitor your packing progress.",
@@ -124,10 +124,10 @@ const projects = [
   {
     projectId: 10,
     name: "Bankist",
-    mainImage: "/projectsImages/bankist/bankist1.png",
+    mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
       { length: 9 },
-      (_, index) => `/projectsImages/bankist/bankist${index + 1}.png`
+      (_, index) => `/projectsImages/bankist/bankist${index + 1}.webp`
     ),
     description:
       "Welcome to Banksy, an innovative banking app with elegant design and powerful JavaScript features. \nYou can access the code on GitHub to witness impressive JavaScript effects. Our app offers interactive features, including an engaging navbar with hover effects and smooth fade animations. \nA sticky navbar remains accessible as you scroll. Explore an open modal window for a simulated login experience, and find a discreet cookie message for transparency. \nExperience improved performance with efficient lazy loading of images and smooth scrolling for easy navigation. \nOrganize content with a tabbed interface, and enjoy a dynamic slider for captivating visuals and information presentation.",
