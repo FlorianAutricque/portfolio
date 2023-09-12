@@ -10,11 +10,14 @@
 
 .text {
   display: none;
+  /* opacity: 0; */
 }
 
 .containerEachBox:hover .text {
+  /* opacity: 1; */
   display: block;
   color: var(--color-text);
+  /* transition: 2s ease-out; */
 }
 
 @media (max-width: 485px) {
