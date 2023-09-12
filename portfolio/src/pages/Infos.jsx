@@ -11,7 +11,7 @@ function Infos() {
 
       <div className={styles.container}>
         <div>
-          <img src="/idimage.png" alt="Flo" className={styles.img} />
+          <img src="/idimageWebp.webp" alt="Flo" className={styles.img} />
           <ButtonInfos />
         </div>
 

@@ -2,10 +2,10 @@ const projects = [
   {
     projectId: 1,
     name: "WorldWise",
-    mainImage: "/projectsImages/worldwise/worldwise1.png",
+    mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
       { length: 11 },
-      (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.png`
+      (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.webp`
     ),
     description:
       "Introducing WorldWise: Your Ultimate Travel Companion.\nExperience seamless travel tracking with the WorldWise app. Explore a variety of features to elevate your adventures. Learn about our offerings, products, and pricing for your travel needs. Log in to access your dedicated account with an interactive world map to tell your travel stories. Easily log your trips on the map with personal anecdotes.\nTrack Countries, Cherish Memories: WorldWise counts the countries you've visited. City Exploration: Dive into cities you've visited with details like visit dates and your impression and access destination history through a quick Wikipedia link. ",
@@ -15,10 +15,10 @@ const projects = [
   {
     projectId: 2,
     name: "Weather App",
-    mainImage: "/projectsImages/weatherApp/weatherapp1.png",
+    mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
       { length: 3 },
-      (_, index) => `/projectsImages/weatherApp/weatherapp${index + 1}.png`
+      (_, index) => `/projectsImages/weatherApp/weatherapp${index + 1}.webp`
     ),
     description:
       "Explore global weather in real-time. Simply enter a city name to unveil its weather details.\nThis app showcases React's evolution from classes to functions, making it both informative and weather-savvy.",
@@ -29,10 +29,10 @@ const projects = [
   {
     projectId: 3,
     name: "OUVA",
-    mainImage: "/projectsImages/ouva/ouva1.png",
+    mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
       { length: 5 },
-      (_, index) => `/projectsImages/ouva/ouva${index + 1}.png`
+      (_, index) => `/projectsImages/ouva/ouva${index + 1}.webp`
     ),
     description:
       "Introducing OUVA: Your travel companion for seamless trip planning and finding unique experiences.\nCrafted with Ruby on Rails, JavaScript, CSS, and HTML, OUVA simplifies your journey. Discover hidden gems and offbeat adventures with OUVA's intuitive CSS and HTML-designed interface. JavaScript adds interactivity and responsiveness, making planning a breeze.\nOUVA's development journey relies on Git for collaboration and Heroku for reliable performance. Figma's design finesse and Trello's organization ensure a polished user experience.\nExperience travel like never before with OUVA.",
@@ -42,10 +42,10 @@ const projects = [
   {
     projectId: 4,
     name: "Hairbnb",
-    mainImage: "/projectsImages/hairbnb/airbnb1.png",
+    mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(
       { length: 8 },
-      (_, index) => `/projectsImages/hairbnb/airbnb${index + 1}.png`
+      (_, index) => `/projectsImages/hairbnb/airbnb${index + 1}.webp`
     ),
     description:
       "Introducing Hairbnb: Your destination for renting stunning wigs!\nWe've blended Ruby on Rails, JavaScript, CSS, and HTML for an intuitive experience. Git ensures smooth collaboration.\nOur captivating user interfaces, crafted in Figma, offer a visually stunning and user-friendly design. Trello keeps us organized, delivering Hairbnb with precision.\nExplore chic bobs, wild curly afros, or elegant updos. Hairbnb has the perfect wig for any occasion. Try our 'Owner' mode to rent out your wig and approve rental requests.\nExperience Hairbnb and unlock a world of wig possibilities.",
@@ -55,10 +55,10 @@ const projects = [
   {
     projectId: 5,
     name: "The Wild Oasis",
-    mainImage: "/projectsImages/wildoasis/wildoasis1.png",
+    mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
       { length: 28 },
-      (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.png`
+      (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.webp`
     ),
     description:
       "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info. Data stored in Supabase.",
@@ -137,10 +137,10 @@ const projects = [
   {
     projectId: 11,
     name: "Forkify",
-    mainImage: "/projectsImages/forkify/forkify1.png",
+    mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
       { length: 12 },
-      (_, index) => `/projectsImages/forkify/forkify${index + 1}.png`
+      (_, index) => `/projectsImages/forkify/forkify${index + 1}.webp`
     ),
     description:
       "Forkify is an incredible app with access to 1 million+ online recipes via its API. \nEasily explore diverse dishes with simple ingredient or name searches. There are 10 dishes per pages. \nDiscover a recipe you love? Bookmark it and adjust servings for personalized cooking. Collect as many recipes as you like. Bookmarks stay safe, even after leaving or reloading the page. \nGo a step further by adding private, exclusive recipes only accessible to you.",
@@ -150,10 +150,10 @@ const projects = [
   {
     projectId: 12,
     name: "Mapty",
-    mainImage: "/projectsImages/mapty/mapty1.png",
+    mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
       { length: 6 },
-      (_, index) => `/projectsImages/mapty/mapty${index + 1}.png`
+      (_, index) => `/projectsImages/mapty/mapty${index + 1}.webp`
     ),
     description:
       "Introducing Mapty - Your Personal Workout Tracker! Mapty is an app designed to help you track your running and cycling workouts effortlessly. It automatically logs your location. \nTo record your workouts, you just need to click on the map where you did your workout. A card will appear, allowing you to choose between running or cycling and add details like distance, duration, steps per minute (for running), and elevation (for cycling). \nThe app conveniently allows you to access past workouts by clicking on the cards on the left, and your workouts are automatically saved, even if you leave or refresh the page.",
@@ -163,10 +163,10 @@ const projects = [
   {
     projectId: 13,
     name: "Guess My Number",
-    mainImage: "/projectsImages/number/number1.png",
+    mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
       { length: 3 },
-      (_, index) => `/projectsImages/number/number${index + 1}.png`
+      (_, index) => `/projectsImages/number/number${index + 1}.webp`
     ),
     description:
       "Guess my Number is a game that challenges you to guess a number between 1 and 20. \nEach time you make a guess, your score decreases by one. Once you correctly guess the secret number, that becomes your high score.",
@@ -177,10 +177,10 @@ const projects = [
   {
     projectId: 14,
     name: "Pig Game",
-    mainImage: "/projectsImages/piggame/game1.png",
+    mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
       { length: 4 },
-      (_, index) => `/projectsImages/piggame/game${index + 1}.png`
+      (_, index) => `/projectsImages/piggame/game${index + 1}.webp`
     ),
     description:
       "Pig Game is a two-player game where each player takes turns rolling a dice. \nThe objective is to be the first to reach a score of 100 and win the game. However, if a player rolls a 1, their current score resets to zero. \nPlayers have the option to save their current score by pressing the hold button, which adds the current score to their main score. \nThey can also restart the game at any time by pressing the new game button.",
