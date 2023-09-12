@@ -49,15 +49,16 @@
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+    background-color: var(--color-box-2);
   }
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-    transition: 0.3s;
+
     background-color: var(--color-box-2);
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    transition: 0.3s;
+
     background-color: var(--color-box-2);
   }
   .navMenu {

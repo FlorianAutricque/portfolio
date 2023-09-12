@@ -14,6 +14,11 @@ function Project() {
 
   const project = location.state ? location.state.projectData : null;
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
     <>
       <PageNav />
@@ -28,7 +33,7 @@ function Project() {
       </div>
 
       <div className={styles.goBack}>
-        <Link to="/projects" className={styles2.button}>
+        <Link to="/projects" className={styles2.button} onClick={scrollToTop}>
           &larr; Go back
         </Link>
       </div>
