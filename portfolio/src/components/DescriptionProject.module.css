@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 500px) {
-  .aboutDescription {
+  .aboutDescription p {
     width: 100%;
   }
 }
