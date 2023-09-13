@@ -25,11 +25,16 @@ import {
 } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
 
+import { useTranslation } from "react-i18next";
+
 function Languages() {
+  const { t } = useTranslation();
+
   return (
     <>
       <PageNav />
-      <h1>Languages and Tools</h1>
+
+      <h1>{t("LanguagesTitle")}</h1>
 
       <div className={styles.container}>
         <div className={styles.containerEachBox}>
