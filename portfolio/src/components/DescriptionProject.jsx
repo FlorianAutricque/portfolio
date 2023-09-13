@@ -17,7 +17,7 @@ function DescriptionProject() {
         ? project.description
             .split("\n")
             .map((paragraph, index) => <p key={index}>{paragraph}</p>)
-        : ""}{" "}
+        : ""}
       <br />
       <br />
       <Link to={project.github} target="_blank" className={styles2.button}>
