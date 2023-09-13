@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .homepage {
@@ -21,4 +22,11 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
+}
+
+.BtnTranslation {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
 }

@@ -5,6 +5,7 @@ import { BsBoxArrowInUp } from "react-icons/bs";
 
 import styles from "./ButtonScrollTop.module.css";
 import styles2 from "./Button.module.css";
+import { useTranslation } from "react-i18next";
 
 function ButtonScrollTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,13 +31,16 @@ function ButtonScrollTop() {
       behavior: "smooth",
     });
   };
+
+  const { t } = useTranslation();
+
   return (
     <div className={styles.buttonScrollTop}>
       {isVisible && (
         <Link onClick={scrollToTop} className={styles2.button}>
           <span className={styles.textLink}>
             {" "}
-            <BsBoxArrowInUp /> Back to Top
+            <BsBoxArrowInUp /> {t("buttonBackToTop")}
           </span>
         </Link>
       )}

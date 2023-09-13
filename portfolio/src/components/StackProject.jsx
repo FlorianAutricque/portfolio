@@ -11,14 +11,19 @@ import LanguagesBox from "./LanguagesBox";
 
 import styles from "./StackProject.module.css";
 import styles2 from "../pages/Languages.module.css";
+import { useTranslation } from "react-i18next";
 
 function StackProject() {
   const location = useLocation();
 
   const project = location.state ? location.state.projectData : null;
+
+  const { t } = useTranslation();
+
   return (
     <div className={styles.stackGithub}>
-      <h3 className={styles.StackUsedText}>Stack used</h3>
+      <h3 className={styles.StackUsedText}>{t("stackUsed")}</h3>
+
       <div className={styles.StackProjectGrid}>
         {project.stack.slice(1).map((x, index) => (
           <div key={index} className={styles.StackProject}>

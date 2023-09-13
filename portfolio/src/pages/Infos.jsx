@@ -2,8 +2,11 @@ import PageNav from "../components/PageNav";
 import styles from "./Infos.module.css";
 import ButtonInfos from "../components/ButtonInfos";
 import AllFunFacts from "../components/AllFunFacts";
+import { useTranslation } from "react-i18next";
 
 function Infos() {
+  const { t } = useTranslation();
+
   return (
     <>
       <PageNav />
@@ -16,17 +19,11 @@ function Infos() {
         </div>
 
         <p>
-          <u>Location:</u> Montreal, Canada <br />
-          <br />I am a team player, creative and passionate, highly organized,
-          "can-do" attitude, reliable. With a Bachelor's degree in territory
-          development and environment, followed by a Master's degree in
-          sustainable development, I have amassed valuable experience in the
-          solar industry, where I successfully held management positions
-          overseeing environmental projects.
+          <u>{t("locationInfos")}</u> Montreal, Canada <br />
+          <br />
+          {t("textInfos.1")}
           <br /> <br />
-          Motivated by a desire for career transition, I pursued further
-          education in Full Stack Web Development at Le Wagon in Montreal,
-          focusing my expertise on Front-end development.
+          {t("textInfos.2")}
         </p>
       </div>
       <div className={styles.containerFunFact}>

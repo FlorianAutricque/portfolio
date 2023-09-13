@@ -29,8 +29,6 @@ import ContactAllButtons from "../components/ContactAllButtons";
 import PageNav from "../components/PageNav";
 import styles from "./Contact.module.css";
 
-import BtnTranslation from "../translation/BtnTranslation";
-
 function Contact() {
   const { t } = useTranslation();
   const titleParts = t("contactText").split("\n");
@@ -38,7 +36,7 @@ function Contact() {
   return (
     <>
       <PageNav />
-      <BtnTranslation />
+
       <div className={styles.contact}>
         <h1>Contact</h1>
 
