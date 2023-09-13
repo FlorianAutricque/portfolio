@@ -8,6 +8,7 @@ import PageNav from "../components/PageNav";
 import StackProject from "../components/StackProject";
 import CarouselComponent from "../components/CarouselComponent";
 import DescriptionProject from "../components/DescriptionProject";
+import { useTranslation } from "react-i18next";
 
 function Project() {
   const location = useLocation();
@@ -19,6 +20,9 @@ function Project() {
       top: 0,
     });
   };
+
+  const { t } = useTranslation();
+
   return (
     <>
       <PageNav />
@@ -34,7 +38,7 @@ function Project() {
 
       <div className={styles.goBack}>
         <Link to="/projects" className={styles2.button} onClick={scrollToTop}>
-          &larr; Go back
+          &larr; {t("buttonGoBack")}
         </Link>
       </div>
     </>

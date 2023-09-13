@@ -8,7 +8,7 @@ function AllExperiences() {
   return (
     <>
       <Scroll position={styles.first}>
-        <h3>React Course 2023: React, Redux, Tailwind CSS & More</h3>
+        <h3>{t("expTitle.9")}</h3>
         <h5>{t("date.1")}</h5>
         <p>
           <em>Udemy</em>
@@ -20,7 +20,7 @@ function AllExperiences() {
 
       <div className={styles.margin}>
         <Scroll position={styles.right}>
-          <h3>Javascript course</h3>
+          <h3>{t("expTitle.10")}</h3>
           <h5>{t("date.2")}</h5>
           <p>
             <em>Udemy</em>
@@ -60,7 +60,7 @@ function AllExperiences() {
           <em>Stralis Energy</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> Gunnedah and Woolooga solar plant (Australia)
+          <BiSolidLocationPlus /> {t("localisationExp.1")}
         </span>
         <br /> <br />
         {t("experienceExp.3.1")} <br />
@@ -77,7 +77,7 @@ function AllExperiences() {
             <em>All Energy Contracting</em>
           </p>
           <span>
-            <BiSolidLocationPlus /> Glenrowan solar plant (Australia)
+            <BiSolidLocationPlus /> {t("localisationExp.2")}
           </span>{" "}
           <br /> <br />
           {t("experienceExp.4.1")} <br /> {t("experienceExp.4.2")}
@@ -91,7 +91,7 @@ function AllExperiences() {
           <em>Protech Group</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> Limondale solar plant (Australia)
+          <BiSolidLocationPlus /> {t("localisationExp.3")}
         </span>{" "}
         <br /> <br /> {t("experienceExp.5.1")}
         <br />
@@ -110,7 +110,7 @@ function AllExperiences() {
             <em>Bamford Engineering & Consulting</em>
           </p>
           <span>
-            <BiSolidLocationPlus /> Limondale solar plant (Australia)
+            <BiSolidLocationPlus /> {t("localisationExp.3")}
           </span>{" "}
           <br /> <br /> {t("experienceExp.6.1")}
           <br />
@@ -127,7 +127,7 @@ function AllExperiences() {
           <em>Bamford Engineering & Consulting</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> Limondale solar plant (Australia)
+          <BiSolidLocationPlus /> {t("localisationExp.3")}
         </span>{" "}
         <br /> <br /> {t("experienceExp.7")}
       </Scroll>
@@ -140,7 +140,7 @@ function AllExperiences() {
             <em>{t("locationExp.1")}</em>
           </p>
           <br />
-          <span>Master Territorial Sustainable Development Policies.</span>
+          <span>{t("experienceExp.8")}</span>
         </Scroll>
       </div>
 
@@ -151,10 +151,9 @@ function AllExperiences() {
           <em>XPO Logistics</em>
         </p>
         <br />
-        Collaborated with colleagues for efficient store operations and customer
-        satisfaction. <br />
-        Prepared accurate customer orders with attention to detail. <br />
-        Prioritized safety by following guidelines.
+        {t("experienceExp.9.1")} <br />
+        {t("experienceExp.9.2")} <br />
+        {t("experienceExp.9.3")}
       </Scroll>
 
       <div className={styles.margin}>
@@ -165,7 +164,7 @@ function AllExperiences() {
             <em>{t("locationExp.2")}</em>
           </p>
           <br />
-          <span>Bachelor's degree, Territory development and environment.</span>
+          <span>{t("experienceExp.10")}</span>
         </Scroll>
       </div>
 
@@ -176,15 +175,15 @@ function AllExperiences() {
           <em>Carrefour</em>
         </p>
         <br />
-        Problem-solving.
+        {t("experienceExp.11.1")}
         <br />
-        Collaborating for store operations.
+        {t("experienceExp.11.2")}
         <br />
-        Customer interactions, security, and safety.
+        {t("experienceExp.11.3")}
         <br />
-        Organizing products attractively.
+        {t("experienceExp.11.4")}
         <br />
-        Managing inventory and restocking notifications.
+        {t("experienceExp.11.5")}
       </Scroll>
     </>
   );

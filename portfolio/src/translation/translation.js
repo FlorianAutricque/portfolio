@@ -7,6 +7,19 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        navbar: {
+          1: "Experiences",
+          2: "Languages",
+          3: "Projects",
+        },
+        buttonBackToTop: "Back to Top",
+        buttonGoBack: "Go Back",
+        stackUsed: "Stack used",
+        AboutProject: "About",
+        Carousel: "Project photos",
+        filterStack: "All",
+        listOfProjects: "List of projects",
+
         contactText:
           "Need some HTML, CSS, or JavaScript magic? Don't hesitate!\n Reach out to me. Whether it's about web design, responsive layouts, job opportunities or designing exceptional user journeys, I'm here to help.\n Let's turn your digital dreams into reality!",
         LanguagesTitle: "Languages and Tools",
@@ -19,6 +32,8 @@ i18n.use(initReactI18next).init({
           6: "Retail worker | Student job",
           7: "Bachelor's degree",
           8: "Fullstack web development, computer programming",
+          9: "React Course 2023: React, Redux, Tailwind CSS & More",
+          10: "Javascript course",
         },
         date: {
           1: "August 2023",
@@ -63,11 +78,53 @@ i18n.use(initReactI18next).init({
             3: "Strived to boost production efficiency and output.",
           },
           7: "Assembling components in the workshop area.",
+          8: "Master Territorial Sustainable Development Policies.",
+          9: {
+            1: "Collaborated with colleagues for efficient store operations and customer satisfaction.",
+            2: "Prepared accurate customer orders with attention to detail.",
+            3: "Prioritized safety by following guidelines.",
+          },
+          10: "Bachelor's degree, Territory development and environment.",
+          11: {
+            1: "Problem-solving.",
+            2: "Collaborating for store operations.",
+            3: "Customer interactions, security, and safety.",
+            4: "Organizing products attractively.",
+            5: "Managing inventory and restocking notifications.",
+          },
+        },
+        localisationExp: {
+          1: "Gunnedah and Woolooga solar plant (Australia)",
+          2: "Glenrowan solar plant (Australia)",
+          3: "Limondale solar plant (Australia)",
+        },
+        locationInfos: "Location:",
+        textInfos: {
+          1: "I am a team player, creative and passionate, highly organized, 'can-do'attitude, reliable. With a Bachelor's degree in territory development and environment, followed by a Master's degree in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects.",
+          2: "Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at Le Wagon in Montreal, focusing my expertise on Front-end development.",
+        },
+        funfacts: {
+          1: "As an art enthusiast, drawing is, to me, an expression of my creativity. I like to think of coding the same way as drawing, just substituting a pen with letters and numbers.",
+          2: "I've supervised 150+ individuals on Australian solar plant projects, highlighting the importance of teamwork to me.",
+          3: "Sports hold a special place in my heart, with skiing being a true passion. During my younger years, I even competed as a semi-professional skier.",
         },
       },
     },
     fr: {
       translation: {
+        navbar: {
+          1: "Expériences",
+          2: "Langages",
+          3: "Projets",
+        },
+        buttonBackToTop: "Haut de Page",
+        buttonGoBack: "Retour",
+        stackUsed: "Stack utilisées",
+        AboutProject: "A propos",
+        Carousel: "Photos du projet",
+        filterStack: "Tout",
+        listOfProjects: "Liste des projets",
+
         contactText:
           "Besoin d'une touche de magie en HTML, CSS ou JavaScript ?\n N'hésitez pas à me contacter. Que ce soit pour la conception de sites web, des opportunités d'emploi ou la conception d'expériences utilisateur exceptionnelles. \n Transformons vos rêves numériques en réalité !",
         LanguagesTitle: "Langages et Outils",
@@ -80,6 +137,8 @@ i18n.use(initReactI18next).init({
           6: "Employé de vente | Job étudiant",
           7: "License",
           8: "Développement web Fullstack, programmation informatique",
+          9: "React 2023: React, Redux, Tailwind CSS & Plus",
+          10: "Cours sur Javascript",
         },
         date: {
           1: "Août 2023",
@@ -124,6 +183,35 @@ i18n.use(initReactI18next).init({
             3: "J'ai cherché à améliorer l'efficacité de la production et la production globale.",
           },
           7: "Assemblage de composants dans la zone de l'atelier.",
+          8: "Master gestion des territoires et développement local.",
+          9: {
+            1: "Collaboration avec mes collègues pour assurer le bon fonctionnement du magasin et la satisfaction des clients.",
+            2: "Préparation des commandes de clients précises, en portant une attention particulière aux détails.",
+            3: "Prioritisation de la sécurité en suivant les directives.",
+          },
+          10: "Diplôme de licence en développement territorial et environnement.",
+          11: {
+            1: "Résolution de problèmes.",
+            2: "Collaboration pour les opérations en magasin.",
+            3: "Interactions avec les clients, sécurité et sûreté.",
+            4: "Organisation attractive des produits.",
+            5: "Gestion des stocks et notifications de réapprovisionnement.",
+          },
+        },
+        localisationExp: {
+          1: "Centrale solaire de Gunnedah et de Woolooga (Australie)",
+          2: "Centrale solaire de Glenrowan (Australie)",
+          3: "Centrale solaire de Limondale (Australie)",
+        },
+        locationInfos: "Localisation :",
+        textInfos: {
+          1: "Adorant le travail d'équipe, créatif et passionné, hautement organisé, avec une attitude positive et fiable. Doté d'une licence en aménagement du territoire et environnement, suivie d'un master en développement durable, j'ai acquis une précieuse expérience dans l'industrie solaire, où j'ai occupé avec succès des postes de superviseur.",
+          2: "Motivé par le désir de changer de carrière, j'ai entrepris une formation en développement web Full Stack à Le Wagon à Montréal, en mettant me spécialisant sur le développement Front-End.",
+        },
+        funfacts: {
+          1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser à la programmation de la même manière que le dessin, en remplaçant simplement un stylo par des lettres et des chiffres.",
+          2: "J'ai supervisé plus de 150 individus sur des projets de centrales solaires en Australie, le travail d'équipe est très important pour moi.",
+          3: "Le sport occupe une place spéciale dans mon cœur, le ski étant ma véritable passion. Plus jeunes, j'ai fais de la compétition en tant que skieur semi-professionnel.",
         },
       },
     },

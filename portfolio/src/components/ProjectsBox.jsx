@@ -12,6 +12,7 @@ import Filter from "./Filter";
 import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { DiRuby } from "react-icons/di";
+import { useTranslation } from "react-i18next";
 
 function ProjectsBox() {
   //FILTER
@@ -27,12 +28,14 @@ function ProjectsBox() {
     window.scrollTo(0, 0);
   }
 
+  const { t } = useTranslation();
+
   return (
     <>
       <Filter
         filterField="stack"
         options={[
-          { value: "All", label: "All" },
+          { value: "All", label: t("filterStack") },
           { value: "React", label: "React", icon: <FaReact /> },
           {
             value: "Javascript",
