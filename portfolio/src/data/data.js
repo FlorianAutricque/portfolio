@@ -159,7 +159,7 @@ const projects = [
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
-      { length: 12 },
+      { length: 11 },
       (_, index) => `/projectsImages/forkify/forkify${index + 1}.webp`
     ),
     description: {
