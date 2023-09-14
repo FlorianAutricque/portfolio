@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
+import { CiLocationOn } from "react-icons/ci";
+
 import PageNav from "../components/PageNav";
 import styles from "./Infos.module.css";
 import ButtonInfos from "../components/ButtonInfos";
 import AllFunFacts from "../components/AllFunFacts";
-import { useTranslation } from "react-i18next";
 
 function Infos() {
   const { t } = useTranslation();
@@ -19,7 +22,8 @@ function Infos() {
         </div>
 
         <p>
-          <u>{t("locationInfos")}</u> Montreal, Canada <br />
+          <CiLocationOn /> <u>{t("locationInfos")}</u> Montreal, Canada
+          <br />
           <br />
           {t("textInfos.1")}
           <br /> <br />

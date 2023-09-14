@@ -1,4 +1,4 @@
-import { BiSolidLocationPlus } from "react-icons/bi";
+import { CiLocationOn } from "react-icons/ci";
 import Scroll from "../components/Scroll";
 import styles from "./AllExperiences.module.css";
 import { useTranslation } from "react-i18next";
@@ -60,7 +60,7 @@ function AllExperiences() {
           <em>Stralis Energy</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> {t("localisationExp.1")}
+          <CiLocationOn /> {t("localisationExp.1")}
         </span>
         <br /> <br />
         {t("experienceExp.3.1")} <br />
@@ -77,7 +77,7 @@ function AllExperiences() {
             <em>All Energy Contracting</em>
           </p>
           <span>
-            <BiSolidLocationPlus /> {t("localisationExp.2")}
+            <CiLocationOn /> {t("localisationExp.2")}
           </span>{" "}
           <br /> <br />
           {t("experienceExp.4.1")} <br /> {t("experienceExp.4.2")}
@@ -91,7 +91,7 @@ function AllExperiences() {
           <em>Protech Group</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> {t("localisationExp.3")}
+          <CiLocationOn /> {t("localisationExp.3")}
         </span>{" "}
         <br /> <br /> {t("experienceExp.5.1")}
         <br />
@@ -110,7 +110,7 @@ function AllExperiences() {
             <em>Bamford Engineering & Consulting</em>
           </p>
           <span>
-            <BiSolidLocationPlus /> {t("localisationExp.3")}
+            <CiLocationOn /> {t("localisationExp.3")}
           </span>{" "}
           <br /> <br /> {t("experienceExp.6.1")}
           <br />
@@ -127,7 +127,7 @@ function AllExperiences() {
           <em>Bamford Engineering & Consulting</em>
         </p>
         <span>
-          <BiSolidLocationPlus /> {t("localisationExp.3")}
+          <CiLocationOn /> {t("localisationExp.3")}
         </span>{" "}
         <br /> <br /> {t("experienceExp.7")}
       </Scroll>

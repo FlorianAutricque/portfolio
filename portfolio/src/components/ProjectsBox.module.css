@@ -5,6 +5,7 @@
   gap: 3rem;
 }
 .img {
+  object-fit: inherit;
   height: 280px;
   width: 475px;
 }

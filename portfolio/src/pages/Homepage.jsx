@@ -20,8 +20,13 @@ function Homepage() {
           <span>Front-end </span>Developer <br />
           Creative
         </h1>
-        <span className={styles.BtnTranslation} onClick={handleShowTranslation}>
-          <MdLanguage size={25} />
+        <span
+          className={`${styles.BtnTranslation} ${show ? styles.active : ""}`}
+          onClick={handleShowTranslation}
+        >
+          <p>
+            <MdLanguage size={25} />
+          </p>
           {show && <BtnTranslation onCloseDropdown={() => setShow(false)} />}
         </span>
       </div>

@@ -26,7 +26,16 @@
 
 .BtnTranslation {
   position: absolute;
-  top: 3%;
+  top: 8%;
   right: 3%;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.BtnTranslation.active {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-box-1),
+    var(--color-box-2)
+  );
 }
