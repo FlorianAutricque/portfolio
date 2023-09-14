@@ -6,6 +6,7 @@ import Languages from "./pages/Languages";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 // import { Suspense, lazy } from "react";
 
 // const Homepage = lazy(() => import("./pages/Homepage"));
@@ -27,6 +28,7 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="project/:projectId" element={<Project />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

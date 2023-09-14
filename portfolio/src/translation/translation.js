@@ -19,6 +19,7 @@ i18n.use(initReactI18next).init({
         Carousel: "Project photos",
         filterStack: "All",
         listOfProjects: "List of projects",
+        errorMessage: "Sorry, this page doesn't exist",
 
         contactText:
           "Need some HTML, CSS, or JavaScript magic? Don't hesitate!\n Reach out to me. Whether it's about web design, responsive layouts, job opportunities or designing exceptional user journeys, I'm here to help.\n Let's turn your digital dreams into reality!",
@@ -124,6 +125,7 @@ i18n.use(initReactI18next).init({
         Carousel: "Photos du projet",
         filterStack: "Tout",
         listOfProjects: "Liste des projets",
+        errorMessage: "Désolé, cette page n'existe pas",
 
         contactText:
           "Besoin d'une touche de magie en HTML, CSS ou JavaScript ?\n N'hésitez pas à me contacter. Que ce soit pour la conception de sites web, des opportunités d'emploi ou la conception d'expériences utilisateur exceptionnelles. \n Transformons vos rêves numériques en réalité !",
