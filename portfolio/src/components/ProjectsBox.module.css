@@ -5,8 +5,8 @@
   gap: 3rem;
 }
 .img {
-  object-fit: inherit;
-  height: 280px;
+  object-fit: contain;
+  height: 210px;
   width: 475px;
 }
 .containerProjects a {
