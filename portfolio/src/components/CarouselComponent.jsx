@@ -1,9 +1,9 @@
 import { Carousel } from "react-responsive-carousel";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import styles from "./CarouselComponent.module.css";
-import { useTranslation } from "react-i18next";
 
 function CarouselComponent() {
   const location = useLocation();

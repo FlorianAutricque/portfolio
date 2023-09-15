@@ -1,16 +1,22 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import styles from "./Filter.module.css";
 import styles2 from "./Button.module.css";
 
-function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
+function Filter({ filterField, options, onSelectFilter }) {
   const [searchParams] = useSearchParams();
-  const currentFilter = searchParams.get(filterField) || options[0].value;
+  const [activeOption, setActiveOption] = useState(
+    searchParams.get(filterField) || options[0].value
+  );
 
   useEffect(() => {
-    onSelectFilter(currentFilter);
-  }, [currentFilter, onSelectFilter]);
+    onSelectFilter(activeOption);
+  }, [activeOption, onSelectFilter]);
+
+  const handleOptionClick = optionValue => {
+    setActiveOption(optionValue);
+  };
 
   return (
     <div className={styles.selectFilter}>
@@ -18,8 +24,10 @@ function Filter({ filterField, options, onSelectFilter, selectedFilter }) {
         <Link
           key={option.value}
           value={option.value}
-          onClick={() => onSelectFilter(option.value)}
-          className={styles2.button}
+          onClick={() => handleOptionClick(option.value)}
+          className={`${styles2.button} ${
+            activeOption === option.value ? styles.activeFilter : ""
+          }`}
         >
           <span className={styles2.textLink}>
             {option.icon}

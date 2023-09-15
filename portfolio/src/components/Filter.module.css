@@ -14,3 +14,7 @@
     gap: 1rem;
   }
 }
+
+.activeFilter {
+  color: var(--color-text);
+}

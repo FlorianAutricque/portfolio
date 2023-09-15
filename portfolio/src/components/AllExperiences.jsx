@@ -1,7 +1,7 @@
 import { CiLocationOn } from "react-icons/ci";
+import { useTranslation } from "react-i18next";
 import Scroll from "../components/Scroll";
 import styles from "./AllExperiences.module.css";
-import { useTranslation } from "react-i18next";
 
 function AllExperiences() {
   const { t } = useTranslation();

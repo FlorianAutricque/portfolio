@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { BsBoxArrowInUp } from "react-icons/bs";
 
 import styles from "./ButtonScrollTop.module.css";
 import styles2 from "./Button.module.css";
-import { useTranslation } from "react-i18next";
 
 function ButtonScrollTop() {
   const [isVisible, setIsVisible] = useState(false);

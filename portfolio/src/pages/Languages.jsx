@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import PageNav from "../components/PageNav";
 import LanguagesBox from "../components/LanguagesBox";
 
@@ -24,8 +26,6 @@ import {
   SiStimulus,
 } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
-
-import { useTranslation } from "react-i18next";
 
 function Languages() {
   const { t } = useTranslation();

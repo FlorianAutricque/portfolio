@@ -1,12 +1,12 @@
 import { GiPencilBrush } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaSkiing } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 import Box from "./Box";
 
 import styles from "./SizeBox.module.css";
 import styles2 from "./AllFunFacts.module.css";
-import { useTranslation } from "react-i18next";
 
 function AllFunFacts() {
   const { t } = useTranslation();

@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { FaReact, FaBootstrap } from "react-icons/fa6";
 import { BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
@@ -11,7 +12,6 @@ import LanguagesBox from "./LanguagesBox";
 
 import styles from "./StackProject.module.css";
 import styles2 from "../pages/Languages.module.css";
-import { useTranslation } from "react-i18next";
 
 function StackProject() {
   const location = useLocation();

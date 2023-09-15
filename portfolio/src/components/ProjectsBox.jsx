@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./ProjectsBox.module.css";
 import styles2 from "./SizeBox.module.css";
@@ -12,7 +13,6 @@ import Filter from "./Filter";
 import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { DiRuby } from "react-icons/di";
-import { useTranslation } from "react-i18next";
 
 function ProjectsBox() {
   //FILTER

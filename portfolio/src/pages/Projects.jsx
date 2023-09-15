@@ -1,7 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 import PageNav from "../components/PageNav";
 import ButtonScrollTop from "../components/ButtonScrollTop";
 import ProjectsBox from "../components/ProjectsBox";
-import { useTranslation } from "react-i18next";
 
 function Projects() {
   const { t } = useTranslation();

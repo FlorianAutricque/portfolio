@@ -7,15 +7,6 @@ import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
-// import { Suspense, lazy } from "react";
-
-// const Homepage = lazy(() => import("./pages/Homepage"));
-// const Infos = lazy(() => import("./pages/Infos"));
-// const Experiences = lazy(() => import("./pages/Experiences"));
-// const Languages = lazy(() => import("./pages/Languages"));
-// const Projects = lazy(() => import("./pages/Projects"));
-// const Project = lazy(() => import("./pages/Project"));
-// const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (

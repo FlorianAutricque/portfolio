@@ -32,6 +32,21 @@ const projects = [
   },
   {
     projectId: 3,
+    name: "Portfolio",
+    mainImage: "/projectsImages/portfolio/portfolio1.webp",
+    allImages: Array.from(
+      { length: 15 },
+      (_, index) => `/projectsImages/portfolio/portfolio${index + 1}.webp`
+    ),
+    description: {
+      en: "My portfolio is an integral part of my projects, featuring a minimalist homepage. Visitors will first encounter a clean and simple interface, offering key information and some intriguing fun facts. As they delve deeper, they'll find details about my experiences as they scroll down. Additionally, all of my projects are showcased, easily filterable by stack. \n Each project entry provides a glimpse into the technologies used, a comprehensive description, a GitHub link to explore the code, and a carousel to view project-related photos. For those seeking to connect or inquire further, there's a designated contact section. Here, visitors can access my LinkedIn and GitHub profiles, as well as reach out via email. \n This React app ensures a seamless user experience, being 100% responsive. The navigation bar and overall design adapt to different devices, optimizing the interface for smartphones and other screens. Moreover, visitors have the option to translate the content into French (or keep English as the default language) by simply clicking on an icon conveniently placed on the homepage. Thanks to local storage, the chosen language preference is retained throughout the website as visitors navigate, enhancing user convenience.",
+      fr: "Mon portfolio est une partie intégrante de mes projets, présentant une page d'accueil épurée. Les visiteurs découvriront d'abord une interface propre et simple, offrant des informations clés et quelques faits amusants. En explorant davantage, ils trouveront des détails sur mes expériences à mesure qu'ils font défiler la page. De plus, l'ensemble de mes projets y sont présentés, facilement filtrables par stack. \nChaque fiche de projet donne un aperçu des technologies utilisées, une description complète, un lien GitHub pour explorer le code et un carrousel pour voir des photos liées au projet. Pour ceux qui souhaitent se connecter ou poser des questions supplémentaires, il y a une section de contact dédiée. Ici, les visiteurs peuvent accéder à mes profils LinkedIn et GitHub, ainsi que me contacter par e-mail.\n Cette application React garantit une expérience utilisateur fluide, en étant 100% responsive. La barre de navigation et le design s'adaptent aux différents appareils, optimisant l'interface pour les smartphones et autres écrans. De plus, les visiteurs ont la possibilité de traduire le contenu en français (ou de le laisser en anglais, langue par défaut) en cliquant simplement sur une icône judicieusement placée sur la page d'accueil. Grâce au stockage local, la préférence linguistique choisie est conservée tout au long du site web pendant la navigation, améliorant ainsi la commodité pour l'utilisateur.",
+    },
+    github: "https://github.com/FlorianAutricque/portfolio",
+    stack: ["All", "React", "CSS", "JSX", "Javascript"],
+  },
+  {
+    projectId: 4,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -46,7 +61,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 4,
+    projectId: 5,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(
@@ -61,7 +76,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 5,
+    projectId: 6,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -77,7 +92,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 6,
+    projectId: 7,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -92,7 +107,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 7,
+    projectId: 8,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -108,7 +123,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 8,
+    projectId: 9,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -124,7 +139,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 9,
+    projectId: 10,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -140,7 +155,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 10,
+    projectId: 11,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -155,7 +170,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 11,
+    projectId: 12,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -170,7 +185,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -185,7 +200,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -201,7 +216,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(

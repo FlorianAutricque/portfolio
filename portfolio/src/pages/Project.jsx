@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import React from "react";
 
 import styles from "./Project.module.css";
@@ -8,7 +9,6 @@ import PageNav from "../components/PageNav";
 import StackProject from "../components/StackProject";
 import CarouselComponent from "../components/CarouselComponent";
 import DescriptionProject from "../components/DescriptionProject";
-import { useTranslation } from "react-i18next";
 
 function Project() {
   const location = useLocation();
