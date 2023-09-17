@@ -34,6 +34,7 @@ const projects = [
     projectId: 3,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
+
     allImages: Array.from(
       { length: 15 },
       (_, index) => `/projectsImages/portfolio/portfolio${index + 1}.webp`
