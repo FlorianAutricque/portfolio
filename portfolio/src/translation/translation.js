@@ -207,8 +207,8 @@ i18n.use(initReactI18next).init({
         },
         locationInfos: "Localisation :",
         textInfos: {
-          1: "Comment me décrire ? Créatif, passionné, hautement organisé, avec une attitude positive et fiable, adorant le travail d'équipe. Doté d'une licence en aménagement du territoire et environnement, suivie d'un master en développement durable, j'ai acquis une précieuse expérience dans l'industrie solaire, où j'ai occupé avec succès des postes de superviseur.",
-          2: "Motivé par le désir de changer de carrière, j'ai entrepris une formation intensice en développement web Full Stack à Le Wagon Montréal, en me spécialisant sur le développement Front-End.",
+          1: "Comment me décrire ? Créatif, passionné, hautement organisé, avec une attitude positive et fiable, j'apprécie le travail d'équipe. Je suis titulaire d'une licence en aménagement du territoire et environnement, suivie d'un master en développement durable. J'ai acquis une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de superviseur.",
+          2: "Motivé par le désir de changer de carrière, j'ai suivi une formation intensive en développement web Full Stack à Le Wagon Montréal, en me spécialisant dans le développement Front-End.",
         },
         funfacts: {
           1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser la programmation de la même manière que le dessin, en remplaçant un stylo par des lettres et des chiffres.",
