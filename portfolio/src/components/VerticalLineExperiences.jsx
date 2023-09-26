@@ -3,6 +3,7 @@ import styles from "./VerticalLineExperiences.module.css";
 
 function VerticalLineExperiences() {
   const [scrollHeight, setScrollHeight] = useState(0);
+  const [x, setX] = useState(window.innerWidth > 550 ? 245 : 400);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -10,15 +11,23 @@ function VerticalLineExperiences() {
       setScrollHeight(scrollTop);
     };
 
+    const handleResize = () => {
+      setX(window.innerWidth > 550 ? 245 : 400);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <div
       className={styles.horizontal}
-      style={{ height: `${scrollHeight + 245}px` }}
+      style={{ height: `${scrollHeight + x}px` }}
     ></div>
   );
 }

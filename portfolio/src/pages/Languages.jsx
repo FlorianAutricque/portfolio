@@ -26,6 +26,7 @@ import {
   SiStimulus,
 } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
+import { TbBrandNextjs } from "react-icons/tb";
 
 function Languages() {
   const { t } = useTranslation();
@@ -39,6 +40,10 @@ function Languages() {
       <div className={styles.container}>
         <div className={styles.containerEachBox}>
           <LanguagesBox icon={<FaReact size={80} />}>React</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<TbBrandNextjs size={80} />}>NextJS</LanguagesBox>
         </div>
 
         <div className={styles.containerEachBox}>

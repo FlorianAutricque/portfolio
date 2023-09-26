@@ -35,6 +35,7 @@ i18n.use(initReactI18next).init({
           8: "Fullstack web development, computer programming",
           9: "React Course 2023: React, Redux, Tailwind CSS & More",
           10: "Javascript course",
+          11: "NextJS",
         },
         date: {
           1: "August 2023",
@@ -50,6 +51,7 @@ i18n.use(initReactI18next).init({
           11: "November 2016-August 2018",
           12: "September 2012-July 2016",
           13: "January 2014-September 2016",
+          14: "September 2023",
         },
         locationExp: {
           1: "Le Mans University",
@@ -93,6 +95,7 @@ i18n.use(initReactI18next).init({
             4: "Organizing products attractively.",
             5: "Managing inventory and restocking notifications.",
           },
+          12: "NextJS features like pre-rendering, SSR, data fetching, file-based routing and authentication",
         },
         localisationExp: {
           1: "Gunnedah and Woolooga solar plant (Australia)",
@@ -156,6 +159,7 @@ i18n.use(initReactI18next).init({
           11: "Novembre 2016-Août 2018",
           12: "Septembre 2012-Juillet 2016",
           13: "Janvier 2014-Septembre 2016",
+          14: "Septembre 2023",
         },
         locationExp: {
           1: "Université Le Mans",
@@ -199,6 +203,7 @@ i18n.use(initReactI18next).init({
             4: "Organisation attractive des produits.",
             5: "Gestion des stocks et notifications de réapprovisionnement.",
           },
+          12: "Fonctionnalités de NextJS telles que le pré-rendu, le SSR (rendu côté serveur), la récupération de données, routing et l'authentification.",
         },
         localisationExp: {
           1: "Centrale solaire de Gunnedah et de Woolooga (Australie)",
