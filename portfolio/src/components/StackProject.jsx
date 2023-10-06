@@ -7,6 +7,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { SiRubyonrails, SiTailwindcss, SiStimulus } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
 import { RiSupabaseFill } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
 
 import LanguagesBox from "./LanguagesBox";
 
@@ -40,6 +41,12 @@ function StackProject() {
             ) : x === "React" ? (
               <div className={styles2.containerEachBox}>
                 <LanguagesBox icon={<FaReact size={80} />}>React</LanguagesBox>
+              </div>
+            ) : x === "NextJS" ? (
+              <div className={styles2.containerEachBox}>
+                <LanguagesBox icon={<TbBrandNextjs size={80} />}>
+                  NextJS
+                </LanguagesBox>
               </div>
             ) : x === "Javascript" ? (
               <div className={styles2.containerEachBox}>

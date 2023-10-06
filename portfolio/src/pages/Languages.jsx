@@ -11,6 +11,7 @@ import {
   BiLogoFigma,
   BiLogoJavascript,
   BiLogoPostgresql,
+  BiLogoMongodb,
 } from "react-icons/bi";
 import { BsGit } from "react-icons/bs";
 import { DiHeroku, DiRuby, DiSass } from "react-icons/di";
@@ -119,6 +120,12 @@ function Languages() {
 
         <div className={styles.containerEachBox}>
           <LanguagesBox icon={<DiHeroku size={80} />}>Heroku</LanguagesBox>
+        </div>
+
+        <div className={styles.containerEachBox}>
+          <LanguagesBox icon={<BiLogoMongodb size={80} />}>
+            MongoDB
+          </LanguagesBox>
         </div>
 
         <div className={styles.containerEachBox}>

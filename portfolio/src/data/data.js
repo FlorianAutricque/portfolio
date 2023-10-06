@@ -232,6 +232,21 @@ const projects = [
       "https://github.com/FlorianAutricque/Javascript-exercise/tree/main/07%20Project%2003:%20Pig%20Game",
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
+  {
+    projectId: 16,
+    name: "Blog",
+    mainImage: "/projectsImages/blog/blog1.webp",
+    allImages: Array.from(
+      { length: 7 },
+      (_, index) => `/projectsImages/blog/blog${index + 1}.webp`
+    ),
+    description: {
+      en: "This project is a blog where I can share articles about web development. It was created using Next.js. You can find articles about Next.js and JavaScript. \n Feel free to ask me any questions. Head to the contact page and send me your inquiries. Your questions will be stored in a MongoDB database.",
+      fr: "Ce projet est un blog où je peux partager des articles sur le développement web. Il a été créé à l'aide de Next.js. Vous pouvez trouver des articles sur Next.js et JavaScript. \n N'hésitez pas à me poser des questions. Rendez-vous sur la page de contact et envoyez-moi ce que vous voulez. Vos questions seront stockées dans une base de données MongoDB",
+    },
+    github: "https://github.com/FlorianAutricque/nextjs/tree/main/07%20Blog",
+    stack: ["All", "Javascript", "CSS", "HTML", "NextJS"],
+  },
 ];
 
 export default projects;

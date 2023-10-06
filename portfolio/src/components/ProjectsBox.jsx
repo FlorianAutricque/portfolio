@@ -13,6 +13,7 @@ import Filter from "./Filter";
 import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { DiRuby } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 
 function ProjectsBox() {
   //FILTER
@@ -41,6 +42,11 @@ function ProjectsBox() {
             value: "Javascript",
             label: "Javascript",
             icon: <BiLogoJavascript />,
+          },
+          {
+            value: "NextJS",
+            label: "NextJS",
+            icon: <TbBrandNextjs />,
           },
           { value: "Ruby on rails", label: "Ruby", icon: <DiRuby /> },
         ]}

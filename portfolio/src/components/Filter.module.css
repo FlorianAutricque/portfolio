@@ -5,7 +5,7 @@
   margin-bottom: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .selectFilter {
     display: flex;
     flex-wrap: wrap;
