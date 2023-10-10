@@ -12,6 +12,7 @@ const projects = [
       fr: "Découvrez WorldWise : Votre Compagnon de Voyage Ultime (fictif).\n Explorez le suivi de voyage sans effort avec l'application WorldWise. Découvrez nos fonctionnalités pour enrichir vos aventures, nos produits et nos tarifs. Connectez-vous pour accéder à un compte dédié avec une carte interactive pour partager vos récits de voyage. Enregistrez vos voyages sur la carte avec des anecdotes personnelles. \nSuivi des Pays, Souvenirs Précieux : WorldWise compte les pays visités. Exploration de Villes : Découvrez les villes visitées avec dates, impressions et liens Wikipedia.",
     },
     github: "https://github.com/FlorianAutricque/worldwise",
+    production: "https://worldwise-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
@@ -28,6 +29,7 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/react_course_challenge/tree/main/09%20Classy%20weather",
+    production: "https://classy-weather-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
@@ -44,6 +46,7 @@ const projects = [
       fr: "Mon portfolio est une partie intégrante de mes projets, présentant une page d'accueil épurée. Les visiteurs découvriront d'abord une interface propre et simple, offrant des informations clés et quelques faits amusants. En explorant davantage, ils trouveront des détails sur mes expériences à mesure qu'ils font défiler la page. De plus, l'ensemble de mes projets y sont présentés, facilement filtrables par stack. \nChaque fiche de projet donne un aperçu des technologies utilisées, une description complète, un lien GitHub pour explorer le code et un carrousel pour voir des photos liées au projet. Pour ceux qui souhaitent se connecter ou poser des questions supplémentaires, il y a une section de contact dédiée. Ici, les visiteurs peuvent accéder à mes profils LinkedIn et GitHub, ainsi que me contacter par e-mail.\n Cette application React garantit une expérience utilisateur fluide, en étant 100% responsive. La barre de navigation et le design s'adaptent aux différents appareils, optimisant l'interface pour les smartphones et autres écrans. De plus, les visiteurs ont la possibilité de traduire le contenu en français (ou de le laisser en anglais, langue par défaut) en cliquant simplement sur une icône judicieusement placée sur la page d'accueil. Grâce au stockage local, la préférence linguistique choisie est conservée tout au long du site web pendant la navigation, améliorant ainsi la commodité pour l'utilisateur.",
     },
     github: "https://github.com/FlorianAutricque/portfolio",
+    production: "https://fautcq.com",
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
@@ -85,11 +88,12 @@ const projects = [
       (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.webp`
     ),
     description: {
-      en: "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info.\n Data stored in Supabase.",
-      fr: "Présentation de Wild Oasis : une application web de gestion hôtelière pour les propriétaires d'entreprise. \nLes utilisateurs se connectent pour accéder, avec un design adaptatif incluant un mode sombre.\n Vous trouverez ; la page d'accueil : Des informations sur les réservations, les ventes, les enregistrements et les taux d'occupation. Page de réservation : Afficher, enregistrer et gérer les réservations. Page des cabanes : Explorer et ajouter des cabanes. Page des utilisateurs : Gérer l'accès des collègues. Page des paramètres : Mettre à jour les informations sur les cabanes et les réservations. \nLes données sont stockées dans Supabase.",
+      en: "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info.\n Data stored in Supabase.\n USE: email address: flo@example.com password: 123456",
+      fr: "Présentation de Wild Oasis : une application web de gestion hôtelière pour les propriétaires d'entreprise. \nLes utilisateurs se connectent pour accéder, avec un design adaptatif incluant un mode sombre.\n Vous trouverez ; la page d'accueil : Des informations sur les réservations, les ventes, les enregistrements et les taux d'occupation. Page de réservation : Afficher, enregistrer et gérer les réservations. Page des cabanes : Explorer et ajouter des cabanes. Page des utilisateurs : Gérer l'accès des collègues. Page des paramètres : Mettre à jour les informations sur les cabanes et les réservations. \nLes données sont stockées dans Supabase. USE: adresse mail : flo@example.com mot de passe: 123456",
     },
     github:
       "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
+    production: "https://wild-oasis-flo.netlify.app",
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
@@ -105,6 +109,7 @@ const projects = [
       fr: "Présentation de usePopcorn : Votre passerelle vers une expérience cinématographique incroyable. \nAccédez aux évaluations IMDb, aux descriptions, à la distribution, et plus encore. \nNotez, suivez et gérez votre collection sans effort. Profitez d'une gestion élégante des erreurs et d'un chargement captivant pour les connexions plus lentes.",
     },
     github: "https://github.com/FlorianAutricque/usePopcorn",
+    production: "https://usepopcorn-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
@@ -121,6 +126,7 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/react_course_challenge/tree/main/15%20React%20pizza",
+    production: "https://react-pizza-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
@@ -153,6 +159,7 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/react_course_challenge/tree/main/05%20travel-list/src",
+    production: "https://far-away-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {

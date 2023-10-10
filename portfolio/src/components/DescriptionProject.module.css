@@ -4,6 +4,12 @@
   width: 500px;
 }
 
+.linkProdGithub {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 @media (max-width: 500px) {
   .aboutDescription p {
     width: 100%;

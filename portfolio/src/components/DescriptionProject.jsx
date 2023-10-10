@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { AiFillGithub } from "react-icons/ai";
+import { CgWebsite } from "react-icons/cg";
 
 import styles from "./DescriptionProject.module.css";
 import styles2 from "./Button.module.css";
@@ -30,11 +31,27 @@ function DescriptionProject() {
         : ""}
       <br />
       <br />
-      <Link to={project.github} target="_blank" className={styles2.button}>
-        <span className={styles2.textLink}>
-          <AiFillGithub size={20} /> Github
-        </span>
-      </Link>
+      <div className={styles.linkProdGithub}>
+        <Link to={project.github} target="_blank" className={styles2.button}>
+          <span className={styles2.textLink}>
+            <AiFillGithub size={20} /> Github
+          </span>
+        </Link>
+
+        {project.production ? (
+          <Link
+            to={project.production}
+            target="_blank"
+            className={styles2.button}
+          >
+            <span className={styles2.textLink}>
+              <CgWebsite size={20} /> Production
+            </span>
+          </Link>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }
