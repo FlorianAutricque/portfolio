@@ -254,6 +254,23 @@ const projects = [
     github: "https://github.com/FlorianAutricque/nextjs/tree/main/07%20Blog",
     stack: ["All", "Javascript", "CSS", "HTML", "NextJS"],
   },
+  {
+    projectId: 16,
+    name: "Space login",
+    mainImage: "/projectsImages/spacelogin/login1.webp",
+    allImages: Array.from(
+      { length: 7 },
+      (_, index) => `/projectsImages/spacelogin/login${index + 1}.webp`
+    ),
+    description: {
+      en: "Space Login is a simulated login experience with a sleek design featuring a dynamic space background. To enhance security, certain criteria like password character count and email format must be met. \n Users can choose to either log in or sign up, with both processes adhering to the specified security measures. Upon successful sign-up, a brief celebratory message is displayed and fades after 3 seconds, seamlessly returning to the login page. Once logged in, a success message confirms your entry into the platform.",
+      fr: "Space Login propose une expérience de connexion simulée avec un design moderne mettant en avant un fond spatial animé. Pour renforcer la sécurité, certaines conditions doivent être remplies, comme le nombre de caractères du mot de passe et le format de l'adresse e-mail. \n Les utilisateurs peuvent choisir de se connecter ou de s'inscrire, les deux processus respectant les mesures de sécurité spécifiées. Après une inscription réussie, un bref message de célébration s'affiche et disparaît après 3 secondes, revenant ainsi en douceur à la page de connexion. Une fois connecté, un message de succès confirme votre accès à la plateforme.",
+    },
+    github:
+      "https://github.com/FlorianAutricque/exercise/tree/main/01%20React%20form",
+    production: "https://login-space-form-flo.netlify.app/",
+    stack: ["All", "Javascript", "CSS", "HTML", "React"],
+  },
 ];
 
 export default projects;
