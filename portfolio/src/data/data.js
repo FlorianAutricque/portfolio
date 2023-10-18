@@ -81,21 +81,22 @@ const projects = [
   },
   {
     projectId: 6,
-    name: "The Wild Oasis",
-    mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
+    name: "Space login",
+    mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
-      { length: 28 },
-      (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.webp`
+      { length: 7 },
+      (_, index) => `/projectsImages/spacelogin/login${index + 1}.webp`
     ),
     description: {
-      en: "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info.\n Data stored in Supabase.\n USE: email address: flo@example.com password: 123456",
-      fr: "Présentation de Wild Oasis : une application web de gestion hôtelière pour les propriétaires d'entreprise. \nLes utilisateurs se connectent pour accéder, avec un design adaptatif incluant un mode sombre.\n Vous trouverez ; la page d'accueil : Des informations sur les réservations, les ventes, les enregistrements et les taux d'occupation. Page de réservation : Afficher, enregistrer et gérer les réservations. Page des cabanes : Explorer et ajouter des cabanes. Page des utilisateurs : Gérer l'accès des collègues. Page des paramètres : Mettre à jour les informations sur les cabanes et les réservations. \nLes données sont stockées dans Supabase. USE: adresse mail : flo@example.com mot de passe: 123456",
+      en: "Space Login is a simulated login experience with a sleek design featuring a dynamic space background. To enhance security, certain criteria like password character count and email format must be met. \n Users can choose to either log in or sign up, with both processes adhering to the specified security measures. Upon successful sign-up, a brief celebratory message is displayed and fades after 3 seconds, seamlessly returning to the login page. Once logged in, a success message confirms your entry into the platform.",
+      fr: "Space Login propose une expérience de connexion simulée avec un design moderne mettant en avant un fond spatial animé. Pour renforcer la sécurité, certaines conditions doivent être remplies, comme le nombre de caractères du mot de passe et le format de l'adresse e-mail. \n Les utilisateurs peuvent choisir de se connecter ou de s'inscrire, les deux processus respectant les mesures de sécurité spécifiées. Après une inscription réussie, un bref message de célébration s'affiche et disparaît après 3 secondes, revenant ainsi en douceur à la page de connexion. Une fois connecté, un message de succès confirme votre accès à la plateforme.",
     },
     github:
-      "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
-    production: "https://wild-oasis-flo.netlify.app",
-    stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
+      "https://github.com/FlorianAutricque/exercise/tree/main/01%20React%20form",
+    production: "https://login-space-form-flo.netlify.app/",
+    stack: ["All", "Javascript", "CSS", "HTML", "React"],
   },
+
   {
     projectId: 7,
     name: "usePopcorn",
@@ -254,22 +255,23 @@ const projects = [
     github: "https://github.com/FlorianAutricque/nextjs/tree/main/07%20Blog",
     stack: ["All", "Javascript", "CSS", "HTML", "NextJS"],
   },
+
   {
-    projectId: 16,
-    name: "Space login",
-    mainImage: "/projectsImages/spacelogin/login1.webp",
+    projectId: 17,
+    name: "The Wild Oasis",
+    mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
-      { length: 7 },
-      (_, index) => `/projectsImages/spacelogin/login${index + 1}.webp`
+      { length: 28 },
+      (_, index) => `/projectsImages/wildoasis/wildoasis${index + 1}.webp`
     ),
     description: {
-      en: "Space Login is a simulated login experience with a sleek design featuring a dynamic space background. To enhance security, certain criteria like password character count and email format must be met. \n Users can choose to either log in or sign up, with both processes adhering to the specified security measures. Upon successful sign-up, a brief celebratory message is displayed and fades after 3 seconds, seamlessly returning to the login page. Once logged in, a success message confirms your entry into the platform.",
-      fr: "Space Login propose une expérience de connexion simulée avec un design moderne mettant en avant un fond spatial animé. Pour renforcer la sécurité, certaines conditions doivent être remplies, comme le nombre de caractères du mot de passe et le format de l'adresse e-mail. \n Les utilisateurs peuvent choisir de se connecter ou de s'inscrire, les deux processus respectant les mesures de sécurité spécifiées. Après une inscription réussie, un bref message de célébration s'affiche et disparaît après 3 secondes, revenant ainsi en douceur à la page de connexion. Une fois connecté, un message de succès confirme votre accès à la plateforme.",
+      en: "Introducing Wild Oasis: a hotel management web app for business owners.\nUsers log in for access, with an adaptive design including dark mode.\nYou will find; the home page: Insights on bookings, sales, check-ins, and occupancy rates. Booking page: View, check-in, and manage bookings. Cabins page: Explore and add cabins. Users page: Manage colleague access. Settings page: Update cabin and booking info.\n Data stored in Supabase.\n USE: email address: flo@example.com password: 123456",
+      fr: "Présentation de Wild Oasis : une application web de gestion hôtelière pour les propriétaires d'entreprise. \nLes utilisateurs se connectent pour accéder, avec un design adaptatif incluant un mode sombre.\n Vous trouverez ; la page d'accueil : Des informations sur les réservations, les ventes, les enregistrements et les taux d'occupation. Page de réservation : Afficher, enregistrer et gérer les réservations. Page des cabanes : Explorer et ajouter des cabanes. Page des utilisateurs : Gérer l'accès des collègues. Page des paramètres : Mettre à jour les informations sur les cabanes et les réservations. \nLes données sont stockées dans Supabase. USE: adresse mail : flo@example.com mot de passe: 123456",
     },
     github:
-      "https://github.com/FlorianAutricque/exercise/tree/main/01%20React%20form",
-    production: "https://login-space-form-flo.netlify.app/",
-    stack: ["All", "Javascript", "CSS", "HTML", "React"],
+      "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
+    production: "https://wild-oasis-flo.netlify.app",
+    stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
 ];
 
