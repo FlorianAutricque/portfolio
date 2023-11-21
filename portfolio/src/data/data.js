@@ -15,23 +15,25 @@ const projects = [
     production: "https://worldwise-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
+
   {
     projectId: 2,
-    name: "Weather App",
-    mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
+    name: "Photo & Weather",
+    mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
-      { length: 3 },
-      (_, index) => `/projectsImages/weatherApp/weatherapp${index + 1}.webp`
+      { length: 5 },
+      (_, index) => `/projectsImages/weatherImage/wi${index + 1}.webp`
     ),
     description: {
-      en: "Explore global weather in real-time. Simply enter a city name to unveil its weather details.\nThis app showcases React's evolution from classes to functions, making it both informative and weather-savvy.",
-      fr: "Explorez la météo mondiale en temps réel. Il vous suffit d'entrer le nom d'une ville pour découvrir ses détails météorologiques. \nCette application met en avant l'évolution des classes dans React vers les fonctions, la rendant éducative.",
+      en: "Check the weather anywhere in the world and retrieve an image of the location you are searching for.  \nIf the location doesn't exist, you will receive an error message. Similarly, if the app can't find an image, an error message will be displayed",
+      fr: "Vérifiez la météo n'importe où dans le monde et obtenez une image de l'endroit que vous recherchez. \nSi l'emplacement n'existe pas, vous recevrez un message d'erreur. De même, si l'application ne peut pas trouver une image, un message d'erreur sera affiché.",
     },
     github:
-      "https://github.com/FlorianAutricque/react_course_challenge/tree/main/09%20Classy%20weather",
-    production: "https://classy-weather-flo.netlify.app/",
+      "https://github.com/FlorianAutricque/exercise/tree/main/02%20Weather",
+    production: "https://weather-image-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
+
   {
     projectId: 3,
     name: "Portfolio",
@@ -96,9 +98,26 @@ const projects = [
     production: "https://login-space-form-flo.netlify.app/",
     stack: ["All", "Javascript", "CSS", "HTML", "React"],
   },
-
   {
     projectId: 7,
+    name: "Weather App",
+    mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
+    allImages: Array.from(
+      { length: 3 },
+      (_, index) => `/projectsImages/weatherApp/weatherapp${index + 1}.webp`
+    ),
+    description: {
+      en: "Explore global weather in real-time. Simply enter a city name to unveil its weather details.\nThis app showcases React's evolution from classes to functions, making it both informative and weather-savvy.",
+      fr: "Explorez la météo mondiale en temps réel. Il vous suffit d'entrer le nom d'une ville pour découvrir ses détails météorologiques. \nCette application met en avant l'évolution des classes dans React vers les fonctions, la rendant éducative.",
+    },
+    github:
+      "https://github.com/FlorianAutricque/react_course_challenge/tree/main/09%20Classy%20weather",
+    production: "https://classy-weather-flo.netlify.app/",
+    stack: ["All", "React", "CSS", "HTML", "JSX"],
+  },
+
+  {
+    projectId: 8,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -114,7 +133,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 8,
+    projectId: 9,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -131,7 +150,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 9,
+    projectId: 10,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -147,7 +166,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 10,
+    projectId: 11,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -164,7 +183,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 11,
+    projectId: 12,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -179,7 +198,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -194,7 +213,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -209,7 +228,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -225,7 +244,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -241,7 +260,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -257,7 +276,7 @@ const projects = [
   },
 
   {
-    projectId: 17,
+    projectId: 18,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
