@@ -23,3 +23,19 @@
 .stackGithub {
   text-align: center;
 }
+
+@media (max-width: 380px) {
+  .StackProjectGrid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 310px) {
+  .StackProjectGrid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+  }
+}

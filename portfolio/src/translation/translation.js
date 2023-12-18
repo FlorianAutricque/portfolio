@@ -26,8 +26,8 @@ i18n.use(initReactI18next).init({
         LanguagesTitle: "Languages and Tools",
         expTitle: {
           1: "Personal goal pursuit | Career break",
-          2: "Leading Hand/Supervisor",
-          3: "Leading Hand",
+          2: "Supervisor",
+          3: "Supervisor",
           4: "Laborer",
           5: "Master's degree",
           6: "Retail worker | Student job",
@@ -135,8 +135,8 @@ i18n.use(initReactI18next).init({
         LanguagesTitle: "Langages et Outils",
         expTitle: {
           1: "Poursuite d'objectifs personnels",
-          2: "Chef d'équipe/Superviseur",
-          3: "Chef d'équipe",
+          2: "Superviseur",
+          3: "Superviseur",
           4: "Ouvrier",
           5: "Master",
           6: "Employé de vente | Job étudiant",
