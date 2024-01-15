@@ -1,6 +1,22 @@
 const projects = [
   {
     projectId: 1,
+    name: "MovieSphere",
+    mainImage: "/projectsImages/moviesphere/moviesphere1.webp",
+    allImages: Array.from(
+      { length: 9 },
+      (_, index) => `/projectsImages/moviesphere/moviesphere${index + 1}.webp`
+    ),
+    description: {
+      en: "Moviesphere is a comprehensive online platform designed to provide users with detailed information about movies and series. With a user-friendly interface, you can effortlessly search for your favorite movies or series, add them to your watchlist, watch trailers, and access essential details such as synopses. \nAdditionally, our platform offers recommendations for related movies or series within the same genre, enhancing your overall entertainment experience.",
+      fr: "Moviesphere est une plateforme en ligne conçue pour fournir aux utilisateurs des informations détaillées sur des films et des séries. Avec une interface conviviale, vous pouvez facilement rechercher vos films ou séries préférés, les ajouter à votre liste de visionnage, regarder des bandes-annonces et accéder à des détails essentiels tels que les synopsys.\n De plus, cette plateforme propose des recommandations pour des films ou des séries connexes dans le même genre, améliorant ainsi votre expérience globale de divertissement.",
+    },
+    github: "https://github.com/FlorianAutricque/exercise/tree/main/03%20Movie",
+    production: "https://worldwise-flo.netlify.app/",
+    stack: ["All", "React", "CSS", "HTML", "JSX"],
+  },
+  {
+    projectId: 2,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -17,7 +33,7 @@ const projects = [
   },
 
   {
-    projectId: 2,
+    projectId: 3,
     name: "Photo & Weather",
     mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
@@ -35,7 +51,7 @@ const projects = [
   },
 
   {
-    projectId: 3,
+    projectId: 4,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -52,7 +68,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 4,
+    projectId: 5,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -66,21 +82,7 @@ const projects = [
     github: "https://github.com/etnlg/ouva",
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
-  {
-    projectId: 5,
-    name: "Hairbnb",
-    mainImage: "/projectsImages/hairbnb/airbnb1.webp",
-    allImages: Array.from(
-      { length: 8 },
-      (_, index) => `/projectsImages/hairbnb/airbnb${index + 1}.webp`
-    ),
-    description: {
-      en: "Introducing Hairbnb: Your destination for renting stunning wigs!\nWe've blended Ruby on Rails, JavaScript, CSS, and HTML for an intuitive experience. Git ensures smooth collaboration.\nOur captivating user interfaces, crafted in Figma, offer a visually stunning and user-friendly design. Trello keeps us organized, delivering Hairbnb with precision.\nExplore chic bobs, wild curly afros, or elegant updos. Hairbnb has the perfect wig for any occasion. Try our 'Owner' mode to rent out your wig and approve rental requests.\nExperience Hairbnb and unlock a world of wig possibilities.",
-      fr: "Présentation de Hairbnb : Votre site pour la location de perruques époustouflantes copiant le principe de Airbnb !\n Nous avons associé Ruby on Rails, JavaScript, CSS et HTML pour une expérience intuitive. Git garantit une collaboration fluide. \nNos interfaces utilisateur captivantes, créées avec Figma, offrent un design visuellement époustouflant et convivial. Trello nous permet de rester organisés et de livrer Hairbnb avec précision. \nExplorez les chic bobs, les boucles folles afro ou les élégantes coiffures relevées. Hairbnb a la perruque parfaite pour chaque occasion. Essayez notre mode 'Propriétaire' pour louer votre perruque et approuver les demandes de location. \nDécouvrez Hairbnb et débloquez un monde de possibilités en matière de perruques.",
-    },
-    github: "https://github.com/etnlg/hairbnb-1208",
-    stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
-  },
+
   {
     projectId: 6,
     name: "Space login",
@@ -291,6 +293,21 @@ const projects = [
       "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
     production: "https://wild-oasis-flo.netlify.app",
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
+  },
+  {
+    projectId: 19,
+    name: "Hairbnb",
+    mainImage: "/projectsImages/hairbnb/airbnb1.webp",
+    allImages: Array.from(
+      { length: 8 },
+      (_, index) => `/projectsImages/hairbnb/airbnb${index + 1}.webp`
+    ),
+    description: {
+      en: "Introducing Hairbnb: Your destination for renting stunning wigs!\nWe've blended Ruby on Rails, JavaScript, CSS, and HTML for an intuitive experience. Git ensures smooth collaboration.\nOur captivating user interfaces, crafted in Figma, offer a visually stunning and user-friendly design. Trello keeps us organized, delivering Hairbnb with precision.\nExplore chic bobs, wild curly afros, or elegant updos. Hairbnb has the perfect wig for any occasion. Try our 'Owner' mode to rent out your wig and approve rental requests.\nExperience Hairbnb and unlock a world of wig possibilities.",
+      fr: "Présentation de Hairbnb : Votre site pour la location de perruques époustouflantes copiant le principe de Airbnb !\n Nous avons associé Ruby on Rails, JavaScript, CSS et HTML pour une expérience intuitive. Git garantit une collaboration fluide. \nNos interfaces utilisateur captivantes, créées avec Figma, offrent un design visuellement époustouflant et convivial. Trello nous permet de rester organisés et de livrer Hairbnb avec précision. \nExplorez les chic bobs, les boucles folles afro ou les élégantes coiffures relevées. Hairbnb a la perruque parfaite pour chaque occasion. Essayez notre mode 'Propriétaire' pour louer votre perruque et approuver les demandes de location. \nDécouvrez Hairbnb et débloquez un monde de possibilités en matière de perruques.",
+    },
+    github: "https://github.com/etnlg/hairbnb-1208",
+    stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
 ];
 
