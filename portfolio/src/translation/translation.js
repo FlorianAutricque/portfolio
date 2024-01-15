@@ -36,6 +36,7 @@ i18n.use(initReactI18next).init({
           9: "React Course 2023: React, Redux, Tailwind CSS & More",
           10: "Javascript course",
           11: "NextJS",
+          12: "Web Developer",
         },
         date: {
           1: "August 2023",
@@ -52,6 +53,7 @@ i18n.use(initReactI18next).init({
           12: "September 2012-July 2016",
           13: "January 2014-September 2016",
           14: "September 2023",
+          15: "July 2023-Now",
         },
         locationExp: {
           1: "Le Mans University",
@@ -96,6 +98,7 @@ i18n.use(initReactI18next).init({
             5: "Managing inventory and restocking notifications.",
           },
           12: "NextJS features like pre-rendering, SSR, data fetching, file-based routing and authentication",
+          13: "Self-employed, I work on various projects, either for clients or for my own projects",
         },
         localisationExp: {
           1: "Gunnedah and Woolooga solar plant (Australia)",
@@ -144,6 +147,7 @@ i18n.use(initReactI18next).init({
           8: "Développement web Fullstack, programmation informatique",
           9: "React 2023: React, Redux, Tailwind CSS & Plus",
           10: "Cours sur Javascript",
+          12: "Développeur Web",
         },
         date: {
           1: "Août 2023",
@@ -160,6 +164,7 @@ i18n.use(initReactI18next).init({
           12: "Septembre 2012-Juillet 2016",
           13: "Janvier 2014-Septembre 2016",
           14: "Septembre 2023",
+          15: "Juillet 2023-Présent",
         },
         locationExp: {
           1: "Université Le Mans",
@@ -204,6 +209,7 @@ i18n.use(initReactI18next).init({
             5: "Gestion des stocks et notifications de réapprovisionnement.",
           },
           12: "Fonctionnalités de NextJS telles que le pré-rendu, le SSR (rendu côté serveur), la récupération de données, routing et l'authentification.",
+          13: "Travailleur indépendant, je travaille sur divers projets, que ce soit pour des clients ou pour mes propres projets.",
         },
         localisationExp: {
           1: "Centrale solaire de Gunnedah et de Woolooga (Australie)",
