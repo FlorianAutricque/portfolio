@@ -21,12 +21,14 @@ function LanguageSelector({ onCloseDropdown }) {
         onClick={() => changeLanguage("en")}
       >
         <Flag code="gb" height="25" width="40" />
+        <p>EN</p>
       </button>
       <button
         className={styles.btnTranslation}
         onClick={() => changeLanguage("fr")}
       >
         <Flag code="fr" height="25" width="40" />
+        <p>FR</p>
       </button>
     </div>
   );

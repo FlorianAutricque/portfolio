@@ -1,9 +1,9 @@
 import PageNav from "../components/PageNav";
 import styles from "./Homepage.module.css";
 
-import BtnTranslation from "../translation/BtnTranslation";
-import { MdLanguage } from "react-icons/md";
 import { useState } from "react";
+
+import { useTranslation } from "react-i18next";
 
 function Homepage() {
   //show translation
@@ -12,6 +12,15 @@ function Homepage() {
   function handleShowTranslation() {
     setShow(!show);
   }
+
+  const { i18n } = useTranslation();
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("selectedLanguage", lng);
+
+    handleShowTranslation();
+  };
   return (
     <>
       <PageNav />
@@ -20,15 +29,21 @@ function Homepage() {
           <span>Front-end </span>Developer <br />
           Creative
         </h1>
-        <span
-          className={`${styles.BtnTranslation} ${show ? styles.active : ""}`}
-          onClick={handleShowTranslation}
-        >
-          <p>
-            <MdLanguage size={25} />
-          </p>
-          {show && <BtnTranslation onCloseDropdown={() => setShow(false)} />}
-        </span>
+        {show ? (
+          <button
+            className={styles.BtnTranslation}
+            onClick={() => changeLanguage("en")}
+          >
+            <p>EN</p>
+          </button>
+        ) : (
+          <button
+            className={styles.BtnTranslation}
+            onClick={() => changeLanguage("fr")}
+          >
+            <p>FR</p>
+          </button>
+        )}
       </div>
     </>
   );

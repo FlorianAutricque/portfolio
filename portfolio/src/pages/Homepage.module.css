@@ -17,6 +17,19 @@
   color: transparent;
 }
 
+.containerBtnTranslation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 1rem;
+  width: 80px;
+  height: 120px;
+  background-image: linear-gradient(to bottom right, #27292bef, #454849e8);
+  border-radius: 0 0 10px 10px;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .homepage span {
     -webkit-background-clip: text;
@@ -29,13 +42,41 @@
   top: 8%;
   right: 3%;
   cursor: pointer;
-  border-radius: 10px;
+
+  padding: 0.3rem;
+  font-family: roboto;
+  background: none;
+  border: none;
+  background-color: var(--color-box-2);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto";
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.BtnTranslation.active {
-  background: linear-gradient(
-    to bottom right,
-    var(--color-box-1),
-    var(--color-box-2)
-  );
+.BtnTranslation:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.07);
 }
