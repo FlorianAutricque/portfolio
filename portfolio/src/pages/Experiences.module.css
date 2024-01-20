@@ -1,15 +1,15 @@
-.containerExp {
+/* .containerExp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 6rem;
   margin: 0 10% 0 10%;
-}
+} */
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .containerExp {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin: 0 10% 0 10%;
   }
-}
+} */

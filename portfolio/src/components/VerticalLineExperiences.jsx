@@ -3,7 +3,7 @@ import styles from "./VerticalLineExperiences.module.css";
 
 function VerticalLineExperiences() {
   const [scrollHeight, setScrollHeight] = useState(0);
-  const [x, setX] = useState(window.innerWidth > 550 ? 245 : 400);
+  const [x, setX] = useState(window.innerWidth > 550 ? 333 : 580);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,7 +12,7 @@ function VerticalLineExperiences() {
     };
 
     const handleResize = () => {
-      setX(window.innerWidth > 550 ? 245 : 400);
+      setX(window.innerWidth > 550 ? 333 : 400);
     };
 
     window.addEventListener("scroll", handleScroll);

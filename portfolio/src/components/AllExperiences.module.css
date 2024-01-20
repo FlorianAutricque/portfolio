@@ -1,23 +1,81 @@
+.container {
+  margin: 2rem;
+
+  display: flex;
+
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
 .left {
-  text-align: right;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-right: auto;
+  width: 40%;
 }
 
 .right {
-  margin-top: 4rem;
+  margin-left: auto;
   line-height: 1.5;
+  width: 40%;
 }
 
-.margin {
-  margin-top: 4rem;
+.maxiContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
 
-.first {
+.seconcontainer {
+  margin-top: 0;
+}
+.container.odd {
+  flex-direction: row-reverse;
+}
+
+.left.odd {
+  margin-left: auto;
+  text-align: left;
+}
+
+.left.even {
+  margin-left: auto;
   text-align: right;
-  line-height: 1.5;
 }
 
-p em {
-  font-size: smaller;
+.right.odd {
+  margin-right: auto;
+  text-align: right;
+}
+
+.right.even {
+  margin-right: auto;
+  text-align: left;
+}
+
+.circle {
+  transform: translate(20%, 45%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-box-1);
+}
+
+.donut {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-box-1);
+  transform: translate(22%, 45%);
+}
+
+.donut::before {
+  content: "";
+  position: absolute;
+  width: 5px; /* Ajustez la largeur du trou selon votre préférence */
+  height: 5px; /* Ajustez la hauteur du trou selon votre préférence */
+  background-color: var(--color-main); /* Couleur de fond du trou */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
