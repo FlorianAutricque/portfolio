@@ -78,7 +78,7 @@ i18n.use(initReactI18next).init({
             4: "Conducted field assessments to verify module quality standards.",
           },
           6: {
-            1: "Led 30-person workshop team.",
+            1: "Led 30-person, workshop team.",
             2: "Ensured rigorous quality control for production standards.",
             3: "Strived to boost production efficiency and output.",
           },

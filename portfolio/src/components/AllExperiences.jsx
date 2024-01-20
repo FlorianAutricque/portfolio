@@ -86,6 +86,18 @@ const Experiences = () => {
         t("experienceExp.6.3"),
       ],
     },
+    {
+      title: t("expTitle.5"),
+      date: t("date.10"),
+      location: t("locationExp.1"),
+      experience: t("experienceExp.8"),
+    },
+    {
+      title: t("expTitle.7"),
+      date: t("date.12"),
+      location: t("locationExp.2"),
+      experience: t("experienceExp.10"),
+    },
   ];
   return (
     <>
@@ -149,18 +161,9 @@ const Experiences = () => {
 //         </span>{" "}
 //         <br /> <br /> {t("experienceExp.7")}
 //       </Scroll>
+////////////////////////////////////////////////////////////
 
-//       <div className={styles.margin}>
-//         <Scroll position={styles.right}>
-//           <h3>{t("expTitle.5")}</h3>
-//           <h5>{t("date.10")}</h5>
-//           <p>
-//             <em>{t("locationExp.1")}</em>
-//           </p>
-//           <br />
-//           <span>{t("experienceExp.8")}</span>
-//         </Scroll>
-//       </div>
+//
 
 //       <Scroll position={styles.left}>
 //         <h3>{t("expTitle.6")}</h3>
@@ -173,6 +176,7 @@ const Experiences = () => {
 //         {t("experienceExp.9.2")} <br />
 //         {t("experienceExp.9.3")}
 //       </Scroll>
+/////////////////////////////////////////////////////////////
 
 //       <div className={styles.margin}>
 //         <Scroll position={styles.right}>
