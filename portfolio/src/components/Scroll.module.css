@@ -3,16 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Ensure content doesn't overflow during transition */
 }
 
 .hidden {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+  left: -100%; /* Move the element off-screen to the left */
+  transition: opacity 0.5s, left 0.5s, transform 0.5s;
 }
 
 .visible {
   opacity: 1;
+  left: 0; /* Move the element back to its original position */
   transform: translateY(0);
-  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, left 0.5s, transform 0.5s;
 }

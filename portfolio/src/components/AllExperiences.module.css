@@ -65,15 +65,15 @@
   height: 15px;
   border-radius: 50%;
   background-color: var(--color-box-1);
-  transform: translate(22%, 45%);
+  transform: translate(19%, 45%);
 }
 
 .donut::before {
   content: "";
   position: absolute;
-  width: 5px; /* Ajustez la largeur du trou selon votre préférence */
-  height: 5px; /* Ajustez la hauteur du trou selon votre préférence */
-  background-color: var(--color-main); /* Couleur de fond du trou */
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-main);
   border-radius: 50%;
   top: 50%;
   left: 50%;

@@ -114,7 +114,7 @@ const Experiences = () => {
             <Scroll>
               <div className={styles.x}>
                 <h3>{t(experience.title)}</h3>
-                <h5>{t(experience.date)}</h5>
+
                 <p>
                   <em>{experience.location}</em>
                 </p>
@@ -149,19 +149,6 @@ const Experiences = () => {
     </>
   );
 };
-
-//       <Scroll position={styles.left}>
-//         <h3>{t("expTitle.4")}</h3>
-//         <h5>{t("date.9")}</h5>
-//         <p>
-//           <em>Bamford Engineering & Consulting</em>
-//         </p>
-//         <span>
-//           <CiLocationOn /> {t("localisationExp.3")}
-//         </span>{" "}
-//         <br /> <br /> {t("experienceExp.7")}
-//       </Scroll>
-////////////////////////////////////////////////////////////
 
 //
 

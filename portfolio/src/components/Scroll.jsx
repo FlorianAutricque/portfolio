@@ -8,7 +8,7 @@ function ScrollTriggeredText({ children, position }) {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "0px",
+      rootMargin: "-50px",
       threshold: 0.5,
     };
 
