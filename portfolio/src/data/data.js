@@ -12,28 +12,12 @@ const projects = [
       fr: "Moviesphere est une plateforme en ligne conçue pour fournir aux utilisateurs des informations détaillées sur des films et des séries. Avec une interface conviviale, vous pouvez facilement rechercher vos films ou séries préférés, les ajouter à votre liste de visionnage, regarder des bandes-annonces et accéder à des détails essentiels tels que les synopsys.\n De plus, cette plateforme propose des recommandations pour des films ou des séries connexes dans le même genre, améliorant ainsi votre expérience globale de divertissement.",
     },
     github: "https://github.com/FlorianAutricque/exercise/tree/main/03%20Movie",
-    production: "https://worldwise-flo.netlify.app/",
-    stack: ["All", "React", "CSS", "HTML", "JSX"],
-  },
-  {
-    projectId: 2,
-    name: "WorldWise",
-    mainImage: "/projectsImages/worldwise/worldwise1.webp",
-    allImages: Array.from(
-      { length: 11 },
-      (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.webp`
-    ),
-    description: {
-      en: "Introducing WorldWise: Your Ultimate Travel Companion.\nExperience seamless travel tracking with the WorldWise app. Explore a variety of features to elevate your adventures. Learn about our offerings, products, and pricing for your travel needs. Log in to access your dedicated account with an interactive world map to tell your travel stories. Easily log your trips on the map with personal anecdotes.\nTrack Countries, Cherish Memories: WorldWise counts the countries you've visited. City Exploration: Dive into cities you've visited with details like visit dates and your impression and access destination history through a quick Wikipedia link. ",
-      fr: "Découvrez WorldWise : Votre Compagnon de Voyage Ultime (fictif).\n Explorez le suivi de voyage sans effort avec l'application WorldWise. Découvrez nos fonctionnalités pour enrichir vos aventures, nos produits et nos tarifs. Connectez-vous pour accéder à un compte dédié avec une carte interactive pour partager vos récits de voyage. Enregistrez vos voyages sur la carte avec des anecdotes personnelles. \nSuivi des Pays, Souvenirs Précieux : WorldWise compte les pays visités. Exploration de Villes : Découvrez les villes visitées avec dates, impressions et liens Wikipedia.",
-    },
-    github: "https://github.com/FlorianAutricque/worldwise",
-    production: "https://worldwise-flo.netlify.app/",
+    production: "https://moviesphere-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
 
   {
-    projectId: 3,
+    projectId: 2,
     name: "Photo & Weather",
     mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
@@ -48,6 +32,24 @@ const projects = [
       "https://github.com/FlorianAutricque/exercise/tree/main/02%20Weather",
     production: "https://weather-image-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
+  },
+
+  {
+    projectId: 3,
+    name: "Space login",
+    mainImage: "/projectsImages/spacelogin/login1.webp",
+    allImages: Array.from(
+      { length: 7 },
+      (_, index) => `/projectsImages/spacelogin/login${index + 1}.webp`
+    ),
+    description: {
+      en: "Space Login is a simulated login experience with a sleek design featuring a dynamic space background. To enhance security, certain criteria like password character count and email format must be met. \n Users can choose to either log in or sign up, with both processes adhering to the specified security measures. Upon successful sign-up, a brief celebratory message is displayed and fades after 3 seconds, seamlessly returning to the login page. Once logged in, a success message confirms your entry into the platform.",
+      fr: "Space Login propose une expérience de connexion simulée avec un design moderne mettant en avant un fond spatial animé. Pour renforcer la sécurité, certaines conditions doivent être remplies, comme le nombre de caractères du mot de passe et le format de l'adresse e-mail. \n Les utilisateurs peuvent choisir de se connecter ou de s'inscrire, les deux processus respectant les mesures de sécurité spécifiées. Après une inscription réussie, un bref message de célébration s'affiche et disparaît après 3 secondes, revenant ainsi en douceur à la page de connexion. Une fois connecté, un message de succès confirme votre accès à la plateforme.",
+    },
+    github:
+      "https://github.com/FlorianAutricque/exercise/tree/main/01%20React%20form",
+    production: "https://login-space-form-flo.netlify.app/",
+    stack: ["All", "Javascript", "CSS", "HTML", "React"],
   },
 
   {
@@ -82,24 +84,23 @@ const projects = [
     github: "https://github.com/etnlg/ouva",
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
-
   {
     projectId: 6,
-    name: "Space login",
-    mainImage: "/projectsImages/spacelogin/login1.webp",
+    name: "WorldWise",
+    mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
-      { length: 7 },
-      (_, index) => `/projectsImages/spacelogin/login${index + 1}.webp`
+      { length: 11 },
+      (_, index) => `/projectsImages/worldwise/worldwise${index + 1}.webp`
     ),
     description: {
-      en: "Space Login is a simulated login experience with a sleek design featuring a dynamic space background. To enhance security, certain criteria like password character count and email format must be met. \n Users can choose to either log in or sign up, with both processes adhering to the specified security measures. Upon successful sign-up, a brief celebratory message is displayed and fades after 3 seconds, seamlessly returning to the login page. Once logged in, a success message confirms your entry into the platform.",
-      fr: "Space Login propose une expérience de connexion simulée avec un design moderne mettant en avant un fond spatial animé. Pour renforcer la sécurité, certaines conditions doivent être remplies, comme le nombre de caractères du mot de passe et le format de l'adresse e-mail. \n Les utilisateurs peuvent choisir de se connecter ou de s'inscrire, les deux processus respectant les mesures de sécurité spécifiées. Après une inscription réussie, un bref message de célébration s'affiche et disparaît après 3 secondes, revenant ainsi en douceur à la page de connexion. Une fois connecté, un message de succès confirme votre accès à la plateforme.",
+      en: "Introducing WorldWise: Your Ultimate Travel Companion.\nExperience seamless travel tracking with the WorldWise app. Explore a variety of features to elevate your adventures. Learn about our offerings, products, and pricing for your travel needs. Log in to access your dedicated account with an interactive world map to tell your travel stories. Easily log your trips on the map with personal anecdotes.\nTrack Countries, Cherish Memories: WorldWise counts the countries you've visited. City Exploration: Dive into cities you've visited with details like visit dates and your impression and access destination history through a quick Wikipedia link. ",
+      fr: "Découvrez WorldWise : Votre Compagnon de Voyage Ultime (fictif).\n Explorez le suivi de voyage sans effort avec l'application WorldWise. Découvrez nos fonctionnalités pour enrichir vos aventures, nos produits et nos tarifs. Connectez-vous pour accéder à un compte dédié avec une carte interactive pour partager vos récits de voyage. Enregistrez vos voyages sur la carte avec des anecdotes personnelles. \nSuivi des Pays, Souvenirs Précieux : WorldWise compte les pays visités. Exploration de Villes : Découvrez les villes visitées avec dates, impressions et liens Wikipedia.",
     },
-    github:
-      "https://github.com/FlorianAutricque/exercise/tree/main/01%20React%20form",
-    production: "https://login-space-form-flo.netlify.app/",
-    stack: ["All", "Javascript", "CSS", "HTML", "React"],
+    github: "https://github.com/FlorianAutricque/worldwise",
+    production: "https://worldwise-flo.netlify.app/",
+    stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
+
   {
     projectId: 7,
     name: "Weather App",

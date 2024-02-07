@@ -38,7 +38,7 @@ function DescriptionProject() {
           </span>
         </Link>
 
-        {/* {project.production ? (
+        {project.production ? (
           <Link
             to={project.production}
             target="_blank"
@@ -50,7 +50,7 @@ function DescriptionProject() {
           </Link>
         ) : (
           ""
-        )} */}
+        )}
       </div>
     </div>
   );
