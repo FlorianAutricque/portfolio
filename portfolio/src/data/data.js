@@ -28,7 +28,7 @@ const projects = [
       fr: "GymRat est un site vitrine dédié à une salle de sport fictive.\n Il met en avant les différentes offres, les nouveautés et les équipements disponibles, tout en proposant un calculateur de l'Indice de Masse Corporelle (IMC) et d'autres fonctionnalités pratiques.\n Grâce à une interface conviviale, les visiteurs peuvent explorer les services offerts par la salle, rester à jour sur les dernières tendances en matière de fitness, découvrir les installations disponibles et même évaluer leur propre indice de santé.",
     },
     github: "https://github.com/FlorianAutricque/exercise/tree/main/04%20Gym",
-    production: "https://moviesphere-flo.netlify.app/",
+    production: "https://gymrat-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
 
