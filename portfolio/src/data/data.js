@@ -15,9 +15,25 @@ const projects = [
     production: "https://moviesphere-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
-
   {
     projectId: 2,
+    name: "GymRat",
+    mainImage: "/projectsImages/gymrat/gymrat1.webp",
+    allImages: Array.from(
+      { length: 8 },
+      (_, index) => `/projectsImages/gymrat/gymrat${index + 1}.webp`
+    ),
+    description: {
+      en: "GymRat is a showcase website dedicated to a fictional gym.\n It highlights various offers, new features, and available equipment, while also providing a Body Mass Index (BMI) calculator and other practical features.\n With a user-friendly interface, visitors can explore the services offered by the gym, stay updated on the latest fitness trends, discover available facilities, and even assess their own health index.",
+      fr: "GymRat est un site vitrine dédié à une salle de sport fictive.\n Il met en avant les différentes offres, les nouveautés et les équipements disponibles, tout en proposant un calculateur de l'Indice de Masse Corporelle (IMC) et d'autres fonctionnalités pratiques.\n Grâce à une interface conviviale, les visiteurs peuvent explorer les services offerts par la salle, rester à jour sur les dernières tendances en matière de fitness, découvrir les installations disponibles et même évaluer leur propre indice de santé.",
+    },
+    github: "https://github.com/FlorianAutricque/exercise/tree/main/04%20Gym",
+    production: "https://moviesphere-flo.netlify.app/",
+    stack: ["All", "React", "CSS", "HTML", "JSX"],
+  },
+
+  {
+    projectId: 3,
     name: "Photo & Weather",
     mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
@@ -35,7 +51,7 @@ const projects = [
   },
 
   {
-    projectId: 3,
+    projectId: 4,
     name: "Space login",
     mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
@@ -53,7 +69,7 @@ const projects = [
   },
 
   {
-    projectId: 4,
+    projectId: 5,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -70,7 +86,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 5,
+    projectId: 6,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -85,7 +101,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 6,
+    projectId: 7,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -97,12 +113,12 @@ const projects = [
       fr: "Découvrez WorldWise : Votre Compagnon de Voyage Ultime (fictif).\n Explorez le suivi de voyage sans effort avec l'application WorldWise. Découvrez nos fonctionnalités pour enrichir vos aventures, nos produits et nos tarifs. Connectez-vous pour accéder à un compte dédié avec une carte interactive pour partager vos récits de voyage. Enregistrez vos voyages sur la carte avec des anecdotes personnelles. \nSuivi des Pays, Souvenirs Précieux : WorldWise compte les pays visités. Exploration de Villes : Découvrez les villes visitées avec dates, impressions et liens Wikipedia.",
     },
     github: "https://github.com/FlorianAutricque/worldwise",
-    production: "https://worldwise-flo.netlify.app/",
+    // production: "https://worldwise-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
 
   {
-    projectId: 7,
+    projectId: 8,
     name: "Weather App",
     mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
@@ -120,7 +136,7 @@ const projects = [
   },
 
   {
-    projectId: 8,
+    projectId: 9,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -132,11 +148,11 @@ const projects = [
       fr: "Présentation de usePopcorn : Votre passerelle vers une expérience cinématographique incroyable. \nAccédez aux évaluations IMDb, aux descriptions, à la distribution, et plus encore. \nNotez, suivez et gérez votre collection sans effort. Profitez d'une gestion élégante des erreurs et d'un chargement captivant pour les connexions plus lentes.",
     },
     github: "https://github.com/FlorianAutricque/usePopcorn",
-    production: "https://usepopcorn-flo.netlify.app/",
+    // production: "https://usepopcorn-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 9,
+    projectId: 10,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -149,11 +165,11 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/react_course_challenge/tree/main/15%20React%20pizza",
-    production: "https://react-pizza-flo.netlify.app/",
+    // production: "https://react-pizza-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 10,
+    projectId: 11,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -169,7 +185,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 11,
+    projectId: 12,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -182,11 +198,11 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/react_course_challenge/tree/main/05%20travel-list/src",
-    production: "https://far-away-flo.netlify.app/",
+    // production: "https://far-away-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -201,7 +217,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -216,7 +232,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -231,7 +247,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -247,7 +263,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -263,7 +279,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 17,
+    projectId: 18,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -279,7 +295,7 @@ const projects = [
   },
 
   {
-    projectId: 18,
+    projectId: 19,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -292,11 +308,11 @@ const projects = [
     },
     github:
       "https://github.com/FlorianAutricque/the-wild-oasis/tree/main/wild-oasis",
-    production: "https://wild-oasis-flo.netlify.app",
+    // production: "https://wild-oasis-flo.netlify.app",
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 19,
+    projectId: 20,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(
