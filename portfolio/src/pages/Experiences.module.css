@@ -1,35 +1,8 @@
-/* .containerExp {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 6rem;
-  margin: 0 10% 0 10%;
-} */
-
-/* @media (max-width: 450px) {
-  .containerExp {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0 10% 0 10%;
-  }
-} */
-
-.containerExp {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+.date {
+  color: var(--color-text);
+  font-weight: 400 !important;
 }
 
-.experienceWrapper {
-  /* position: relative; */
-}
-
-.timeline {
-  position: absolute;
-  height: 120%;
-  left: 50px; /* Adjust this value according to your layout */
-  top: 15rem;
-  bottom: 0;
-  width: 2px; /* Adjust the width of the line */
-  background-color: black; /* Color of the timeline */
+.description {
+  font-weight: 400 !important;
 }

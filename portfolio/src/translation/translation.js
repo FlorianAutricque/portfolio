@@ -32,7 +32,7 @@ i18n.use(initReactI18next).init({
           5: "Master's degree",
           6: "Retail worker | Student job",
           7: "Bachelor's degree",
-          8: "Fullstack web development, computer programming",
+          8: "Fullstack web development, computer programming Bootcamp",
           9: "React Course 2023: React, Redux, Tailwind CSS & More",
           10: "Javascript course",
           11: "NextJS",
@@ -62,26 +62,10 @@ i18n.use(initReactI18next).init({
         experienceExp: {
           1: "9 weeks intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.",
           2: "Pursuing personal goal of investment opportunities through CTO, PEA, LI. Additionally, I invested into real estate by implementing a buy, renovation, and re-sell strategy.",
-          3: {
-            1: "Led teams of 15 in Gunnedah and 30 in Woolooga.",
-            2: "Managed operations, quality, organization, and safety.",
-            3: "Enhanced production efficiency for better performance.",
-          },
-          4: {
-            1: "Assisted supervisors with a 15-member underground electric cable team, prioritizing team organization.",
-            2: "Ensured quality control for combiner boxes and power conditioning units (PCUs).",
-          },
-          5: {
-            1: "Managed a 15-member team, improving task organization and performance.",
-            2: "Ensured high-quality component construction.",
-            3: "Implemented workplace safety measures.",
-            4: "Conducted field assessments to verify module quality standards.",
-          },
-          6: {
-            1: "Led 30-person, workshop team.",
-            2: "Ensured rigorous quality control for production standards.",
-            3: "Strived to boost production efficiency and output.",
-          },
+          3: "Led teams of 15 in Gunnedah and 30 in Woolooga. Managed operations, quality, organization, and safety. Enhanced production efficiency for better performance.",
+          4: "Assisted supervisors with a 15 member underground electric cable team, prioritizing team organization. Ensured quality control for combiner boxes and power conditioning units (PCUs).",
+          5: "Managed a 15 member team, improving task organization and performance. Ensured high-quality component construction. Implemented workplace safety measures. Conducted field assessments to verify module quality standards.",
+          6: "Led 30 person, workshop team. Ensured rigorous quality control for production standards. Strived to boost production efficiency and output.",
           7: "Assembling components in the workshop area.",
           8: "Master Territorial Sustainable Development Policies.",
           9: {
@@ -98,7 +82,7 @@ i18n.use(initReactI18next).init({
             5: "Managing inventory and restocking notifications.",
           },
           12: "NextJS features like pre-rendering, SSR, data fetching, file-based routing and authentication",
-          13: "Self-employed, I work on various projects, either for clients or for my own projects",
+          13: "Self-employed, I work on various projects, either for clients or on my own projects",
         },
         localisationExp: {
           1: "Gunnedah and Woolooga solar plant (Australia)",
@@ -144,7 +128,7 @@ i18n.use(initReactI18next).init({
           5: "Master",
           6: "Employé de vente | Job étudiant",
           7: "License",
-          8: "Développement web Fullstack, programmation informatique",
+          8: "Bootcamp en développement web Fullstack, programmation informatique",
           9: "React 2023: React, Redux, Tailwind CSS & Plus",
           10: "Cours sur Javascript",
           12: "Développeur Web",
@@ -173,26 +157,10 @@ i18n.use(initReactI18next).init({
         experienceExp: {
           1: "Formation intensive de 9 semaines en bootcamp de codage, apprentissage de HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku et Ruby on Rails.",
           2: "Poursuite d'objectifs personnels : investissement à travers CTO, PEA et LI. De plus, j'ai investi dans l'immobilier en mettant en œuvre une stratégie d'achat, de rénovation et de revente.",
-          3: {
-            1: "Direction des équipes de 15 personnes à Gunnedah et de 30 à Woolooga.",
-            2: "Géré les opérations, la qualité, l'organisation et la sécurité de l'équipe.",
-            3: "Amélioré l'efficacité de la production pour des performances plus accrues.",
-          },
-          4: {
-            1: "Aidé les superviseurs en accompagnant une équipe de 15 membres, travaillant sur des câbles électriques souterrains, en priorisant l'organisation de l'équipe.",
-            2: "Assuré le contrôle de la qualité pour les boîtes de combinaison et les unités de conditionnement de puissance (PCU).",
-          },
-          5: {
-            1: "Direction d'une équipe de 15 membres, améliorant l'organisation des tâches et les performances.",
-            2: "Supervision de la construction des composants.",
-            3: "Mise en place des mesures de sécurité.",
-            4: "Réalisation d'évaluations sur le terrain pour vérifier la conformité aux normes de qualité des modules.",
-          },
-          6: {
-            1: "Direction d'une équipe de 30 personnes.",
-            2: "Veillé à un contrôle qualité rigoureux, conformément aux normes de production.",
-            3: "Amélioration de l'efficacité de la production.",
-          },
+          3: "Direction d'une équipe de 15 personnes à Gunnedah et de 30 à Woolooga. Gérer les opérations, la qualité, l'organisation et la sécurité de l'équipe. Amélioré l'efficacité de la production pour des performances plus accrues.",
+          4: "Aidé les superviseurs en accompagnant une équipe de 15 membres, travaillant sur des câbles électriques souterrains, en priorisant l'organisation de l'équipe. Assuré le contrôle de la qualité pour les boîtes de combinaison et les unités de conditionnement de puissance (PCU).",
+          5: "Direction d'une équipe de 15 membres, améliorant l'organisation des tâches et les performances. Supervision de la construction des composants. Mise en place des mesures de sécurité. Réalisation d'évaluations sur le terrain pour vérifier la conformité aux normes de qualité des modules.",
+          6: "Direction d'une équipe de 30 personnes. Veillé à un contrôle qualité rigoureux, conformément aux normes de production. Amélioration de l'efficacité de la production.",
           7: "Assemblage de composants dans la zone de l'atelier.",
           8: "Master gestion des territoires et développement local.",
           9: {
