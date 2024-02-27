@@ -145,7 +145,8 @@ function Experiences() {
                   }}
                   icon={isWorkIcon ? <BsPersonWorkspace /> : <TbSchool />}
                   contentStyle={{
-                    background: "rgba(73, 79, 83, 0.632)",
+                    background:
+                      "linear-gradient(to bottom right, #27292ba4, #454849b9",
                     color: "var(--color-text)",
                     boxShadow: "none",
                     border: "1px solid white",

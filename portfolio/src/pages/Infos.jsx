@@ -27,7 +27,15 @@ function Infos() {
           <br />
           {t("textInfos.1")}
           <br /> <br />
-          {t("textInfos.2")}
+          <p
+            className={styles.hyperlink}
+            dangerouslySetInnerHTML={{
+              __html: t("textInfos.2", {
+                LeWagon:
+                  '<a href="https://www.lewagon.com/fr" target="_blank">Le Wagon</a>',
+              }),
+            }}
+          />
         </p>
       </div>
       <div className={styles.containerFunFact}>

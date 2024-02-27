@@ -3,6 +3,8 @@ import { initReactI18next } from "react-i18next";
 
 const selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
 
+// const LeWagon = <a href="https://www.lewagon.com/fr">Le Wagon</a>;
+
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -91,8 +93,8 @@ i18n.use(initReactI18next).init({
         },
         locationInfos: "Location:",
         textInfos: {
-          1: "I am a team player, creative and passionate, highly organized, 'can-do'attitude, reliable. With a Bachelor's degree in territory development and environment, followed by a Master's degree in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects.",
-          2: "Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at Le Wagon in Montreal, focusing my expertise on Front-end development.",
+          1: "I am a team player, creative and passionate, highly organized, 'can-do'attitude, reliable. As a Junior Frontend Developer, I possess a strong skill set covering HTML, CSS, JavaScript, React, Tailwind, NextJS and SCSS. My focus is on crafting responsive websites that excel in user experience. I thrive in collaborative environments, seamlessly integrating with cross-functional teams to deliver outstanding web applications.",
+          2: "With a Bachelor's degree in territory development and environment, followed by a Master's degree in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects. Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at {{LeWagon}}</0>  in Montreal, focusing my expertise on Front-end development.",
         },
         funfacts: {
           1: "As an art enthusiast, drawing is, to me, an expression of my creativity. I like to think of coding the same way as drawing, just substituting a pen with letters and numbers.",
@@ -186,8 +188,8 @@ i18n.use(initReactI18next).init({
         },
         locationInfos: "Localisation :",
         textInfos: {
-          1: "Comment me décrire ? Créatif, passionné, hautement organisé, avec une attitude positive et fiable, j'apprécie le travail d'équipe. Je suis titulaire d'une licence en aménagement du territoire et environnement, suivie d'un master en développement durable. J'ai acquis une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de superviseur.",
-          2: "Motivé par le désir de changer de carrière, j'ai suivi une formation intensive en développement web Full Stack à Le Wagon Montréal, en me spécialisant dans le développement Front-End.",
+          1: "En tant que développeur frontend junior, je suis créatif et passionné, hautement organisé, avec une attitude positive et fiable. Je possède une solide expérience dans les langages HTML, CSS, JavaScript, React, Tailwind, NextJS et SCSS. Mon objectif principal est de créer des sites Web réactifs qui se distinguent par leur expérience utilisateur. Je prospère dans des environnements collaboratifs, m'intégrant parfaitement aux équipes interfonctionnelles pour offrir des applications Web exceptionnelles.",
+          2: `Avec une licence en aménagement du territoire et environnement, suivie d'un master en développement durable, j'ai accumulé une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de management supervisant des projets environnementaux. Motivé par le désir d'une transition de carrière, j'ai suivi une formation supplémentaire en développement web Full Stack à {{LeWagon}}</0>  à Montréal, en focalisant mon expertise sur le développement Front-end.`,
         },
         funfacts: {
           1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser la programmation de la même manière que le dessin, en remplaçant un stylo par des lettres et des chiffres.",
