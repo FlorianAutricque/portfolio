@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import PageNav from "../components/PageNav";
 import LanguagesBox from "../components/LanguagesBox";
+import ButtonScrollTop from "../components/ButtonScrollTop.jsx";
 
 import styles from "./Languages.module.css";
 
@@ -44,7 +45,7 @@ function Languages() {
       <div className={styles.container}>
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.lang").toUppercase()} </p>
+            <p>> {t("languages.lang").toUpperCase()} </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -74,7 +75,7 @@ function Languages() {
 
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.framework").toUppercae()} </p>
+            <p>> {t("languages.framework").toUpperCase()} </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -137,7 +138,7 @@ function Languages() {
 
         <div className={styles.containerSmall}>
           <div>
-            <p>>{t("languages.others").toUpperCase()}</p>
+            <p>> {t("languages.others").toUpperCase()}</p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -198,6 +199,8 @@ function Languages() {
             </div>
           </div>
         </div>
+
+        <ButtonScrollTop />
       </div>
     </>
   );

@@ -12,6 +12,7 @@
 .containerSmall p {
   margin-bottom: 1rem;
   font-size: larger;
+  color: #8e8885;
 }
 
 .organisationContainer {
@@ -34,6 +35,11 @@
 
 @media (max-width: 485px) {
   .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+  }
+  .organisationContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
