@@ -101,6 +101,12 @@ i18n.use(initReactI18next).init({
           2: "I've supervised 150+ individuals on Australian solar plant projects, highlighting the importance of teamwork to me.",
           3: "Sports hold a special place in my heart, with skiing being a true passion. During my younger years, I even competed as a semi-professional skier.",
         },
+        languages: {
+          lang: "My preferred languages",
+          framework: "My preferred frameworks",
+          libraries: "My preferred libraries",
+          others: "Others",
+        },
       },
     },
     fr: {
@@ -195,6 +201,12 @@ i18n.use(initReactI18next).init({
           1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser la programmation de la même manière que le dessin, en remplaçant un stylo par des lettres et des chiffres.",
           2: "J'ai supervisé plus de 150 personnes sur des projets de centrales solaires en Australie, le travail d'équipe est très important pour moi.",
           3: "Le sport occupe une place spéciale dans mon cœur, le ski étant une véritable passion. Plus jeunes, j'ai fais de la compétition en tant que skieur semi-professionnel.",
+        },
+        languages: {
+          lang: "Mes langages préférés",
+          framework: "Mes frameworks préférés",
+          libraries: "Mes librairies préférés",
+          others: "Autres",
         },
       },
     },
