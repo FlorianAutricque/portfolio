@@ -69,13 +69,13 @@ i18n.use(initReactI18next).init({
           5: "Managed a 15 member team, improving task organization and performance. Ensured high-quality component construction. Implemented workplace safety measures. Conducted field assessments to verify module quality standards.",
           6: "Led 30 person, workshop team. Ensured rigorous quality control for production standards. Strived to boost production efficiency and output.",
           7: "Assembling components in the workshop area.",
-          8: "Master Territorial Sustainable Development Policies.",
+          8: `<a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master</a> Territorial Sustainable Development Policies.`,
           9: {
             1: "Collaborated with colleagues for efficient store operations and customer satisfaction.",
             2: "Prepared accurate customer orders with attention to detail.",
             3: "Prioritized safety by following guidelines.",
           },
-          10: "Bachelor's degree, Territory development and environment.",
+          10: `<a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" > Bachelor's degree</a>, Territory development and environment.`,
           11: {
             1: "Problem-solving.",
             2: "Collaborating for store operations.",
@@ -94,7 +94,7 @@ i18n.use(initReactI18next).init({
         locationInfos: "Location:",
         textInfos: {
           1: "I am a team player, creative and passionate, highly organized, 'can-do'attitude, reliable. As a Junior Frontend Developer, I possess a strong skill set covering HTML, CSS, JavaScript, React, Tailwind, NextJS and SCSS. My focus is on crafting responsive websites that excel in user experience. I thrive in collaborative environments, seamlessly integrating with cross-functional teams to deliver outstanding web applications.",
-          2: "With a Bachelor's degree in territory development and environment, followed by a Master's degree in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects. Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at {{LeWagon}}</0>  in Montreal, focusing my expertise on Front-end development.",
+          2: `With a <a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" > Bachelor's degree</a> in territory development and environment, followed by a <a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master's degree </a> in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects. Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at {{LeWagon}}</0>  in Montreal, focusing my expertise on Front-end development.`,
         },
         funfacts: {
           1: "As an art enthusiast, drawing is, to me, an expression of my creativity. I like to think of coding the same way as drawing, just substituting a pen with letters and numbers.",
@@ -127,9 +127,9 @@ i18n.use(initReactI18next).init({
           2: "Superviseur",
           3: "Superviseur",
           4: "Ouvrier",
-          5: "Master",
+          5: "Diplome Master",
           6: "Employé de vente | Job étudiant",
-          7: "License",
+          7: "Diplome Licence",
           8: "Bootcamp en développement web Fullstack, programmation informatique",
           9: "React 2023: React, Redux, Tailwind CSS & Plus",
           10: "Cours sur Javascript",
@@ -164,13 +164,13 @@ i18n.use(initReactI18next).init({
           5: "Direction d'une équipe de 15 membres, améliorant l'organisation des tâches et les performances. Supervision de la construction des composants. Mise en place des mesures de sécurité. Réalisation d'évaluations sur le terrain pour vérifier la conformité aux normes de qualité des modules.",
           6: "Direction d'une équipe de 30 personnes. Veillé à un contrôle qualité rigoureux, conformément aux normes de production. Amélioration de l'efficacité de la production.",
           7: "Assemblage de composants dans la zone de l'atelier.",
-          8: "Master gestion des territoires et développement local.",
+          8: `<a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master</a> gestion des territoires et développement local.`,
           9: {
             1: "Collaboration avec mes collègues pour assurer le bon fonctionnement du magasin et la satisfaction des clients.",
             2: "Préparation des commandes, en portant une attention particulière aux détails.",
             3: "Prioritisation de la sécurité en suivant les directives.",
           },
-          10: "Diplôme de licence en développement territorial et environnement.",
+          10: `<a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" >Diplôme de licence</a> en développement territorial et environnement.`,
           11: {
             1: "Résolution de problèmes.",
             2: "Collaboration pour les opérations en magasin.",
@@ -189,7 +189,7 @@ i18n.use(initReactI18next).init({
         locationInfos: "Localisation :",
         textInfos: {
           1: "En tant que développeur frontend junior, je suis créatif et passionné, hautement organisé, avec une attitude positive et fiable. Je possède une solide expérience dans les langages HTML, CSS, JavaScript, React, Tailwind, NextJS et SCSS. Mon objectif principal est de créer des sites Web réactifs qui se distinguent par leur expérience utilisateur. Je prospère dans des environnements collaboratifs, m'intégrant parfaitement aux équipes interfonctionnelles pour offrir des applications Web exceptionnelles.",
-          2: `Avec une licence en aménagement du territoire et environnement, suivie d'un master en développement durable, j'ai accumulé une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de management supervisant des projets environnementaux. Motivé par le désir d'une transition de carrière, j'ai suivi une formation supplémentaire en développement web Full Stack à {{LeWagon}}</0>  à Montréal, en focalisant mon expertise sur le développement Front-end.`,
+          2: `Avec une <a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" >Licence</a> en aménagement du territoire et environnement, suivie d'un <a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master</a> en développement durable, j'ai accumulé une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de management supervisant des projets environnementaux. Motivé par le désir d'une transition de carrière, j'ai suivi une formation supplémentaire en développement web Full Stack à {{LeWagon}}</0>  à Montréal, en focalisant mon expertise sur le développement Front-end.`,
         },
         funfacts: {
           1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser la programmation de la même manière que le dessin, en remplaçant un stylo par des lettres et des chiffres.",

@@ -21,11 +21,15 @@ function Infos() {
           <ButtonInfos />
         </div>
 
-        <p>
+        <div>
           <CiLocationOn /> <u>{t("locationInfos")}</u> Montreal, Canada
           <br />
           <br />
-          {t("textInfos.1")}
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t("textInfos.1"),
+            }}
+          />
           <br /> <br />
           <p
             className={styles.hyperlink}
@@ -36,7 +40,7 @@ function Infos() {
               }),
             }}
           />
-        </p>
+        </div>
       </div>
       <div className={styles.containerFunFact}>
         <AllFunFacts />
