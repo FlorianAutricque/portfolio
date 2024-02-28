@@ -62,7 +62,7 @@ i18n.use(initReactI18next).init({
           2: "University Bordeaux Montaigne",
         },
         experienceExp: {
-          1: "9 weeks intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.",
+          1: `<a href="https://www.lewagon.com/fr" target="_blank" >9 weeks intensive coding bootcamp</a> learning HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.`,
           2: "Pursuing personal goal of investment opportunities through CTO, PEA, LI. Additionally, I invested into real estate by implementing a buy, renovation, and re-sell strategy.",
           3: "Led teams of 15 in Gunnedah and 30 in Woolooga. Managed operations, quality, organization, and safety. Enhanced production efficiency for better performance.",
           4: "Assisted supervisors with a 15 member underground electric cable team, prioritizing team organization. Ensured quality control for combiner boxes and power conditioning units (PCUs).",
@@ -83,7 +83,7 @@ i18n.use(initReactI18next).init({
             4: "Organizing products attractively.",
             5: "Managing inventory and restocking notifications.",
           },
-          12: "NextJS features like pre-rendering, SSR, data fetching, file-based routing and authentication",
+          12: `<a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/" target="_blank" > NextJS</a> features like pre-rendering, SSR, data fetching, file-based routing and authentication`,
           13: "Self-employed, I work on various projects, either for clients or on my own projects",
         },
         localisationExp: {
@@ -157,7 +157,7 @@ i18n.use(initReactI18next).init({
           2: "Université Bordeaux Montaigne",
         },
         experienceExp: {
-          1: "Formation intensive de 9 semaines en bootcamp de codage, apprentissage de HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku et Ruby on Rails.",
+          1: `<a href="https://www.lewagon.com/fr" target="_blank" >Formation intensive de 9 semaines</a> en bootcamp de codage, apprentissage de HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku et Ruby on Rails.`,
           2: "Poursuite d'objectifs personnels : investissement à travers CTO, PEA et LI. De plus, j'ai investi dans l'immobilier en mettant en œuvre une stratégie d'achat, de rénovation et de revente.",
           3: "Direction d'une équipe de 15 personnes à Gunnedah et de 30 à Woolooga. Gérer les opérations, la qualité, l'organisation et la sécurité de l'équipe. Amélioré l'efficacité de la production pour des performances plus accrues.",
           4: "Aidé les superviseurs en accompagnant une équipe de 15 membres, travaillant sur des câbles électriques souterrains, en priorisant l'organisation de l'équipe. Assuré le contrôle de la qualité pour les boîtes de combinaison et les unités de conditionnement de puissance (PCU).",
@@ -178,7 +178,7 @@ i18n.use(initReactI18next).init({
             4: "Organisation attractive des produits.",
             5: "Gestion des stocks et notifications de réapprovisionnement.",
           },
-          12: "Fonctionnalités de NextJS telles que le pré-rendu, le SSR (rendu côté serveur), la récupération de données, routing et l'authentification.",
+          12: `Fonctionnalités de <a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/" target="_blank" > NextJS</a> telles que le pré-rendu, le SSR (rendu côté serveur), la récupération de données, routing et l'authentification.`,
           13: "Travailleur indépendant, je travaille sur divers projets, que ce soit pour des clients ou pour mes propres projets.",
         },
         localisationExp: {

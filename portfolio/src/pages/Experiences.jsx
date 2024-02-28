@@ -39,7 +39,7 @@ function Experiences() {
       date: t("date.1"),
       title: t("expTitle.9"),
       location: "Udemy",
-      description: `React.js, Tailwind CSS, supabase, Redux.js, JavaScript eXtension (JSX),
+      description: `<a href="https://www.udemy.com/course/the-ultimate-react-course/" target="_blank" > React.js</a>, Tailwind CSS, supabase, Redux.js, JavaScript eXtension (JSX),
       CSS Modules, Styled Components, Context API, React Router.`,
       icon: "school",
     },
@@ -48,7 +48,7 @@ function Experiences() {
       date: t("date.2"),
       title: t("expTitle.10"),
       location: "Udemy",
-      description: `Modern OOP, Asynchronous JavaScript, NPM, Parcel, Babel and ES6
+      description: `<a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" > Javascript</a>; Modern OOP, Asynchronous JavaScript, NPM, Parcel, Babel and ES6
       modules.`,
       icon: "school",
     },
@@ -157,9 +157,11 @@ function Experiences() {
                   <p>
                     <em>{element.location}</em>
                   </p>
-                  <p id="description" className={styles.description}>
-                    {element.description}
-                  </p>
+                  <p
+                    id="description"
+                    className={styles.description}
+                    dangerouslySetInnerHTML={{ __html: element.description }}
+                  />
                 </VerticalTimelineElement>
               </>
             );

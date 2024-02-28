@@ -6,3 +6,13 @@
 .description {
   font-weight: 400 !important;
 }
+
+.description a {
+  color: #bebfb9;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.description a:hover {
+  text-decoration: underline;
+}
