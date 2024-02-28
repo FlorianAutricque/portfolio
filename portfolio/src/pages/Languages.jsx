@@ -45,7 +45,7 @@ function Languages() {
       <div className={styles.container}>
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.lang").toUpperCase()} </p>
+            <p>&gt; {t("languages.lang").toUpperCase()} </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -75,7 +75,7 @@ function Languages() {
 
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.framework").toUpperCase()} </p>
+            <p>&gt; {t("languages.framework").toUpperCase()} </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -120,7 +120,7 @@ function Languages() {
 
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.libraries").toUpperCase()}</p>
+            <p>&gt; {t("languages.libraries").toUpperCase()}</p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -138,7 +138,7 @@ function Languages() {
 
         <div className={styles.containerSmall}>
           <div>
-            <p>> {t("languages.others").toUpperCase()}</p>
+            <p>&gt; {t("languages.others").toUpperCase()}</p>
           </div>
 
           <div className={styles.organisationContainer}>
