@@ -62,10 +62,10 @@ i18n.use(initReactI18next).init({
           2: "University Bordeaux Montaigne",
         },
         experienceExp: {
-          1: `<a href="https://www.lewagon.com/fr" target="_blank" >9 weeks intensive coding bootcamp</a> learning HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku and Ruby on Rails.`,
+          1: `<a href="https://www.lewagon.com/fr" target="_blank" >9 weeks intensive coding bootcamp</a> learning HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku, Stimulus and Ruby on Rails.`,
           2: "Pursuing personal goal of investment opportunities through CTO, PEA, LI. Additionally, I invested into real estate by implementing a buy, renovation, and re-sell strategy.",
           3: "Led teams of 15 in Gunnedah and 30 in Woolooga. Managed operations, quality, organization, and safety. Enhanced production efficiency for better performance.",
-          4: "Assisted supervisors with a 15 member underground electric cable team, prioritizing team organization. Ensured quality control for combiner boxes and power conditioning units (PCUs).",
+          4: "Management of a 15 member underground electric cable team, prioritizing team organization. Ensured quality control for combiner boxes and power conditioning units (PCUs).",
           5: "Managed a 15 member team, improving task organization and performance. Ensured high-quality component construction. Implemented workplace safety measures. Conducted field assessments to verify module quality standards.",
           6: "Led 30 person, workshop team. Ensured rigorous quality control for production standards. Strived to boost production efficiency and output.",
           7: "Assembling components in the workshop area.",
@@ -84,7 +84,7 @@ i18n.use(initReactI18next).init({
             5: "Managing inventory and restocking notifications.",
           },
           12: `<a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/" target="_blank" > NextJS</a> features like pre-rendering, SSR, data fetching, file-based routing and authentication`,
-          13: "Self-employed, I work on various projects, either for clients or on my own projects",
+          13: "Working on freelance contracts for clients (Medical home, small businesses), using ReactJS and Nuxt, Developed an application to help users find movies, using React",
         },
         localisationExp: {
           1: "Gunnedah and Woolooga solar plant (Australia)",
@@ -93,7 +93,7 @@ i18n.use(initReactI18next).init({
         },
         locationInfos: "Location:",
         textInfos: {
-          1: "I am a team player, creative and passionate, highly organized, 'can-do'attitude, reliable. As a Junior Frontend Developer, I possess a strong skill set covering HTML, CSS, JavaScript, React, Tailwind, NextJS and SCSS. My focus is on crafting responsive websites that excel in user experience. I thrive in collaborative environments, seamlessly integrating with cross-functional teams to deliver outstanding web applications.",
+          1: "As a Frontend Developer, I possess a strong skill set covering HTML, CSS, JavaScript, React, Tailwind, NextJS and SCSS. My focus is on crafting responsive websites that excel in user experience. I thrive in collaborative environments, seamlessly integrating with cross-functional teams to deliver outstanding web applications.",
           2: `With a <a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" > Bachelor's degree</a> in territory development and environment, followed by a <a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master's degree </a> in sustainable development, I have amassed valuable experience in the solar industry, where I successfully held management positions overseeing environmental projects. Motivated by a desire for career transition, I pursued further education in Full Stack Web Development at {{LeWagon}}</0>  in Montreal, focusing my expertise on Front-end development.`,
         },
         funfacts: {
@@ -163,10 +163,10 @@ i18n.use(initReactI18next).init({
           2: "Université Bordeaux Montaigne",
         },
         experienceExp: {
-          1: `<a href="https://www.lewagon.com/fr" target="_blank" >Formation intensive de 9 semaines</a> en bootcamp de codage, apprentissage de HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku et Ruby on Rails.`,
+          1: `<a href="https://www.lewagon.com/fr" target="_blank" >Formation intensive de 9 semaines</a> en bootcamp de codage, apprentissage de HTML, CSS, Bootstrap, JavaScript, Figma, Trello, SQL, git, GitHub, Heroku, Stimulus et Ruby on Rails.`,
           2: "Poursuite d'objectifs personnels : investissement à travers CTO, PEA et LI. De plus, j'ai investi dans l'immobilier en mettant en œuvre une stratégie d'achat, de rénovation et de revente.",
-          3: "Direction d'une équipe de 15 personnes à Gunnedah et de 30 à Woolooga. Gérer les opérations, la qualité, l'organisation et la sécurité de l'équipe. Amélioré l'efficacité de la production pour des performances plus accrues.",
-          4: "Aidé les superviseurs en accompagnant une équipe de 15 membres, travaillant sur des câbles électriques souterrains, en priorisant l'organisation de l'équipe. Assuré le contrôle de la qualité pour les boîtes de combinaison et les unités de conditionnement de puissance (PCU).",
+          3: "Direction d'une équipe de 15 personnes à Gunnedah et de 30 à Woolooga. Gestion des opérations, de la qualité, de l'organisation et de la sécurité de l'équipe. Amélioration de l'efficacité de la production pour des performances accrues",
+          4: "Supervision d'une équipe de 15 membres travaillant sur des câbles électriques souterrains, en mettant l'accent sur l'organisation de l'équipe. Garantie du contrôle qualité pour les boîtes de combinaison et les unités de conditionnement de puissance (PCU).",
           5: "Direction d'une équipe de 15 membres, améliorant l'organisation des tâches et les performances. Supervision de la construction des composants. Mise en place des mesures de sécurité. Réalisation d'évaluations sur le terrain pour vérifier la conformité aux normes de qualité des modules.",
           6: "Direction d'une équipe de 30 personnes. Veillé à un contrôle qualité rigoureux, conformément aux normes de production. Amélioration de l'efficacité de la production.",
           7: "Assemblage de composants dans la zone de l'atelier.",
@@ -185,7 +185,7 @@ i18n.use(initReactI18next).init({
             5: "Gestion des stocks et notifications de réapprovisionnement.",
           },
           12: `Fonctionnalités de <a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/" target="_blank" > NextJS</a> telles que le pré-rendu, le SSR (rendu côté serveur), la récupération de données, routing et l'authentification.`,
-          13: "Travailleur indépendant, je travaille sur divers projets, que ce soit pour des clients ou pour mes propres projets.",
+          13: "Travaillant sur des contrats de freelance pour des clients (maisons médicales, petites entreprises), utilisant ReactJS et Nuxt, j'ai aussi développé une application pour aider les utilisateurs à trouver des films, en utilisant React",
         },
         localisationExp: {
           1: "Centrale solaire de Gunnedah et de Woolooga (Australie)",
@@ -194,8 +194,8 @@ i18n.use(initReactI18next).init({
         },
         locationInfos: "Localisation :",
         textInfos: {
-          1: "En tant que développeur frontend junior, je suis créatif et passionné, hautement organisé, avec une attitude positive et fiable. Je possède une solide expérience dans les langages HTML, CSS, JavaScript, React, Tailwind, NextJS et SCSS. Mon objectif principal est de créer des sites Web réactifs qui se distinguent par leur expérience utilisateur. Je prospère dans des environnements collaboratifs, m'intégrant parfaitement aux équipes interfonctionnelles pour offrir des applications Web exceptionnelles.",
-          2: `Avec une <a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" >Licence</a> en aménagement du territoire et environnement, suivie d'un <a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master</a> en développement durable, j'ai accumulé une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de management supervisant des projets environnementaux. Motivé par le désir d'une transition de carrière, j'ai suivi une formation supplémentaire en développement web Full Stack à {{LeWagon}}</0>  à Montréal, en focalisant mon expertise sur le développement Front-end.`,
+          1: "En tant que développeur frontend, je suis créatif et passionné, hautement organisé, avec une attitude positive et fiable. Je possède une solide expérience dans les langages HTML, CSS, JavaScript, React, Tailwind, Next.js et SCSS. Mon objectif principal est de créer des sites Web réactifs qui se distinguent par leur expérience utilisateur. Je prospère dans des environnements collaboratifs, m'intégrant parfaitement en équipe pour offrir des applications Web exceptionnelles.",
+          2: `Avec une <a href="https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-geographie-et-amenagement-KQMCIPBB.html" target="_blank" >Licence</a> en aménagement du territoire et environnement, suivie d'un <a href="https://www.univ-lemans.fr/fr/formation/catalogue-des-formations/master-lmd-MLMD/sciences-humaines-et-sociales-0001/master-gestion-des-territoires-et-developpement-local-formation-a-distance-IXRITAMU/parcours-politiques-territoriales-de-developpement-durable-politer-master-gestion-des-territoires-et-developpement-local-formation-a-distance-KFCC722V.html" target="_blank" > Master</a> en développement durable, j'ai accumulé une expérience précieuse dans l'industrie solaire, où j'ai occupé avec succès des postes de management supervisant divers projets environnementaux. Motivé par le désir d'une transition de carrière, j'ai suivi une formation en développement web Full Stack à {{LeWagon}}</0>  à Montréal, en focalisant mon expertise sur le développement Front-end.`,
         },
         funfacts: {
           1: "En tant qu'amateur d'art, le dessin est, pour moi, une expression de ma créativité. J'aime penser la programmation de la même manière que le dessin, en remplaçant un stylo par des lettres et des chiffres.",
