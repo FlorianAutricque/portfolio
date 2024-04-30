@@ -1,33 +1,37 @@
 import { useTranslation } from "react-i18next";
 
-import Flag from "react-world-flags";
-
 import styles from "./BtnTranslation.module.css";
+import { useState } from "react";
 
-function LanguageSelector({ onCloseDropdown }) {
+function LanguageSelector() {
   const { i18n } = useTranslation();
+
+  const [active, setActive] = useState(
+    localStorage.getItem("selectedLanguage") || "en"
+  );
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
     localStorage.setItem("selectedLanguage", lng);
-
-    onCloseDropdown();
+    setActive(lng);
   };
 
   return (
     <div className={styles.containerBtnTranslation}>
       <button
-        className={styles.btnTranslation}
+        className={`${styles.btnTranslation} ${
+          active === "en" ? styles.active : ""
+        }`}
         onClick={() => changeLanguage("en")}
       >
-        <Flag code="gb" height="25" width="40" />
         <p>EN</p>
       </button>
       <button
-        className={styles.btnTranslation}
+        className={`${styles.btnTranslation} ${
+          active === "fr" ? styles.active : ""
+        }`}
         onClick={() => changeLanguage("fr")}
       >
-        <Flag code="fr" height="25" width="40" />
         <p>FR</p>
       </button>
     </div>

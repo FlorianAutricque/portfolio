@@ -6,6 +6,8 @@ import styles from "./PageNav.module.css";
 
 import Logo from "./Logo";
 
+import BtnTranslation from "../translation/BtnTranslation.jsx";
+
 function PageNav() {
   const [isActive, setIsActive] = useState(false);
 
@@ -40,6 +42,7 @@ function PageNav() {
         </div>
 
         <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
+          <BtnTranslation />
           <li onClick={removeActive}>
             <NavLink
               to="/infos"
