@@ -79,7 +79,7 @@ function Experiences() {
     {
       id: 8,
       date: t("date.6"),
-      title: "Team Leader",
+      title: t("expTitle.2"),
       location: [t("localisationExp.2"), " - All Energy Contracting"],
       description: t("experienceExp.4"),
       icon: "work",
@@ -102,6 +102,14 @@ function Experiences() {
     },
     {
       id: 11,
+      date: t("date.9"),
+      title: t("expTitle.4"),
+      location: [t("localisationExp.3"), " - Bamford Engineering & Consulting"],
+      description: t("experienceExp.7"),
+      icon: "work",
+    },
+    {
+      id: 12,
       date: t("date.10"),
       title: t("expTitle.5"),
       location: t("locationExp.1"),
@@ -109,7 +117,7 @@ function Experiences() {
       icon: "school",
     },
     {
-      id: 12,
+      id: 13,
       date: t("date.12"),
       title: t("expTitle.7"),
       location: t("locationExp.2"),
