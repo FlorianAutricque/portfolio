@@ -36,6 +36,118 @@ import { SiNuxtdotjs } from "react-icons/si";
 function Languages() {
   const { t } = useTranslation();
 
+  const languages = [
+    {
+      icon: <BiLogoJavascript size={80} />,
+      text: "Javascript",
+    },
+    {
+      icon: <AiFillHtml5 size={80} />,
+      text: "HTML",
+    },
+    {
+      icon: <BiLogoCss3 size={80} />,
+      text: "CSS",
+    },
+    {
+      icon: <DiSass size={80} />,
+      text: "Sass",
+    },
+    {
+      icon: <DiRuby size={80} />,
+      text: "Ruby",
+    },
+  ];
+
+  const frameworks = [
+    {
+      icon: <TbBrandNextjs size={80} />,
+      text: "NextJS",
+    },
+    {
+      icon: <SiTailwindcss size={80} />,
+      text: "Tailwindcss",
+    },
+    {
+      icon: <FaBootstrap size={80} />,
+      text: "Bootstrap",
+    },
+    {
+      icon: <SiStimulus size={80} />,
+      text: "Stimulus",
+    },
+    {
+      icon: <SiRubyonrails size={80} />,
+      text: "Rails",
+    },
+    {
+      icon: <SiVuedotjs size={80} />,
+      text: "Vue",
+    },
+    {
+      icon: <SiNuxtdotjs size={80} />,
+      text: "Nuxt",
+    },
+  ];
+
+  const librairies = [
+    {
+      icon: <FaReact size={80} />,
+      text: "React",
+    },
+    {
+      icon: <SiStyledcomponents size={80} />,
+      text: "Styled Comp.",
+    },
+  ];
+
+  const others = [
+    {
+      icon: <SiVite size={80} />,
+      text: "Vite",
+    },
+    {
+      icon: <PiFileJsxDuotone size={80} />,
+      text: "JSX",
+    },
+    {
+      icon: <SiMysql size={80} />,
+      text: "MySQL",
+    },
+    {
+      icon: <BiLogoPostgresql size={80} />,
+      text: "SQL",
+    },
+    {
+      icon: <SiSqlite size={80} />,
+      text: "SQLite",
+    },
+    {
+      icon: <BiLogoFigma size={80} />,
+      text: "Figma",
+    },
+    {
+      icon: <BsGit size={80} />,
+      text: "Git",
+    },
+    {
+      icon: <DiHeroku size={80} />,
+      text: "Heroku",
+    },
+    {
+      icon: <BiLogoMongodb size={80} />,
+      text: "MongoDB",
+    },
+    {
+      icon: <SiWebpack size={80} />,
+      text: "Webpack",
+    },
+    {
+      icon: <RiSupabaseFill size={80} />,
+      text: "Supabase",
+    },
+  ];
+
   return (
     <>
       <PageNav />
@@ -44,34 +156,27 @@ function Languages() {
 
       <div className={styles.container}>
         <div className={styles.containerSmall}>
+          {/* languages */}
           <div>
             <p>&gt; {t("languages.lang").toUpperCase()} </p>
           </div>
 
           <div className={styles.organisationContainer}>
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BiLogoJavascript size={80} />}>
-                Javascript
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<AiFillHtml5 size={80} />}>HTML</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BiLogoCss3 size={80} />}>CSS</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<DiSass size={80} />}>Sass</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<DiRuby size={80} />}>Ruby</LanguagesBox>
-            </div>
+            {languages.map((language, index) => (
+              <div
+                key={index}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+              >
+                <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                  {language.icon}
+                  <span className={styles.text}>{language.text}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
+        {/* frameworks */}
 
         <div className={styles.containerSmall}>
           <div>
@@ -79,44 +184,21 @@ function Languages() {
           </div>
 
           <div className={styles.organisationContainer}>
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<TbBrandNextjs size={80} />}>
-                NextJS
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiTailwindcss size={80} />}>
-                Tailwindcss
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<FaBootstrap size={80} />}>
-                Bootstrap
-              </LanguagesBox>
-            </div>
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiStimulus size={80} />}>
-                Stimulus
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiRubyonrails size={80} />}>
-                Rails
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiVuedotjs size={80} />}>Vue</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiNuxtdotjs size={80} />}>Nuxt</LanguagesBox>
-            </div>
+            {frameworks.map((framework, index) => (
+              <div
+                key={index}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+              >
+                <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                  {framework.icon}
+                  <span className={styles.text}>{framework.text}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
+        {/* librairies */}
 
         <div className={styles.containerSmall}>
           <div>
@@ -124,79 +206,38 @@ function Languages() {
           </div>
 
           <div className={styles.organisationContainer}>
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<FaReact size={80} />}>React</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiStyledcomponents size={80} />}>
-                Styled Comp.
-              </LanguagesBox>
-            </div>
+            {librairies.map((library, index) => (
+              <div
+                key={index}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+              >
+                <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                  {library.icon}
+                  <span className={styles.text}>{library.text}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
+        {/* others */}
         <div className={styles.containerSmall}>
           <div>
             <p>&gt; {t("languages.others").toUpperCase()}</p>
           </div>
 
           <div className={styles.organisationContainer}>
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiVite size={80} />}>Vite</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<PiFileJsxDuotone size={80} />}>
-                JSX
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiMysql size={80} />}>MySQL</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BiLogoPostgresql size={80} />}>
-                SQL
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiSqlite size={80} />}>SQLite</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BiLogoFigma size={80} />}>
-                Figma
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BsGit size={80} />}>Git</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<DiHeroku size={80} />}>Heroku</LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<BiLogoMongodb size={80} />}>
-                MongoDB
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<SiWebpack size={80} />}>
-                Webpack
-              </LanguagesBox>
-            </div>
-
-            <div className={styles.containerEachBox}>
-              <LanguagesBox icon={<RiSupabaseFill size={80} />}>
-                Supabase
-              </LanguagesBox>
-            </div>
+            {others.map((other, index) => (
+              <div
+                key={index}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+              >
+                <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                  {other.icon}
+                  <span className={styles.text}>{other.text}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 

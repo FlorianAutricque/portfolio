@@ -109,7 +109,8 @@ function Infos() {
             <div className={`${styles.boxOutside} ${styles.mediumLarge}`}>
               {fact.icon}
               <h3>{fact.title}</h3>
-              <p className={styles.text}>{fact.text}</p>
+
+              <p className={`${styles.text} `}>{fact.text}</p>
             </div>
           </div>
         ))}
