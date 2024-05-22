@@ -79,8 +79,20 @@
 }
 
 .text {
-  display: none;
-  /* opacity: 0; */
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.3s !important;
+
+  font-size: 0px;
+}
+
+.reveal:hover .text {
+  opacity: 1;
+  visibility: visible;
+  color: var(--color-text);
+  transition: ease-in-out 0.3s !important;
+
+  font-size: 16px;
 }
 
 .containerEachBox:hover .text {

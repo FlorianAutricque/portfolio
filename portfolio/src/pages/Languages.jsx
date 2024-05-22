@@ -207,7 +207,7 @@ function Languages() {
             {languages.map((language, index) => (
               <div
                 key={index}
-                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
               >
                 <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
                   {language.icon}
@@ -231,7 +231,7 @@ function Languages() {
             {frameworks.map((framework, index) => (
               <div
                 key={index}
-                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
               >
                 <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
                   {framework.icon}
@@ -255,7 +255,7 @@ function Languages() {
             {librairies.map((library, index) => (
               <div
                 key={index}
-                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
               >
                 <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
                   {library.icon}
@@ -278,7 +278,7 @@ function Languages() {
             {others.map((other, index) => (
               <div
                 key={index}
-                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact}`}
+                className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
               >
                 <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
                   {other.icon}
