@@ -10,146 +10,49 @@ import { RiSupabaseFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
 import styles from "./StackProject.module.css";
-import styles2 from "../pages/Languages.module.css";
+
+const stackMapping = {
+  CSS: { icon: BiLogoCss3, label: "CSS" },
+  HTML: { icon: AiFillHtml5, label: "HTML" },
+  React: { icon: FaReact, label: "React" },
+  NextJS: { icon: TbBrandNextjs, label: "NextJS" },
+  Javascript: { icon: BiLogoJavascript, label: "Javascript" },
+  Stimulus: { icon: SiStimulus, label: "Stimulus" },
+  "Ruby on rails": { icon: SiRubyonrails, label: "Rails" },
+  Bootstrap: { icon: FaBootstrap, label: "Bootstrap" },
+  Tailwind: { icon: SiTailwindcss, label: "Tailwindcss" },
+  JSX: { icon: PiFileJsxDuotone, label: "JSX" },
+  Supabase: { icon: RiSupabaseFill, label: "Supabase" },
+};
 
 function StackProject() {
   const location = useLocation();
-
   const project = location.state ? location.state.projectData : null;
-
   const { t } = useTranslation();
+
+  if (!project) return null;
 
   return (
     <div className={styles.stackGithub}>
       <h3 className={styles.StackUsedText}>{t("stackUsed")}</h3>
-
       <div className={styles.StackProjectGrid}>
-        {project.stack.slice(1).map((x, index) => (
-          <div key={index} className={styles.StackProject}>
-            {x === "CSS" ? (
-              <div className={styles2.containerEachBox}>
+        {project.stack.slice(1).map((tech, index) => {
+          const { icon: Icon, label } = stackMapping[tech] || {};
+          return (
+            Icon && (
+              <div key={index} className={styles.containerEachBox}>
                 <div
                   className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
                 >
                   <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<BiLogoCss3 size={80} />}
-                    <span className={styles.text}>CSS</span>
+                    <Icon size={80} />
+                    <span className={styles.text}>{label}</span>
                   </div>
                 </div>
               </div>
-            ) : x === "HTML" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<AiFillHtml5 size={80} />}
-                    <span className={styles.text}>HTML</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "React" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<FaReact size={80} />}
-                    <span className={styles.text}>React</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "NextJS" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<TbBrandNextjs size={80} />}
-                    <span className={styles.text}>NextJS</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Javascript" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<BiLogoJavascript size={80} />}
-                    <span className={styles.text}>Javascript</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Stimulus" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<SiStimulus size={80} />}
-                    <span className={styles.text}>Stimulus</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Ruby on rails" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<SiRubyonrails size={80} />}
-                    <span className={styles.text}>Rails</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Bootstrap" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<FaBootstrap size={80} />}
-                    <span className={styles.text}>Bootstrap</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Tailwind" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<SiTailwindcss size={80} />}
-                    <span className={styles.text}>Tailwindcss</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "JSX" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<PiFileJsxDuotone size={80} />}
-                    <span className={styles.text}>JSX</span>
-                  </div>
-                </div>
-              </div>
-            ) : x === "Supabase" ? (
-              <div className={styles2.containerEachBox}>
-                <div
-                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
-                >
-                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
-                    {<RiSupabaseFill size={80} />}
-                    <span className={styles.text}>Supabase</span>
-                  </div>
-                </div>
-              </div>
-            ) : null}
-          </div>
-        ))}
+            )
+          );
+        })}
       </div>
     </div>
   );
