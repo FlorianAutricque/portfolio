@@ -38,10 +38,7 @@ function ButtonScrollTop() {
     <div className={styles.buttonScrollTop}>
       {isVisible && (
         <Link onClick={scrollToTop} className={styles2.button}>
-          <span className={styles.textLink}>
-            {" "}
-            <BsBoxArrowInUp /> {t("buttonBackToTop")}
-          </span>
+          <span className={styles.textLink}> {t("buttonBackToTop")}</span>
         </Link>
       )}
     </div>

@@ -38,7 +38,7 @@ function Project() {
 
       <div className={styles.goBack}>
         <Link to="/projects" className={styles2.button} onClick={scrollToTop}>
-          &larr; {t("buttonGoBack")}
+          {t("buttonGoBack")}
         </Link>
       </div>
     </>

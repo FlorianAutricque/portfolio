@@ -1,13 +1,9 @@
 import { useTranslation } from "react-i18next";
-
 import { CiLocationOn } from "react-icons/ci";
-
 import PageNav from "../components/PageNav";
 import styles from "./Infos.module.css";
 import ButtonInfos from "../components/ButtonInfos";
-
 import { useEffect } from "react";
-
 import { GiPencilBrush } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaSkiing } from "react-icons/fa";
@@ -37,9 +33,9 @@ function Infos() {
     const elementsToObserve = [
       document.querySelector(`.${styles.containerTextOne}`),
       document.querySelector(`.${styles.hyperlink}`),
-      document.querySelector(`.${styles.boxFunFact}:nth-child(1) `),
-      document.querySelector(`.${styles.boxFunFact}:nth-child(2) `),
-      document.querySelector(`.${styles.boxFunFact}:nth-child(3) `),
+      document.querySelector(`.${styles.boxFunFact}:nth-child(1)`),
+      document.querySelector(`.${styles.boxFunFact}:nth-child(2)`),
+      document.querySelector(`.${styles.boxFunFact}:nth-child(3)`),
     ];
 
     const options = {
@@ -49,10 +45,12 @@ function Infos() {
     };
 
     const observerCallback = (entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.show);
-          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add(styles.show);
+            observer.unobserve(entry.target);
+          }, index * 200);
         }
       });
     };
