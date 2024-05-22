@@ -24,6 +24,60 @@
   text-align: center;
 }
 
+.boxFunFact {
+  text-align: center;
+  border: solid 2px var(--color-box-1);
+  padding: 1rem;
+}
+
+.boxFunFact:hover {
+  border-color: var(--color-box-2);
+  transition: 0.3s;
+}
+
+.boxOutside {
+  background-image: linear-gradient(to bottom right, #27292ba4, #454849b9);
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+.small {
+  width: 130px;
+  height: 130px;
+}
+
+.smallMedium {
+  height: 95px;
+}
+
+.text {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.3s !important;
+
+  font-size: 0px;
+}
+
+.reveal:hover .text {
+  opacity: 1;
+  visibility: visible;
+  color: var(--color-text);
+  transition: ease-in-out 0.3s !important;
+
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .boxFunFact {
+    height: 50%;
+    width: 85%;
+  }
+}
+
 @media (min-width: 1000px) {
   .StackProjectGrid {
     display: grid !important;

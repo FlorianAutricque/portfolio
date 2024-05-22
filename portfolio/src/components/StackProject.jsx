@@ -12,8 +12,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import styles from "./StackProject.module.css";
 import styles2 from "../pages/Languages.module.css";
 
-import LanguagesBox from "./LanguagesBox.jsx";
-
 function StackProject() {
   const location = useLocation();
 
@@ -30,65 +28,124 @@ function StackProject() {
           <div key={index} className={styles.StackProject}>
             {x === "CSS" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<BiLogoCss3 size={80} />}>CSS</LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<BiLogoCss3 size={80} />}
+                    <span className={styles.text}>CSS</span>
+                  </div>
+                </div>
               </div>
             ) : x === "HTML" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<AiFillHtml5 size={80} />}>
-                  HTML
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<AiFillHtml5 size={80} />}
+                    <span className={styles.text}>HTML</span>
+                  </div>
+                </div>
               </div>
             ) : x === "React" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<FaReact size={80} />}>React</LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<FaReact size={80} />}
+                    <span className={styles.text}>React</span>
+                  </div>
+                </div>
               </div>
             ) : x === "NextJS" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<TbBrandNextjs size={80} />}>
-                  NextJS
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<TbBrandNextjs size={80} />}
+                    <span className={styles.text}>NextJS</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Javascript" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<BiLogoJavascript size={80} />}>
-                  Javascript
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<BiLogoJavascript size={80} />}
+                    <span className={styles.text}>Javascript</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Stimulus" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<SiStimulus size={80} />}>
-                  Stimulus
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<SiStimulus size={80} />}
+                    <span className={styles.text}>Stimulus</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Ruby on rails" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<SiRubyonrails size={80} />}>
-                  Rails
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<SiRubyonrails size={80} />}
+                    <span className={styles.text}>Rails</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Bootstrap" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<FaBootstrap size={80} />}>
-                  Bootstrap
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<FaBootstrap size={80} />}
+                    <span className={styles.text}>Bootstrap</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Tailwind" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<SiTailwindcss size={80} />}>
-                  Tailwindcss
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<SiTailwindcss size={80} />}
+                    <span className={styles.text}>Tailwindcss</span>
+                  </div>
+                </div>
               </div>
             ) : x === "JSX" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<PiFileJsxDuotone size={80} />}>
-                  JSX
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<PiFileJsxDuotone size={80} />}
+                    <span className={styles.text}>JSX</span>
+                  </div>
+                </div>
               </div>
             ) : x === "Supabase" ? (
               <div className={styles2.containerEachBox}>
-                <LanguagesBox icon={<RiSupabaseFill size={80} />}>
-                  Supabase
-                </LanguagesBox>
+                <div
+                  className={`${styles.containerEachBox} ${styles.small} ${styles.boxFunFact} ${styles.reveal}`}
+                >
+                  <div className={`${styles.boxOutside} ${styles.smallMedium}`}>
+                    {<RiSupabaseFill size={80} />}
+                    <span className={styles.text}>Supabase</span>
+                  </div>
+                </div>
               </div>
             ) : null}
           </div>
