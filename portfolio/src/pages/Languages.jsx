@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import PageNav from "../components/PageNav";
-import LanguagesBox from "../components/LanguagesBox";
+
 import ButtonScrollTop from "../components/ButtonScrollTop.jsx";
 
 import styles from "./Languages.module.css";
@@ -32,6 +32,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiVite } from "react-icons/si";
 import { SiVuedotjs } from "react-icons/si";
 import { SiNuxtdotjs } from "react-icons/si";
+import { useEffect } from "react";
 
 function Languages() {
   const { t } = useTranslation();
@@ -148,6 +149,44 @@ function Languages() {
     },
   ];
 
+  useEffect(() => {
+    const elementsToObserve = [
+      document.querySelector(`.${styles.containerLanguages}`),
+      document.querySelector(`.${styles.containerFrameworks}`),
+      document.querySelector(`.${styles.containerLibrairies}`),
+      document.querySelector(`.${styles.containerOthers}`),
+      document.querySelector(`.${styles.titleLanguages}`),
+      ...document.querySelectorAll(`.${styles.boxFunFact}`),
+    ];
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add(styles.show);
+            observer.unobserve(entry.target);
+          }, index * 200);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+
+    elementsToObserve.forEach(element => {
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
       <PageNav />
@@ -155,10 +194,13 @@ function Languages() {
       <h1>{t("LanguagesTitle")}</h1>
 
       <div className={styles.container}>
-        <div className={styles.containerSmall}>
-          {/* languages */}
+        {/* languages */}
+
+        <div className={styles.containerLanguages}>
           <div>
-            <p>&gt; {t("languages.lang").toUpperCase()} </p>
+            <p className={styles.titleLanguages}>
+              &gt; {t("languages.lang").toUpperCase()}{" "}
+            </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -178,9 +220,11 @@ function Languages() {
 
         {/* frameworks */}
 
-        <div className={styles.containerSmall}>
+        <div className={styles.containerFrameworks}>
           <div>
-            <p>&gt; {t("languages.framework").toUpperCase()} </p>
+            <p className={styles.titleLanguages}>
+              &gt; {t("languages.framework").toUpperCase()}{" "}
+            </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -200,9 +244,11 @@ function Languages() {
 
         {/* librairies */}
 
-        <div className={styles.containerSmall}>
+        <div className={styles.containerLibrairies}>
           <div>
-            <p>&gt; {t("languages.libraries").toUpperCase()}</p>
+            <p className={styles.titleLanguages}>
+              &gt; {t("languages.libraries").toUpperCase()}
+            </p>
           </div>
 
           <div className={styles.organisationContainer}>
@@ -221,9 +267,11 @@ function Languages() {
         </div>
 
         {/* others */}
-        <div className={styles.containerSmall}>
+        <div className={styles.containerOthers}>
           <div>
-            <p>&gt; {t("languages.others").toUpperCase()}</p>
+            <p className={styles.titleLanguages}>
+              &gt; {t("languages.others").toUpperCase()}
+            </p>
           </div>
 
           <div className={styles.organisationContainer}>

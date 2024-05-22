@@ -9,10 +9,10 @@ import { PiFileJsxDuotone } from "react-icons/pi";
 import { RiSupabaseFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
-import LanguagesBox from "./LanguagesBox";
-
 import styles from "./StackProject.module.css";
 import styles2 from "../pages/Languages.module.css";
+
+import LanguagesBox from "./LanguagesBox.jsx";
 
 function StackProject() {
   const location = useLocation();
