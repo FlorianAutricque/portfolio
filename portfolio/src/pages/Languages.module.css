@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+
   flex-wrap: wrap;
   gap: 2rem;
   padding-left: 5rem;
@@ -44,6 +45,13 @@
   .containerLanguages .boxFunFact {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .containerLanguages,
+  .containerFrameworks,
+  .containerLibrairies,
+  .containerOthers {
+    width: auto;
   }
 }
 
@@ -128,7 +136,7 @@
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    align-items: center;
+    align-items: center !important;
   }
   .organisationContainer {
     display: grid;
