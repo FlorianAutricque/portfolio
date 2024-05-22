@@ -8,6 +8,8 @@ import { GiPencilBrush } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaSkiing } from "react-icons/fa";
 
+import ButtonScrollTop from "../components/ButtonScrollTop";
+
 function Infos() {
   const { t } = useTranslation();
 
@@ -115,6 +117,8 @@ function Infos() {
           </div>
         ))}
       </div>
+
+      <ButtonScrollTop />
     </>
   );
 }

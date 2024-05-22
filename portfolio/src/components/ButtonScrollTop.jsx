@@ -20,7 +20,15 @@ function ButtonScrollTop() {
         <span className={styles.textLink}> {t("buttonBackToTop")}</span>
       </Link>
 
-      <Link to="/" onClick={scrollToTop} className={styles2.button}>
+      <Link
+        to="/"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+          });
+        }}
+        className={styles2.button}
+      >
         <span className={styles.textLink}> &gt; cd /</span>
       </Link>
     </div>
