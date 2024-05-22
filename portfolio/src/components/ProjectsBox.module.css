@@ -16,6 +16,55 @@
   text-align: center;
 }
 
+.sizeProject {
+  height: 310px;
+  width: 520px;
+}
+
+.boxFunFact {
+  text-align: center;
+  border: solid 2px var(--color-box-1);
+  padding: 1rem;
+}
+
+.boxFunFact:hover {
+  border-color: var(--color-box-2);
+  transition: 0.3s;
+}
+
+.boxOutside {
+  background-image: linear-gradient(to bottom right, #27292ba4, #454849b9);
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.containerEachProject {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  .boxFunFact {
+    height: 50%;
+    width: 85%;
+  }
+}
+
 @media (max-width: 550px) {
   .containerProjects {
     display: flex;

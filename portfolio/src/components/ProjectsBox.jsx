@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import styles from "./ProjectsBox.module.css";
-import styles2 from "./SizeBox.module.css";
+
 import styles3 from "./PageNav.module.css";
 
-import Box from "./Box";
 import projects from "../data/data";
 import Filter from "./Filter";
 
@@ -16,6 +15,8 @@ import { DiRuby } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 
 function ProjectsBox() {
+  const { t } = useTranslation();
+
   //FILTER
   const [selectedFilter, setSelectedFilter] = useState("All");
 
@@ -29,7 +30,40 @@ function ProjectsBox() {
     window.scrollTo(0, 0);
   }
 
-  const { t } = useTranslation();
+  //Animation
+
+  useEffect(() => {
+    const elementToObserve = [
+      ...document.querySelectorAll(`.${styles.containerEachProject}`),
+    ];
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observerCallBack = (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add(styles.show);
+            observer.unobserve(entry.target);
+          }, index * 200);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallBack, options);
+
+    elementToObserve.forEach(element => {
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
@@ -62,18 +96,20 @@ function ProjectsBox() {
             className={({ isActive }) => (isActive ? styles3.active : "")}
             onClick={handleNavLinkClick}
           >
-            <div>
-              <Box size1={styles2.sizeProject}>
-                {project.name}
-                {project.mainImage && (
-                  <img
-                    src={project.mainImage}
-                    alt={project.name}
-                    className={styles.img}
-                    loading="lazy"
-                  />
-                )}
-              </Box>
+            <div className={styles.containerEachProject}>
+              <div className={`${styles.boxFunFact} ${styles.sizeProject}`}>
+                <div className={`${styles.boxOutside}`}>
+                  {project.name}
+                  {project.mainImage && (
+                    <img
+                      src={project.mainImage}
+                      alt={project.name}
+                      className={styles.img}
+                      loading="lazy"
+                    />
+                  )}
+                </div>
+              </div>
             </div>
           </NavLink>
         ))}
