@@ -9,15 +9,30 @@
   justify-content: center;
 }
 
-.titleLanguages {
+.titleLanguages1 {
   margin-bottom: 1rem;
   font-size: larger;
   color: #8e8885;
 }
 
+.titleLanguages2,
+.titleLanguages3,
+.titleLanguages4 {
+  margin-bottom: 1rem;
+  font-size: larger;
+  color: #8e8885;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
 /* annimation logic */
 
-.containerLanguages {
+.containerLanguages,
+.containerFrameworks,
+.containerLibrairies,
+.containerOthers {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;
@@ -25,28 +40,11 @@
   width: 98%;
 }
 
-.containerFrameworks {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-
-  width: 98%;
-}
-
-.containerLibrairies {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-
-  width: 98%;
-}
-
-.containerOthers {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-
-  width: 98%;
+@media (max-width: 820px) {
+  .containerLanguages .boxFunFact {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .boxFunFact {
@@ -93,13 +91,6 @@
   transition: ease-in-out 0.3s !important;
 
   font-size: 16px;
-}
-
-.containerEachBox:hover .text {
-  /* opacity: 1; */
-  display: block;
-  color: var(--color-text);
-  /* transition: 2s ease-out; */
 }
 
 .boxOutside {

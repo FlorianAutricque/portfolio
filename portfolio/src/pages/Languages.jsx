@@ -155,7 +155,10 @@ function Languages() {
       document.querySelector(`.${styles.containerFrameworks}`),
       document.querySelector(`.${styles.containerLibrairies}`),
       document.querySelector(`.${styles.containerOthers}`),
-      document.querySelector(`.${styles.titleLanguages}`),
+
+      document.querySelector(`.${styles.titleLanguages2}`),
+      document.querySelector(`.${styles.titleLanguages3}`),
+      document.querySelector(`.${styles.titleLanguages4}`),
       ...document.querySelectorAll(`.${styles.boxFunFact}`),
     ];
 
@@ -198,7 +201,7 @@ function Languages() {
 
         <div className={styles.containerLanguages}>
           <div>
-            <p className={styles.titleLanguages}>
+            <p className={styles.titleLanguages1}>
               &gt; {t("languages.lang").toUpperCase()}{" "}
             </p>
           </div>
@@ -222,7 +225,7 @@ function Languages() {
 
         <div className={styles.containerFrameworks}>
           <div>
-            <p className={styles.titleLanguages}>
+            <p className={styles.titleLanguages2}>
               &gt; {t("languages.framework").toUpperCase()}{" "}
             </p>
           </div>
@@ -246,7 +249,7 @@ function Languages() {
 
         <div className={styles.containerLibrairies}>
           <div>
-            <p className={styles.titleLanguages}>
+            <p className={styles.titleLanguages3}>
               &gt; {t("languages.libraries").toUpperCase()}
             </p>
           </div>
@@ -269,7 +272,7 @@ function Languages() {
         {/* others */}
         <div className={styles.containerOthers}>
           <div>
-            <p className={styles.titleLanguages}>
+            <p className={styles.titleLanguages4}>
               &gt; {t("languages.others").toUpperCase()}
             </p>
           </div>
