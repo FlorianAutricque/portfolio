@@ -69,7 +69,7 @@
     left: -100%;
     text-align: start;
     width: 100%;
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in-out;
     background-image: linear-gradient(to bottom right, #27292bef, #454849e8);
     padding: 10px;
     z-index: 1;
