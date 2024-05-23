@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 import ContactAllButtons from "../components/ContactAllButtons";
 import PageNav from "../components/PageNav";
 import styles from "./Contact.module.css";
+import ContactForm from "../components/ContactForm";
+
+import ButtonScrollTop from "../components/ButtonScrollTop.jsx";
 
 function Contact() {
   const { t } = useTranslation();
@@ -20,7 +23,10 @@ function Contact() {
           <p key={index}>{part}</p>
         ))}
 
+        <ContactForm />
         <ContactAllButtons />
+
+        <ButtonScrollTop />
       </div>
     </>
   );

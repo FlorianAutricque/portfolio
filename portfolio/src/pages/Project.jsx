@@ -35,7 +35,7 @@ function Project() {
         <CarouselComponent />
 
         <div className={styles.goBack}>
-          <Link to="/projects" className={styles2.button} onClick={scrollToTop}>
+          <Link to="/projects" className={styles.link} onClick={scrollToTop}>
             {t("buttonGoBack")}
           </Link>
         </div>

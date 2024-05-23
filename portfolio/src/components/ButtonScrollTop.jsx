@@ -16,7 +16,7 @@ function ButtonScrollTop() {
 
   return (
     <div className={styles.buttonScrollTop}>
-      <Link onClick={scrollToTop} className={styles2.button}>
+      <Link onClick={scrollToTop} className={styles.link}>
         <span className={styles.textLink}> {t("buttonBackToTop")}</span>
       </Link>
 
@@ -27,7 +27,7 @@ function ButtonScrollTop() {
             top: 0,
           });
         }}
-        className={styles2.button}
+        className={styles.link}
       >
         <span className={styles.textLink}> &gt; cd /</span>
       </Link>

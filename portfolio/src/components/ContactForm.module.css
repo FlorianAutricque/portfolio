@@ -1,0 +1,138 @@
+.mainContainerContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  gap: 1rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+  border: 1px solid var(--color-box-2);
+}
+
+.mainContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mainContainerContactForm input {
+  width: 88%;
+  height: 1.8rem;
+  font-family: "Roboto";
+
+  background-color: #131417;
+  color: var(--color-text);
+
+  border: 1px solid var(--color-box-1);
+  box-shadow: 0 0 5px var(--color-box-1);
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}
+
+.mainContainerContactForm input:focus,
+.mainContainerContactForm textarea:focus {
+  color: var(--color-box-1);
+}
+
+.mainContainerContactForm textarea {
+  width: 88%;
+  font-family: "Roboto" !important
+  ;
+  padding-top: 5px;
+  background-color: #131417;
+  color: var(--color-text);
+  border: 1px solid var(--color-box-1);
+  box-shadow: 0 0 5px var(--color-box-1);
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.btnContactForm {
+  background-color: var(--color-box-2);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto";
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContactForm:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.07);
+}
+
+.textContactFormAbove {
+  width: 88%;
+  margin-bottom: -0.6rem;
+}
+
+.errorMessage {
+  color: rgb(201, 6, 6);
+}
+
+.redAstrisk {
+  color: rgb(201, 6, 6);
+}
+
+.requiredAsterisk {
+  font-size: 10px;
+  width: 88%;
+}
+
+.phoneImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phoneImage img {
+  height: 20rem;
+  margin-top: -3rem;
+  z-index: -1;
+}
+
+@media (min-width: 760px) {
+  .mainContainerContactForm {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .mainContainerContactForm {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

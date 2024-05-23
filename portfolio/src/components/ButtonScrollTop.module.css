@@ -13,6 +13,16 @@
   gap: 4px;
 }
 
+.link {
+  color: var(--color-text);
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: var(--color-box-2);
+  transition: 0.3s ease-in-out;
+}
+
 @media (max-width: 400px) {
   .buttonScrollTop {
     gap: 1rem;
