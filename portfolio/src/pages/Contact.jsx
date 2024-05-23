@@ -19,9 +19,11 @@ function Contact() {
       <div className={styles.contact}>
         <h1>Contact</h1>
 
-        {titleParts.map((part, index) => (
-          <p key={index}>{part}</p>
-        ))}
+        <div className={styles.textContactPage}>
+          {titleParts.map((part, index) => (
+            <p key={index}>{part}</p>
+          ))}
+        </div>
 
         <ContactForm />
         <ContactAllButtons />

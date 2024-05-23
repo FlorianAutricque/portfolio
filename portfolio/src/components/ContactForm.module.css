@@ -44,8 +44,7 @@
 
 .mainContainerContactForm textarea {
   width: 88%;
-  font-family: "Roboto" !important
-  ;
+  font-family: "Roboto" !important;
   padding-top: 5px;
   background-color: #131417;
   color: var(--color-text);
