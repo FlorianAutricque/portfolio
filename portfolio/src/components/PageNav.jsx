@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import styles from "./PageNav.module.css";
@@ -9,6 +9,7 @@ import Logo from "./Logo";
 import BtnTranslation from "../translation/BtnTranslation.jsx";
 
 function PageNav() {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
   const toggleActiveClass = () => {
@@ -24,14 +25,27 @@ function PageNav() {
 
   const projectDetail = location.pathname.includes("/project/");
 
-  //translation
-  const { t } = useTranslation();
+  //click outside
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsActive(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={styles.nav} ref={menuRef}>
         <Logo />
-
         <div
           className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
           onClick={toggleActiveClass}
@@ -40,7 +54,6 @@ function PageNav() {
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
         </div>
-
         <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
           <BtnTranslation />
           <li onClick={removeActive}>
