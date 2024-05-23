@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import styles from "./Project.module.css";
-import styles2 from "../components/Button.module.css";
 
 import PageNav from "../components/PageNav";
 import StackProject from "../components/StackProject";
