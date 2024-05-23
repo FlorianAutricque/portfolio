@@ -4,6 +4,18 @@
   width: 500px;
 }
 
+@media (max-width: 720px) {
+  .aboutDescription {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .linkProdGithub {
   display: flex;
   align-items: center;

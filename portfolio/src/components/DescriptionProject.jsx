@@ -6,6 +6,7 @@ import { CgWebsite } from "react-icons/cg";
 
 import styles from "./DescriptionProject.module.css";
 import styles2 from "./Button.module.css";
+import { useEffect } from "react";
 
 function DescriptionProject() {
   const location = useLocation();
@@ -20,6 +21,40 @@ function DescriptionProject() {
 
     return project.description[lang] || project.description.en;
   };
+
+  //animation
+  useEffect(() => {
+    const elementToObserver = [
+      document.querySelector(`.${styles.aboutDescription}`),
+    ];
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observerCallBack = (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add(styles.show);
+            observer.unobserve(entry.target);
+          }, index * 200);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallBack, options);
+
+    elementToObserver.forEach(el => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className={styles.aboutDescription}>

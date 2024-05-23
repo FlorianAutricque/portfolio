@@ -15,6 +15,18 @@
   margin-left: 10%;
 }
 
+.containerDescriptionProject,
+.containerCarouselComponent {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 820px) {
   .containerMain {
     flex-direction: column;

@@ -4,13 +4,44 @@ import { useTranslation } from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import styles from "./CarouselComponent.module.css";
+import { useEffect } from "react";
 
 function CarouselComponent() {
+  const { t } = useTranslation();
   const location = useLocation();
 
   const project = location.state ? location.state.projectData : null;
 
-  const { t } = useTranslation();
+  useEffect(() => {
+    const elementToObserver = [document.querySelector(`.${styles.carousel}`)];
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observerCallBack = (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add(styles.show);
+            observer.unobserve(entry.target);
+          }, index * 200);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallBack, options);
+
+    elementToObserver.forEach(el => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
