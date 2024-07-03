@@ -33,6 +33,10 @@ import { SiVite } from "react-icons/si";
 import { SiVuedotjs } from "react-icons/si";
 import { SiNuxtdotjs } from "react-icons/si";
 import { useEffect } from "react";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMongoose } from "react-icons/si";
+import { FaCcStripe } from "react-icons/fa";
+import { SiPug } from "react-icons/si";
 
 function Languages() {
   const { t } = useTranslation();
@@ -104,6 +108,14 @@ function Languages() {
 
   const others = [
     {
+      icon: <FaNodeJs size={80} />,
+      text: "NodeJS",
+    },
+    {
+      icon: <SiPug size={80} />,
+      text: "Pug",
+    },
+    {
       icon: <SiVite size={80} />,
       text: "Vite",
     },
@@ -140,12 +152,20 @@ function Languages() {
       text: "MongoDB",
     },
     {
+      icon: <SiMongoose size={80} />,
+      text: "Mongoose",
+    },
+    {
       icon: <SiWebpack size={80} />,
       text: "Webpack",
     },
     {
       icon: <RiSupabaseFill size={80} />,
       text: "Supabase",
+    },
+    {
+      icon: <FaCcStripe size={80} />,
+      text: "Stripe",
     },
   ];
 
