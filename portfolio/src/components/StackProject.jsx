@@ -8,6 +8,12 @@ import { SiRubyonrails, SiTailwindcss, SiStimulus } from "react-icons/si";
 import { PiFileJsxDuotone } from "react-icons/pi";
 import { RiSupabaseFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMongoose } from "react-icons/si";
+import { FaCcStripe } from "react-icons/fa";
+import { SiPug } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
 
 import styles from "./StackProject.module.css";
 
@@ -23,6 +29,12 @@ const stackMapping = {
   Tailwind: { icon: SiTailwindcss, label: "Tailwindcss" },
   JSX: { icon: PiFileJsxDuotone, label: "JSX" },
   Supabase: { icon: RiSupabaseFill, label: "Supabase" },
+  NodeJS: { icon: FaNodeJs, label: "NodeJS" },
+  Mongoose: { icon: SiMongoose, label: "Mongoose" },
+  Stripe: { icon: FaCcStripe, label: "Stripe" },
+  Pug: { icon: SiPug, label: "Pug" },
+  MongoDB: { icon: BiLogoMongodb, label: "MongoDB" },
+  Postman: { icon: SiPostman, label: "Postman" },
 };
 
 function StackProject() {

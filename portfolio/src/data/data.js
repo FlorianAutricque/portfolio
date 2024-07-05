@@ -31,9 +31,36 @@ const projects = [
     production: "https://gymrat-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
-
   {
     projectId: 3,
+    name: "Natours",
+    mainImage: "/projectsImages/natours/image1.webp",
+    allImages: Array.from(
+      { length: 19 },
+      (_, index) => `/projectsImages/natours/image${index + 1}.webp`
+    ),
+    description: {
+      en: "Natours is an app for booking tours. You can sign up (functionality only implemented on the backend). You will receive a welcome email. Then you can log in. To log in as a user and access more features of the app, you can contact me to get user credentials, and then do all the CRUD operations. Once logged in, you can change your photo, change your password, and see your bookings. \nThere are different types of users: regular user, guide, lead-guide, and admin. Admins and lead-guides can add, modify, or delete a tour (implemented on the backend, not the frontend). You can book a tour and pay using Stripe. Once paid, you can access your booking through your account. \nTo pay, you can use a fake credit card: 4242 4242 4242 4242, as the photo below shows. Do not hesitate to contact me to get credentials to test the app. \n Check the 2 last photos below to see all the operation you can do in the backend \n",
+      fr: "Natours est une application pour réserver des visites. Vous pouvez vous inscrire (fonctionnalité implémentée uniquement sur le backend). Vous recevrez un e-mail de bienvenue. Ensuite, vous pouvez vous connecter. Pour vous connecter en tant qu'utilisateur et accéder à plus de fonctionnalités de l'application, vous pouvez me contacter pour obtenir des identifiants d'utilisateur, afin de réaliser les opérations CRUD. Une fois connecté, vous pouvez changer votre photo, changer votre mot de passe et voir vos réservations. \n Il existe différents types d'utilisateurs : utilisateur régulier, guide, guide principal et administrateur. Les administrateurs et les guides principaux peuvent ajouter, modifier ou supprimer une visite (implémenté sur le backend, pas sur le frontend). Vous pouvez réserver une visite et payer avec Stripe. Une fois payé, vous pouvez accéder à votre réservation via votre compte. \nPour payer, vous pouvez utiliser une fausse carte de crédit : 4242 4242 4242 4242, comme le montre la photo ci-dessous. N'hésitez pas à me contacter pour obtenir des identifiants pour tester l'application. \n Vous pouvez regarder les 2 dernières images afin de voir toutes les opérations réalisables au niveau du backend",
+    },
+    API: "https://documenter.getpostman.com/view/35323521/2sA3XTfLAt",
+    github:
+      "https://github.com/FlorianAutricque/NodeJS_Course/tree/main/natours",
+    production: "https://natours-floran-node.onrender.com/",
+    stack: [
+      "All",
+      "NodeJS",
+      "CSS",
+      "Pug",
+      "Stripe",
+      "MongoDB",
+      "Mongoose",
+      "Postman",
+    ],
+  },
+
+  {
+    projectId: 4,
     name: "Photo & Weather",
     mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
@@ -51,7 +78,7 @@ const projects = [
   },
 
   {
-    projectId: 4,
+    projectId: 5,
     name: "Space login",
     mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
@@ -69,7 +96,7 @@ const projects = [
   },
 
   {
-    projectId: 5,
+    projectId: 6,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -86,7 +113,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 6,
+    projectId: 7,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -101,7 +128,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 7,
+    projectId: 8,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -118,7 +145,7 @@ const projects = [
   },
 
   {
-    projectId: 8,
+    projectId: 9,
     name: "Weather App",
     mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
@@ -136,7 +163,7 @@ const projects = [
   },
 
   {
-    projectId: 9,
+    projectId: 10,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -152,7 +179,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 10,
+    projectId: 11,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -169,7 +196,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 11,
+    projectId: 12,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -185,7 +212,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -202,7 +229,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -217,7 +244,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -232,7 +259,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -247,7 +274,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -263,7 +290,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 17,
+    projectId: 18,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -279,7 +306,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 18,
+    projectId: 19,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -295,7 +322,7 @@ const projects = [
   },
 
   {
-    projectId: 19,
+    projectId: 20,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -312,7 +339,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 20,
+    projectId: 21,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import styles from "./ProjectsBox.module.css";
-
 import styles3 from "./PageNav.module.css";
 
 import projects from "../data/data";
@@ -13,6 +12,7 @@ import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { DiRuby } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa6";
 
 function ProjectsBox() {
   const { t } = useTranslation();
@@ -31,7 +31,6 @@ function ProjectsBox() {
   }
 
   //Animation
-
   useEffect(() => {
     const elementToObserve = [
       ...document.querySelectorAll(`.${styles.containerEachProject}`),
@@ -63,7 +62,7 @@ function ProjectsBox() {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [filteredProjects]);
 
   return (
     <>
@@ -81,6 +80,11 @@ function ProjectsBox() {
             value: "NextJS",
             label: "NextJS",
             icon: <TbBrandNextjs />,
+          },
+          {
+            value: "NodeJS",
+            label: "NodeJS",
+            icon: <FaNodeJs />,
           },
           { value: "Ruby on rails", label: "Ruby", icon: <DiRuby /> },
         ]}

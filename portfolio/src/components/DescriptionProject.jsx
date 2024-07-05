@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
+import { AiFillApi } from "react-icons/ai";
 
 import styles from "./DescriptionProject.module.css";
 import styles2 from "./Button.module.css";
@@ -81,6 +82,16 @@ function DescriptionProject() {
           >
             <span className={styles2.textLink}>
               <CgWebsite size={20} /> Production
+            </span>
+          </Link>
+        ) : (
+          ""
+        )}
+
+        {project.API ? (
+          <Link to={project.API} target="_blank" className={styles2.button}>
+            <span className={styles2.textLink}>
+              <AiFillApi size={20} /> API
             </span>
           </Link>
         ) : (

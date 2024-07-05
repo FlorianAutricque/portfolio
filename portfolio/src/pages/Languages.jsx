@@ -37,6 +37,7 @@ import { FaNodeJs } from "react-icons/fa6";
 import { SiMongoose } from "react-icons/si";
 import { FaCcStripe } from "react-icons/fa";
 import { SiPug } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 
 function Languages() {
   const { t } = useTranslation();
@@ -166,6 +167,10 @@ function Languages() {
     {
       icon: <FaCcStripe size={80} />,
       text: "Stripe",
+    },
+    {
+      icon: <SiPostman size={80} />,
+      text: "Postman",
     },
   ];
 

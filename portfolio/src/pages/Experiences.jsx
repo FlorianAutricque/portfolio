@@ -177,7 +177,10 @@ function Experiences() {
                   }}
                   dateClassName={styles.date}
                 >
-                  <h3>{element.title}</h3>
+                  <h3
+                    className={styles.description}
+                    dangerouslySetInnerHTML={{ __html: element.title }}
+                  ></h3>
                   <p>
                     <em>{element.location}</em>
                   </p>
