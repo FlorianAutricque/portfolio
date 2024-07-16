@@ -80,7 +80,7 @@ function Infos() {
         </div>
 
         <div>
-          <CiLocationOn /> <u>{t("locationInfos")}</u> Montreal, Canada
+          <CiLocationOn /> <u>{t("locationInfos")}</u> France
           <br />
           <br />
           <div

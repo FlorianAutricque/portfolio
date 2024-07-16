@@ -1,9 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-const selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
-
-// const LeWagon = <a href="https://www.lewagon.com/fr">Le Wagon</a>;
+const selectedLanguage = localStorage.getItem("selectedLanguage") || "fr";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -278,7 +276,7 @@ i18n.use(initReactI18next).init({
     },
   },
   lng: selectedLanguage,
-  fallbackLng: "en",
+  fallbackLng: "fr",
   interpolation: {
     escapeValue: false,
   },
