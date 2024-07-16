@@ -7,7 +7,7 @@ function LanguageSelector() {
   const { i18n } = useTranslation();
 
   const [active, setActive] = useState(
-    localStorage.getItem("selectedLanguage") || "en"
+    localStorage.getItem("selectedLanguage") || "fr"
   );
 
   const changeLanguage = lng => {
