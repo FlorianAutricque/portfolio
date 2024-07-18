@@ -45,7 +45,7 @@ function Experiences() {
     {
       id: 4,
       date: t("date.14"),
-      title: t("expTitle.11"),
+      title: "Next.js & React",
       location: "Udemy",
       description: t("experienceExp.12"),
       icon: "school",
