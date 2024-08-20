@@ -58,7 +58,6 @@ const projects = [
       "Postman",
     ],
   },
-
   {
     projectId: 4,
     name: "Photo & Weather",
@@ -76,9 +75,25 @@ const projects = [
     production: "https://weather-image-flo.netlify.app/",
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
-
   {
     projectId: 5,
+    name: "The Ultimate Useless Game",
+    mainImage: "/projectsImages/uselessGame/uselessGame_1.webp",
+    allImages: Array.from(
+      { length: 3 },
+      (_, index) => `/projectsImages/uselessGame/uselessGame_${index + 1}.webp`
+    ),
+    description: {
+      en: "Play the most useless game ever created. Done to play with fetching random images with an API. \n There is a suprise at some point !",
+      fr: "Jouez avec le jeu le plus inutile au monde. Fait dans le but de pratiquer le fetch d'images aléatoires via un API. \n Il y a une surprise à un moment !",
+    },
+    github:
+      "https://github.com/FlorianAutricque/exercise/tree/main/08%20image_choice",
+    production: "https://the-ultimate-useless-game.netlify.app/",
+    stack: ["All", "CSS", "HTML", "Javascript"],
+  },
+  {
+    projectId: 6,
     name: "Space login",
     mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
@@ -96,7 +111,7 @@ const projects = [
   },
 
   {
-    projectId: 6,
+    projectId: 7,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -113,7 +128,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 7,
+    projectId: 8,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -128,7 +143,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 8,
+    projectId: 9,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -145,7 +160,7 @@ const projects = [
   },
 
   {
-    projectId: 9,
+    projectId: 10,
     name: "Weather App",
     mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
@@ -163,7 +178,7 @@ const projects = [
   },
 
   {
-    projectId: 10,
+    projectId: 11,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -179,7 +194,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 11,
+    projectId: 12,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -196,7 +211,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -212,7 +227,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -229,7 +244,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -244,7 +259,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -259,7 +274,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -274,7 +289,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 17,
+    projectId: 18,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -290,7 +305,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 18,
+    projectId: 19,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -306,7 +321,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 19,
+    projectId: 20,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -322,7 +337,7 @@ const projects = [
   },
 
   {
-    projectId: 20,
+    projectId: 21,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -339,7 +354,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 21,
+    projectId: 22,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(
