@@ -33,6 +33,23 @@ const projects = [
   },
   {
     projectId: 3,
+    name: "Plutus",
+    mainImage: "/projectsImages/plutus/plutus1.webp",
+    allImages: Array.from(
+      { length: 6 },
+      (_, index) => `/projectsImages/plutus/plutus${index + 1}.webp`
+    ),
+    description: {
+      en: "Plutus is an application designed to help you manage your expenses. It allows you to add expenses, modify them, and delete them if necessary. You also have the option to add and update your salary. \n The application features a circular chart that summarizes your expenses. It also displays the total sum of calculations and the difference between your salary and expenses, showing you whether you've saved or lost money. \n Additionally, the color of your expenses changes based on the amount you add. Finally, you can customize the application by changing the language and currency according to your preferences.",
+      fr: "Plutus est une application conçue pour vous aider à gérer vos dépenses. Elle vous permet d'ajouter des dépenses, de les modifier, et de les supprimer si nécessaire. Vous avez également la possibilité d'ajouter et de mettre à jour votre salaire. \n L'application intègre un diagramme circulaire qui récapitule vos dépenses. La somme totale des calculs et la différence entre votre salaire et vos dépenses sont aussi affichés, vous indiquant ainsi si vous avez économisé ou perdu de l'argent. \n De plus, la couleur de vos dépenses change en fonction de la valeur que vous y ajoutez. Enfin, vous pouvez personnaliser l'application en changeant la langue et la devise selon vos préférences.",
+    },
+    github:
+      "https://github.com/FlorianAutricque/budget_planner/tree/main/budger_planner",
+    production: "https://budget-planner-jw3e.onrender.com/",
+    stack: ["All", "React", "Tailwind", "HTML", "JSX"],
+  },
+  {
+    projectId: 4,
     name: "Natours",
     mainImage: "/projectsImages/natours/image1.webp",
     allImages: Array.from(
@@ -59,7 +76,7 @@ const projects = [
     ],
   },
   {
-    projectId: 4,
+    projectId: 5,
     name: "Photo & Weather",
     mainImage: "/projectsImages/weatherImage/wi3.webp",
     allImages: Array.from(
@@ -76,7 +93,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 5,
+    projectId: 6,
     name: "The Ultimate Useless Game",
     mainImage: "/projectsImages/uselessGame/uselessGame_1.webp",
     allImages: Array.from(
@@ -93,7 +110,7 @@ const projects = [
     stack: ["All", "CSS", "HTML", "Javascript"],
   },
   {
-    projectId: 6,
+    projectId: 7,
     name: "Space login",
     mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
@@ -111,7 +128,7 @@ const projects = [
   },
 
   {
-    projectId: 7,
+    projectId: 8,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -128,7 +145,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 8,
+    projectId: 9,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -143,7 +160,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 9,
+    projectId: 10,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -160,7 +177,7 @@ const projects = [
   },
 
   {
-    projectId: 10,
+    projectId: 11,
     name: "Weather App",
     mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
@@ -178,7 +195,7 @@ const projects = [
   },
 
   {
-    projectId: 11,
+    projectId: 12,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -194,7 +211,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 12,
+    projectId: 13,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -211,7 +228,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -227,7 +244,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -244,7 +261,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -259,7 +276,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -274,7 +291,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 17,
+    projectId: 18,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -289,7 +306,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 18,
+    projectId: 19,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -305,7 +322,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 19,
+    projectId: 20,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -321,7 +338,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 20,
+    projectId: 21,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -337,7 +354,7 @@ const projects = [
   },
 
   {
-    projectId: 21,
+    projectId: 22,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -354,7 +371,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 22,
+    projectId: 23,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(
