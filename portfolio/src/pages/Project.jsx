@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./Project.module.css";
 
-import PageNav from "../components/PageNav";
 import StackProject from "../components/StackProject";
 import CarouselComponent from "../components/CarouselComponent";
 import DescriptionProject from "../components/DescriptionProject";
@@ -22,7 +21,6 @@ function Project() {
 
   return (
     <>
-      <PageNav />
       <div>
         <h1>{project ? project.name : ""}</h1>
         <div className={styles.containerMain}>

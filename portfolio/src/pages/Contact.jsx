@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import ContactAllButtons from "../components/ContactAllButtons";
-import PageNav from "../components/PageNav";
+
 import styles from "./Contact.module.css";
 import ContactForm from "../components/ContactForm";
 
@@ -14,8 +14,6 @@ function Contact() {
 
   return (
     <>
-      <PageNav />
-
       <div className={styles.contact}>
         <h1>Contact</h1>
 

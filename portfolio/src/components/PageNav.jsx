@@ -2,13 +2,16 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { IoSunnyOutline } from "react-icons/io5";
+import { IoMoonOutline } from "react-icons/io5";
+
 import styles from "./PageNav.module.css";
 
 import Logo from "./Logo";
 
 import BtnTranslation from "../translation/BtnTranslation.jsx";
 
-function PageNav() {
+function PageNav({ toggleDarkMode, darkMode }) {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
@@ -43,7 +46,11 @@ function PageNav() {
   }, []);
 
   return (
-    <div>
+    <div
+      className={`${styles.mainContainerNavbar} ${
+        darkMode ? styles.darkMode : ""
+      }`}
+    >
       <nav
         className={`${styles.nav} ${isActive ? styles.froze : ""}`}
         ref={menuRef}
@@ -57,6 +64,21 @@ function PageNav() {
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
         </div>
+
+        {darkMode ? (
+          <IoSunnyOutline
+            onClick={toggleDarkMode}
+            size={20}
+            className={styles.iconBackgroundcolor}
+          />
+        ) : (
+          <IoMoonOutline
+            size={20}
+            className={styles.iconBackgroundcolor}
+            onClick={toggleDarkMode}
+          />
+        )}
+
         <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
           <BtnTranslation />
           <li onClick={removeActive}>

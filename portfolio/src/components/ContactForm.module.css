@@ -28,8 +28,8 @@
   height: 1.8rem;
   font-family: "Roboto";
 
-  background-color: #131417;
-  color: var(--color-text);
+  background-color: #cbcbcb;
+  color: #1e1e1e;
 
   border: 1px solid var(--color-box-1);
   box-shadow: 0 0 5px var(--color-box-1);
@@ -46,8 +46,8 @@
   width: 88%;
   font-family: "Roboto" !important;
   padding-top: 5px;
-  background-color: #131417;
-  color: var(--color-text);
+  background-color: #cbcbcb;
+  color: #1e1e1e;
   border: 1px solid var(--color-box-1);
   box-shadow: 0 0 5px var(--color-box-1);
   border-radius: 5px;

@@ -6,6 +6,7 @@
   padding-right: 2rem;
   font-family: "Iceland";
   border-bottom: solid 1px #0d0d0d70;
+  background-color: #616263a3;
   padding-top: 8px;
 
   position: fixed;
@@ -24,7 +25,7 @@
 .nav a:link,
 .nav a:visited {
   text-decoration: none;
-  color: var(--color-text);
+  color: #ddddda;
   font-size: 20px;
   transition: color 0.2s;
 }
@@ -36,6 +37,10 @@
   color: var(--color-box-2);
 }
 
+.iconBackgroundcolor {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 885px) {
   .hamburger {
     display: block;
@@ -43,7 +48,7 @@
   }
 
   .bar {
-    background-color: var(--color-text);
+    background-color: var(--text-color);
     width: 20px;
     height: 3px;
     display: block;

@@ -8,8 +8,8 @@
 }
 
 :root {
-  --color-main: #27292b;
-  --color-text: #ddddda;
+  --bg-color: #eee;
+  --text-color: #1e1e1e;
 
   --color-box-1: #17d7e7;
   --color-box-2: #2ce3a3;
@@ -17,8 +17,8 @@
 
 body {
   font-family: "Roboto";
-  background-color: var(--color-main);
-  color: var(--color-text);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin-bottom: 3rem;
 }
 
@@ -33,4 +33,9 @@ h1 {
 
 h1 {
   font-family: "Iceland", "Helvetica", Arial, sans-serif;
+}
+
+.darkMode {
+  --bg-color: #27292b;
+  --text-color: #ddddda;
 }

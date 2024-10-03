@@ -1,4 +1,3 @@
-import PageNav from "../components/PageNav";
 import styles from "./Experiences.module.css";
 
 import ButtonScrollTop from "../components/ButtonScrollTop";
@@ -147,7 +146,6 @@ function Experiences() {
 
   return (
     <>
-      <PageNav />
       <h1>Experiences</h1>
       <div>
         <VerticalTimeline
@@ -171,7 +169,7 @@ function Experiences() {
                   contentStyle={{
                     background:
                       "linear-gradient(to bottom right, #27292ba4, #454849b9",
-                    color: "var(--color-text)",
+                    color: "var(--text-color)",
                     boxShadow: "none",
                     border: "1px solid white",
                   }}

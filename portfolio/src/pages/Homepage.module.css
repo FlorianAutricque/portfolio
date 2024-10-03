@@ -7,7 +7,7 @@
 }
 
 .containerHomepage a {
-  color: var(--color-text);
+  color: var(--text-color);
   text-decoration: none;
 }
 

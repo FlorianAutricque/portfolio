@@ -11,7 +11,7 @@
 }
 .containerProjects a {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--text-color);
   font-size: 20px;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 }
 
 .boxOutside {
-  background-image: linear-gradient(to bottom right, #27292ba4, #454849b9);
+  background-image: linear-gradient(to bottom right, #539ce6a4, #9f9f9fb9);
   padding: 1rem;
   margin: auto;
   display: flex;

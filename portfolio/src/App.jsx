@@ -9,11 +9,28 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 
 import { Toaster } from "react-hot-toast";
+import { useEffect, useState } from "react";
+import PageNav from "./components/PageNav";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(prevDarkmode => !prevDarkmode);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("darkMode");
+    } else {
+      document.body.classList.remove("darkMode");
+    }
+  }, [darkMode]);
+
   return (
     <>
       <BrowserRouter>
+        <PageNav toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="infos" element={<Infos />} />

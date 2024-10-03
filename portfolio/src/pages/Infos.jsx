@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { CiLocationOn } from "react-icons/ci";
-import PageNav from "../components/PageNav";
+
 import styles from "./Infos.module.css";
 import ButtonInfos from "../components/ButtonInfos";
 import { useEffect } from "react";
@@ -10,7 +10,7 @@ import { FaSkiing } from "react-icons/fa";
 
 import ButtonScrollTop from "../components/ButtonScrollTop";
 
-function Infos() {
+function Infos({ darkMode }) {
   const { t } = useTranslation();
 
   const AllFunFacts = [
@@ -70,7 +70,6 @@ function Infos() {
 
   return (
     <>
-      <PageNav />
       <h1>Informations</h1>
 
       <div className={styles.container}>
