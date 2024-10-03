@@ -43,8 +43,11 @@ function PageNav() {
   }, []);
 
   return (
-    <>
-      <nav className={styles.nav} ref={menuRef}>
+    <div>
+      <nav
+        className={`${styles.nav} ${isActive ? styles.froze : ""}`}
+        ref={menuRef}
+      >
         <Logo />
         <div
           className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
@@ -104,7 +107,7 @@ function PageNav() {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
 
