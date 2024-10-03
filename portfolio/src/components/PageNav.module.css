@@ -41,6 +41,13 @@
   cursor: pointer;
 }
 
+.containerLinksDarkMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 885px) {
   .hamburger {
     display: block;

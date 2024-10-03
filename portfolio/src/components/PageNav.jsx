@@ -65,69 +65,71 @@ function PageNav({ toggleDarkMode, darkMode }) {
           <span className={styles.bar}></span>
         </div>
 
-        {darkMode ? (
-          <IoSunnyOutline
-            onClick={toggleDarkMode}
-            size={20}
-            className={styles.iconBackgroundcolor}
-          />
-        ) : (
-          <IoMoonOutline
-            size={20}
-            className={styles.iconBackgroundcolor}
-            onClick={toggleDarkMode}
-          />
-        )}
+        <div className={styles.containerLinksDarkMode}>
+          <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
+            <BtnTranslation />
+            <li onClick={removeActive}>
+              <NavLink
+                to="/infos"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Infos
+              </NavLink>
+            </li>
 
-        <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
-          <BtnTranslation />
-          <li onClick={removeActive}>
-            <NavLink
-              to="/infos"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              Infos
-            </NavLink>
-          </li>
+            <li onClick={removeActive}>
+              <NavLink
+                to="/experiences"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                {t("navbar.1")}
+              </NavLink>
+            </li>
 
-          <li onClick={removeActive}>
-            <NavLink
-              to="/experiences"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              {t("navbar.1")}
-            </NavLink>
-          </li>
+            <li onClick={removeActive}>
+              <NavLink
+                to="/languages"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                {t("navbar.2")}
+              </NavLink>
+            </li>
 
-          <li onClick={removeActive}>
-            <NavLink
-              to="/languages"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              {t("navbar.2")}
-            </NavLink>
-          </li>
+            <li onClick={removeActive}>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive || projectDetail ? styles.active : ""
+                }
+              >
+                {t("navbar.3")}
+              </NavLink>
+            </li>
 
-          <li onClick={removeActive}>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive || projectDetail ? styles.active : ""
-              }
-            >
-              {t("navbar.3")}
-            </NavLink>
-          </li>
+            <li onClick={removeActive}>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
 
-          <li onClick={removeActive}>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
+          {darkMode ? (
+            <IoSunnyOutline
+              onClick={toggleDarkMode}
+              size={20}
+              className={styles.iconBackgroundcolor}
+            />
+          ) : (
+            <IoMoonOutline
+              size={20}
+              className={styles.iconBackgroundcolor}
+              onClick={toggleDarkMode}
+            />
+          )}
+        </div>
       </nav>
     </div>
   );
