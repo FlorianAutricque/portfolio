@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 3rem !important;
 }
+
 .img {
   object-fit: contain;
   height: 210px;
   width: 475px;
 }
+
 .containerProjects a {
   text-decoration: none;
   color: var(--text-color);

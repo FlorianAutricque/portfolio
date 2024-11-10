@@ -13,6 +13,7 @@ import { BiLogoJavascript } from "react-icons/bi";
 import { DiRuby } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
 
 function ProjectsBox() {
   const { t } = useTranslation();
@@ -75,6 +76,11 @@ function ProjectsBox() {
             value: "Javascript",
             label: "Javascript",
             icon: <BiLogoJavascript />,
+          },
+          {
+            value: "Typescript",
+            label: "Typescript",
+            icon: <SiTypescript />,
           },
           {
             value: "NextJS",

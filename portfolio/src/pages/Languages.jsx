@@ -36,6 +36,8 @@ import { SiMongoose } from "react-icons/si";
 import { FaCcStripe } from "react-icons/fa";
 import { SiPug } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { CiCircleQuestion } from "react-icons/ci";
 
 function Languages() {
   const { t } = useTranslation();
@@ -44,6 +46,10 @@ function Languages() {
     {
       icon: <BiLogoJavascript size={80} />,
       text: "Javascript",
+    },
+    {
+      icon: <SiTypescript size={80} />,
+      text: "Typescript",
     },
     {
       icon: <AiFillHtml5 size={80} />,
@@ -117,6 +123,10 @@ function Languages() {
     {
       icon: <SiVite size={80} />,
       text: "Vite",
+    },
+    {
+      icon: <CiCircleQuestion size={80} />,
+      text: "Zod",
     },
     {
       icon: <PiFileJsxDuotone size={80} />,
