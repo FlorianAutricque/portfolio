@@ -21,6 +21,9 @@ function PageNav({ toggleDarkMode, darkMode }) {
 
   const removeActive = () => {
     setIsActive(false);
+    window.scrollTo({
+      top: 0,
+    });
   };
 
   //Projects stays green when entering project
