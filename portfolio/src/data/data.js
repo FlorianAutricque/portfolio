@@ -17,22 +17,6 @@ const projects = [
   },
   {
     projectId: 2,
-    name: "GymRat",
-    mainImage: "/projectsImages/gymrat/gymrat1.webp",
-    allImages: Array.from(
-      { length: 8 },
-      (_, index) => `/projectsImages/gymrat/gymrat${index + 1}.webp`
-    ),
-    description: {
-      en: "GymRat is a showcase website dedicated to a fictional gym.\n It highlights various offers, new features, and available equipment, while also providing a Body Mass Index (BMI) calculator and other practical features.\n With a user-friendly interface, visitors can explore the services offered by the gym, stay updated on the latest fitness trends, discover available facilities, and even assess their own health index.",
-      fr: "GymRat est un site vitrine dédié à une salle de sport fictive.\n Il met en avant les différentes offres, les nouveautés et les équipements disponibles, tout en proposant un calculateur de l'Indice de Masse Corporelle (IMC) et d'autres fonctionnalités pratiques.\n Grâce à une interface conviviale, les visiteurs peuvent explorer les services offerts par la salle, rester à jour sur les dernières tendances en matière de fitness, découvrir les installations disponibles et même évaluer leur propre indice de santé.",
-    },
-    github: "https://github.com/FlorianAutricque/exercise/tree/main/04%20Gym",
-    production: "https://gymrat-flo.netlify.app/",
-    stack: ["All", "React", "CSS", "HTML", "JSX"],
-  },
-  {
-    projectId: 3,
     name: "Plutus",
     mainImage: "/projectsImages/plutus/plutus1.webp",
     allImages: Array.from(
@@ -47,6 +31,22 @@ const projects = [
       "https://github.com/FlorianAutricque/budget_planner/tree/main/budger_planner",
     production: "https://budget-planner-jw3e.onrender.com/",
     stack: ["All", "React", "Tailwind", "HTML", "JSX"],
+  },
+  {
+    projectId: 3,
+    name: "ToDo List Api",
+    mainImage: "/projectsImages/todoapi/todoapi1.webp",
+    allImages: Array.from(
+      { length: 5 },
+      (_, index) => `/projectsImages/todoapi/todoapi${index + 1}.webp`
+    ),
+    description: {
+      en: "Here’s a short description for your to-do list app: This to-do list app allows you to manage tasks with full CRUD (Create, Read, Update, Delete) operations through a robust API.\n Built with TypeScript for type safety, it ensures data integrity and smooth interactions. Zod is used for form validation to guarantee that task descriptions are at least 10 characters long, status is a boolean, and dates are valid. Whether adding, editing, or deleting tasks, the app provides a seamless experience with real-time updates.",
+      fr: "Cette application de liste de tâches vous permet de gérer vos tâches avec des opérations CRUD complètes (Créer, Lire, Mettre à jour, Supprimer) via une API robuste. \nDéveloppée avec TypeScript pour garantir la sécurité des types, elle assure l'intégrité des données et des interactions fluides. Zod est utilisé pour la validation des formulaires, garantissant que les descriptions de tâches font au moins 10 caractères, que le statut est un booléen et que les dates sont valides. Que ce soit pour ajouter, modifier ou supprimer des tâches, l'application offre une expérience fluide avec des mises à jour en temps réel.",
+    },
+    github: "https://github.com/FlorianAutricque/exercise/tree/main/16_test_q",
+    production: "https://todo-list-api-j4o1.onrender.com/",
+    stack: ["All", "React", "CSS", "HTML", "Typescript", "Zod"],
   },
   {
     projectId: 4,
@@ -111,6 +111,22 @@ const projects = [
   },
   {
     projectId: 7,
+    name: "GymRat",
+    mainImage: "/projectsImages/gymrat/gymrat1.webp",
+    allImages: Array.from(
+      { length: 8 },
+      (_, index) => `/projectsImages/gymrat/gymrat${index + 1}.webp`
+    ),
+    description: {
+      en: "GymRat is a showcase website dedicated to a fictional gym.\n It highlights various offers, new features, and available equipment, while also providing a Body Mass Index (BMI) calculator and other practical features.\n With a user-friendly interface, visitors can explore the services offered by the gym, stay updated on the latest fitness trends, discover available facilities, and even assess their own health index.",
+      fr: "GymRat est un site vitrine dédié à une salle de sport fictive.\n Il met en avant les différentes offres, les nouveautés et les équipements disponibles, tout en proposant un calculateur de l'Indice de Masse Corporelle (IMC) et d'autres fonctionnalités pratiques.\n Grâce à une interface conviviale, les visiteurs peuvent explorer les services offerts par la salle, rester à jour sur les dernières tendances en matière de fitness, découvrir les installations disponibles et même évaluer leur propre indice de santé.",
+    },
+    github: "https://github.com/FlorianAutricque/exercise/tree/main/04%20Gym",
+    production: "https://gymrat-flo.netlify.app/",
+    stack: ["All", "React", "CSS", "HTML", "JSX"],
+  },
+  {
+    projectId: 8,
     name: "Space login",
     mainImage: "/projectsImages/spacelogin/login1.webp",
     allImages: Array.from(
@@ -128,7 +144,7 @@ const projects = [
   },
 
   {
-    projectId: 8,
+    projectId: 9,
     name: "Portfolio",
     mainImage: "/projectsImages/portfolio/portfolio1.webp",
 
@@ -145,7 +161,7 @@ const projects = [
     stack: ["All", "React", "CSS", "JSX", "Javascript"],
   },
   {
-    projectId: 9,
+    projectId: 10,
     name: "OUVA",
     mainImage: "/projectsImages/ouva/ouva1.webp",
     allImages: Array.from(
@@ -160,7 +176,7 @@ const projects = [
     stack: ["All", "Ruby on rails", "CSS", "HTML", "Stimulus", "Javascript"],
   },
   {
-    projectId: 10,
+    projectId: 11,
     name: "WorldWise",
     mainImage: "/projectsImages/worldwise/worldwise1.webp",
     allImages: Array.from(
@@ -177,7 +193,7 @@ const projects = [
   },
 
   {
-    projectId: 11,
+    projectId: 12,
     name: "Weather App",
     mainImage: "/projectsImages/weatherApp/weatherapp1.webp",
     allImages: Array.from(
@@ -195,7 +211,7 @@ const projects = [
   },
 
   {
-    projectId: 12,
+    projectId: 13,
     name: "usePopcorn",
     mainImage: "/projectsImages/usepopcorn/usepopcorn1.webp",
     allImages: Array.from(
@@ -211,7 +227,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 13,
+    projectId: 14,
     name: "Fast React Pizza",
     mainImage: "/projectsImages/pizzareact/pizzareact1.webp",
     allImages: Array.from(
@@ -228,7 +244,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX", "Tailwind"],
   },
   {
-    projectId: 14,
+    projectId: 15,
     name: "React Quizz",
     mainImage: "/projectsImages/reactquizz/quizz1.webp",
     allImages: Array.from(
@@ -244,7 +260,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Far Away",
     mainImage: "/projectsImages/faraway/faraway1.webp",
     allImages: Array.from(
@@ -261,7 +277,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "JSX"],
   },
   {
-    projectId: 16,
+    projectId: 17,
     name: "Bankist",
     mainImage: "/projectsImages/bankist/bankist1.webp",
     allImages: Array.from(
@@ -276,7 +292,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 17,
+    projectId: 18,
     name: "Forkify",
     mainImage: "/projectsImages/forkify/forkify1.webp",
     allImages: Array.from(
@@ -291,7 +307,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 18,
+    projectId: 19,
     name: "Mapty",
     mainImage: "/projectsImages/mapty/mapty1.webp",
     allImages: Array.from(
@@ -306,7 +322,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 19,
+    projectId: 20,
     name: "Guess My Number",
     mainImage: "/projectsImages/number/number1.webp",
     allImages: Array.from(
@@ -322,7 +338,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 20,
+    projectId: 21,
     name: "Pig Game",
     mainImage: "/projectsImages/piggame/game1.webp",
     allImages: Array.from(
@@ -338,7 +354,7 @@ const projects = [
     stack: ["All", "Javascript", "CSS", "HTML"],
   },
   {
-    projectId: 21,
+    projectId: 22,
     name: "Blog",
     mainImage: "/projectsImages/blog/blog1.webp",
     allImages: Array.from(
@@ -354,7 +370,7 @@ const projects = [
   },
 
   {
-    projectId: 22,
+    projectId: 23,
     name: "The Wild Oasis",
     mainImage: "/projectsImages/wildoasis/wildoasis1.webp",
     allImages: Array.from(
@@ -371,7 +387,7 @@ const projects = [
     stack: ["All", "React", "CSS", "HTML", "Supabase", "JSX"],
   },
   {
-    projectId: 23,
+    projectId: 24,
     name: "Hairbnb",
     mainImage: "/projectsImages/hairbnb/airbnb1.webp",
     allImages: Array.from(

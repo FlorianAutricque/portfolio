@@ -14,6 +14,8 @@ import { FaCcStripe } from "react-icons/fa";
 import { SiPug } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { CiCircleQuestion } from "react-icons/ci";
 
 import styles from "./StackProject.module.css";
 
@@ -35,6 +37,8 @@ const stackMapping = {
   Pug: { icon: SiPug, label: "Pug" },
   MongoDB: { icon: BiLogoMongodb, label: "MongoDB" },
   Postman: { icon: SiPostman, label: "Postman" },
+  Typescript: { icon: SiTypescript, label: "Typescript" },
+  Zod: { icon: CiCircleQuestion, label: "Zod" },
 };
 
 function StackProject() {
