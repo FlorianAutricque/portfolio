@@ -6,7 +6,8 @@
   padding-right: 2rem;
   font-family: "Iceland";
   border-bottom: solid 1px #0d0d0d70;
-  background-color: #616263a3;
+  /* background-color: #616263a3; */
+  background-color: #303131a3;
   padding-top: 8px;
 
   position: fixed;

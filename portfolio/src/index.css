@@ -9,7 +9,7 @@
 
 :root {
   --bg-color: #eee;
-  --text-color: #1e1e1e;
+  --text-color: #2f2e2e;
 
   --color-box-1: #17d7e7;
   --color-box-2: #2ce3a3;
@@ -36,6 +36,8 @@ h1 {
 }
 
 .darkMode {
-  --bg-color: #27292b;
+  /* --bg-color: #27292b; */
+  --bg-color: #181818;
+
   --text-color: #ddddda;
 }
