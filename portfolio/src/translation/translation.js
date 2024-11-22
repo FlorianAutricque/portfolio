@@ -244,7 +244,7 @@ i18n.use(initReactI18next).init({
         languages: {
           lang: "Mes langages préférés",
           framework: "Mes frameworks préférés",
-          libraries: "Mes librairies préférés",
+          libraries: "Mes librairies préférées",
           others: "Autres",
         },
         CONTACT_FORM: {
