@@ -12,6 +12,8 @@ function Contact() {
   const { t } = useTranslation();
   const titleParts = t("contactText").split("\n");
 
+  // random comment
+
   return (
     <>
       <div className={styles.contact}>
