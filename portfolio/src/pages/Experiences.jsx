@@ -23,7 +23,7 @@ function Experiences() {
       title: t("expTitle.12"),
       location: "France | Canada",
       description: t("experienceExp.13"),
-      icon: "school",
+      icon: "work",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ function Experiences() {
       title: t("expTitle.15"),
       location: "France",
       description: t("experienceExp.16"),
-      icon: "work",
+      icon: "school",
     },
     {
       id: 3,
