@@ -19,6 +19,22 @@ function Experiences() {
   const experiences = [
     {
       id: 1,
+      date: t("date.15"),
+      title: t("expTitle.12"),
+      location: "France | Canada",
+      description: t("experienceExp.13"),
+      icon: "school",
+    },
+    {
+      id: 2,
+      date: t("date.18"),
+      title: t("expTitle.15"),
+      location: "France",
+      description: t("experienceExp.16"),
+      icon: "work",
+    },
+    {
+      id: 3,
       date: t("date.16"),
       title: t("expTitle.13"),
       location: "Montreal - Canada",
@@ -26,15 +42,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 2,
-      date: t("date.15"),
-      title: t("expTitle.12"),
-      location: "Montreal - Canada",
-      description: t("experienceExp.13"),
-      icon: "work",
-    },
-    {
-      id: 3,
+      id: 4,
       date: t("date.17"),
       title: t("expTitle.14"),
       location: "Montreal - Canada",
@@ -42,7 +50,7 @@ function Experiences() {
       icon: "school",
     },
     {
-      id: 4,
+      id: 5,
       date: t("date.3"),
       title: t("expTitle.8"),
       location: "Le Wagon Montreal - Canada",
@@ -50,7 +58,7 @@ function Experiences() {
       icon: "school",
     },
     {
-      id: 5,
+      id: 6,
       date: t("date.4"),
       title: t("expTitle.1"),
       location: "France",
@@ -58,7 +66,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 6,
+      id: 7,
       date: t("date.5"),
       title: t("expTitle.2"),
       location: [t("localisationExp.1"), " - Stralis Energy"],
@@ -66,7 +74,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 7,
+      id: 8,
       date: t("date.6"),
       title: t("expTitle.2"),
       location: [t("localisationExp.2"), " - All Energy Contracting"],
@@ -74,7 +82,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 8,
+      id: 9,
       date: t("date.7"),
       title: t("expTitle.3"),
       location: [t("localisationExp.3"), " - Protech Group"],
@@ -82,7 +90,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 9,
+      id: 10,
       date: t("date.8"),
       title: t("expTitle.3"),
       location: [t("localisationExp.3"), " - Bamford Engineering & Consulting"],
@@ -90,7 +98,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 10,
+      id: 11,
       date: t("date.9"),
       title: t("expTitle.4"),
       location: [t("localisationExp.3"), " - Bamford Engineering & Consulting"],
@@ -98,7 +106,7 @@ function Experiences() {
       icon: "work",
     },
     {
-      id: 11,
+      id: 12,
       date: t("date.10"),
       title: t("expTitle.5"),
       location: t("locationExp.1"),
@@ -106,7 +114,7 @@ function Experiences() {
       icon: "school",
     },
     {
-      id: 12,
+      id: 13,
       date: t("date.12"),
       title: t("expTitle.7"),
       location: t("locationExp.2"),
